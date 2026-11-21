@@ -1,0 +1,129 @@
+@gas
+# 理想气体状态方程
+= pV=nRT
+= pV=\frac{m}{M}RT
+= \frac{pM}{\rho}=RT
+p 为绝对压强（Pa），V 为体积（m³），T 为热力学温度（K），n 为物质的量（mol），M 为摩尔质量（kg/mol），m 为质量（kg），ρ 为密度（kg/m³）。
+= R=8.314\;\mathrm{J\,mol^{-1}\,K^{-1}}
+@visc
+# 牛顿内摩擦定律
+= \tau=-\mu\frac{\mathrm d u_x}{\mathrm d y}
+τ 为剪切应力（Pa）。此处采用的符号约定中，剪切应力与速度梯度方向相反。
+@visc2
+μ 为动力黏度（Pa·s），速度梯度沿垂直于流动方向的坐标 y 计算。温度升高时，一般液体的黏度下降，气体的黏度增大。
+= \nu=\frac{\mu}{\rho}
+ν 为运动黏度（m²/s）。薄层厚度为 δ、两侧流速差为 V 时，黏性力大小可近似写成
+= T=\mu A\left|\frac{\mathrm du}{\mathrm dy}\right|\approx\mu A\frac{V}{\delta}
+@hydro
+# 液体静压基本方程
+= p=p_0+\rho gh
+= p_2=p_1+\rho g(h_2-h_1)
+= z_1+\frac{p_1}{\rho g}=z_2+\frac{p_2}{\rho g}
+= z+\frac{p}{\rho g}=C
+同一种静止液体中，h 为从自由液面向下的深度，z 为向上的位置高程。
+@pressure
+# 绝对压强、相对压强与真空值
+绝对压强以绝对真空为零点。表压以当地大气压为零点，真空值表示当地大气压超过绝对压强的部分。
+= p_{\mathrm{表}}=p_{\mathrm{绝}}-p_{\mathrm a}
+= p_{\mathrm v}=p_{\mathrm a}-p_{\mathrm{绝}}
+@forcefull
+# 作用于平面上的静水压力
+= y_D=y_C+\frac{I_C}{y_CA}
+矩形和圆形面积对形心水平轴的惯性矩分别为
+= I_{C,\mathrm{矩}}=\frac{bh^3}{12}
+= I_{C,\mathrm{圆}}=\frac{\pi d^4}{64}
+@force
+压力合力大小等于受压面形心处的表压乘以面积。上沿与自由液面齐平、竖直放置时，矩形的压力中心距液面为高度的三分之二，圆形为直径的八分之五。
+= P=p_C A
+@balance
+# 连续性方程
+恒定流动中，进入控制体的质量流量等于流出的质量流量。不可压缩流体一进两出的分流示例为
+= v_1 A_1=v_2 A_2+v_3 A_3
+# 伯努利方程
+= z_1+\frac{p_1}{\rho g}+\frac{\alpha_1 v_1^2}{2g}=z_2+\frac{p_2}{\rho g}+\frac{\alpha_2 v_2^2}{2g}+h_{l,1-2}
+有泵输入能量时，在方程左侧加泵扬程 Hₑ。
+# 动量方程
+合外力等于动量的变化率。在一个进口与一个出口之间，有
+= \sum\boldsymbol F=\rho Q\left(\beta_2\boldsymbol v_2-\beta_1\boldsymbol v_1\right)
+# 雷诺数
+= \mathrm{Re}=\frac{vd}{\nu}
+v 为管道断面平均流速（m/s），d 为管径（m），ν 为运动黏度（m²/s）。
+@loss
+# 流动阻力损失
+沿程损失与局部损失分别为
+= h_f=\lambda\frac{l}{d}\frac{v^2}{2g}=Jl
+= h_j=\zeta\frac{v^2}{2g}
+# 圆管中的层流
+充分发展层流的流速剖面是旋转抛物面。中心流速为断面平均流速的两倍。
+= u(r)=u_{\max}\left[1-\left(\frac{r}{r_0}\right)^2\right]
+= u_m=\frac{u_{\max}}{2}
+# 沿程损失系数
+层流区的沿程损失与平均流速成正比。紊流光滑区按布拉休斯公式，损失与流速的 1.75 次方成正比。紊流粗糙区的阻力系数取决于相对粗糙度，损失与平均流速的平方成正比。
+= \lambda=\frac{64}{\mathrm{Re}}\quad(\mathrm{Re}<2000)
+= \lambda\approx\frac{0.3164}{\mathrm{Re}^{1/4}}\quad(\text{紊流光滑区，布拉休斯公式适用范围内})
+= \lambda=f(k_s/d)\quad(\text{紊流粗糙区})
+# 局部阻力损失系数
+以突扩前的小断面平均流速为基准，突然扩大时
+= \zeta=\left(1-\frac{A_1}{A_2}\right)^2
+以突缩后的小断面平均流速为基准，突然缩小时的近似式为
+= \zeta\approx0.5\left(1-\frac{A_2}{A_1}\right)
+@orifice
+# 恒水位管嘴与孔口出流
+= Q=\mu A\sqrt{2gH_0}
+μ 为流量系数，取值随孔口和管嘴的形式而变。
+@resist
+# 比阻与阻抗
+= H=h_f=\lambda\frac{l}{d}\frac{1}{2g}\left(\frac{4Q}{\pi d^2}\right)^2=\frac{8\lambda l}{\pi^2gd^5}Q^2
+= H=S_0lQ^2=SQ^2
+= S_0=\frac{8\lambda}{\pi^2 d^5g}
+@parallel
+# 并联支路的流量分配
+长管或者可以忽略局部损失时，各支路的水头损失相等。
+= Q_1:Q_2:Q_3=\sqrt{\frac{d_1^5}{\lambda_1 l_1}}:\sqrt{\frac{d_2^5}{\lambda_2 l_2}}:\sqrt{\frac{d_3^5}{\lambda_3 l_3}}
+@parallelratio
+= Q_1:Q_2:\cdots:Q_n=\frac{1}{\sqrt{S_1}}:\frac{1}{\sqrt{S_2}}:\cdots:\frac{1}{\sqrt{S_n}}
+@trapezoid
+# 梯形过流断面
+设底宽为 b，水深为 h，边坡系数为 m。水面宽 B、过水面积 A、湿周 χ 和水力半径 R 为
+= B=b+2mh
+= A=(b+mh)h
+= \chi=b+2h\sqrt{1+m^2}
+= R=\frac{A}{\chi}
+@circle
+# 圆形过流断面
+用 θ（弧度）表示湿周所对的圆心角，d 为直径，充满度是水深与直径之比。
+= \alpha=\sin^2\frac{\theta}{4}
+= A=\frac{d^2}{8}(\theta-\sin\theta)
+= \chi=\frac{d\theta}{2}
+= R=\frac{d}{4}\left(1-\frac{\sin\theta}{\theta}\right)
+@open
+# 明渠均匀流
+谢才公式中，均匀流的水力坡度 J 与渠底坡度 i 相等。
+= v=C\sqrt{RJ}=C\sqrt{Ri}
+= Q=Av=AC\sqrt{Ri}
+@manning
+曼宁公式给出谢才系数与糙率 n 的关系，并可据此计算流量。
+= C=\frac{1}{n}R^{1/6}
+= Q=\frac{1}{n}AR^{2/3}i^{1/2}=\frac{A^{5/3}i^{1/2}}{n\chi^{2/3}}
+# 水力最优断面的宽深比
+= \frac{b}{h}=2\left(\sqrt{1+m^2}-m\right)\quad(\text{梯形})
+= \frac{b}{h}=2\quad(\text{矩形})
+@energy
+# 断面单位能量
+= E=h+\frac{\alpha v^2}{2g}=h+\frac{\alpha Q^2}{2gA^2}
+@darcy
+# 达西定律与均匀渗流
+= v=k\frac{H}{l}=kJ
+= J=\frac{H}{l}
+= J=-\frac{\mathrm dH}{\mathrm ds}
+# 井的渗流
+= Q=1.36\,\frac{k(H^2-h_0^2)}{\lg(R/r_0)}
+当降深 S 较小、H 与 h₀ 接近时，近似有
+= Q\approx2.73\,\frac{kHS}{\lg(R/r_0)}
+@gallery
+# 集水廊道
+单侧、单位宽度的渗流量为
+= q=\frac{k(H^2-h^2)}{2l}
+@sim
+# 相似准则
+研究管流阻力问题时，优先考虑雷诺相似；研究溢流时，优先考虑弗劳德相似；以压力和惯性力为主的孔口出流问题可考虑欧拉相似。

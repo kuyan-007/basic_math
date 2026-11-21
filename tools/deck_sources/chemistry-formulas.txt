@@ -1,0 +1,94 @@
+@1
+# 波函数与量子数
+空间波函数由主量子数、角量子数和磁量子数决定，三者的允许取值相互制约。
+= n=1,2,3,\ldots
+= l=0,1,\ldots,n-1
+= m_l=-l,-l+1,\ldots,0,\ldots,l-1,l
+给定 n 时，角量子数有 n 个取值。给定 l 时，磁量子数有 2l＋1 个取值。自旋磁量子数为
+= m_s=\pm\tfrac12
+核外电子排布遵循能量最低原理、泡利不相容原理和洪特规则。讲义列出 d 亚层半满的铬、钼和全满的铜、银、金。原稿将金（Au）的原子序数误排为 75，这里订正为 79。
+能级填充顺序图按斜线依次读取。
+= 1s,\ 2s,\ 2p,\ 3s,\ 3p,\ 4s,\ 3d,\ 4p,\ 5s,\ 4d,\ 5p,\ 6s,\ 4f,\ 5d,\ 6p,\ 7s,\ldots
+@2
+# 元素周期性
+| 变化方向 | 原子半径 | 第一电离能的一般趋势 | 金属性与非金属性 |
+| 同一周期由左向右 | 逐渐减小 | 总体增大 | 非金属性增强 |
+| 同一主族由上向下 | 逐渐增大 | 总体减小 | 金属性增强 |
+结合电负性、氧化物及相应水化物的酸碱性理解这些变化趋势。
+# 晶体的熔点与硬度
+讲义比较三类晶体的一般趋势，具体物质应结合键能和晶体结构判断。
+原子晶体通常高于离子晶体，离子晶体通常高于分子晶体。
+@3
+# 道尔顿分压定律
+理想气体混合物的总压等于各组分分压之和。
+= p_{\text{总}}=p_A+p_B+\cdots=\sum_i p_i
+各组分的分压等于总压乘以该组分的摩尔分数。
+= x_i=\frac{n_i}{n}
+= p_i=\frac{n_i}{n}p_{\text{总}}=x_i p_{\text{总}}
+@4
+# 共价键与杂化轨道
+单键含一个 σ 键，双键含一个 σ 键和一个 π 键，三键含一个 σ 键和两个 π 键。
+| 杂化 | 参加杂化的轨道 | 分子空间构型 | 原表中的典型实例 | 所列构型实例的极性 |
+| sp | 一个 s、一个 p | 直线形 | BeCl₂、BeH₂、HgCl₂、ZnCl₂、CdCl₂、CO₂、CS₂、C₂H₂ | 非极性 |
+| sp² | 一个 s、两个 p | 平面正三角形；乙烯中碳为平面三角构型 | BCl₃、BF₃、B、Al、Ga 等元素的气态三卤化物、C₂H₄ | 非极性 |
+| sp³ | 一个 s、三个 p | 正四面体 | CH₄、SiH₄、CCl₄、SiCl₄ | 非极性 |
+| sp³ 不等性杂化 | 一个 s、三个 p | 三角锥形 | NH₃、NF₃、PH₃、PCl₃、AsH₃、SbH₃ | 极性 |
+| sp³ 不等性杂化 | 一个 s、三个 p | V 字形 | H₂O、H₂S、OF₂ | 极性 |
+@5
+# 氧化还原反应与电极电势
+25 ℃ 时，用常用对数写出的能斯特方程如下。其中 n 为转移电子数，a、b 为反应式相应的计量数，标准态电势以 φ° 表示。
+= \varphi=\varphi^\circ+\frac{0.05917\,\mathrm{V}}{n}\lg\frac{[c(\text{氧化态})/c^\circ]^a}{[c(\text{还原态})/c^\circ]^b}
+将两个依次进行的还原半反应相加，可以利用电子数求合成电对的标准电极电势。
+= \varphi_3^\circ=\frac{n_1\varphi_1^\circ+n_2\varphi_2^\circ}{n_1+n_2}
+@6
+# 溶液的 pH
+25 ℃、稀水溶液条件下，以 mol/L 为浓度单位。
+= \mathrm{pH}+\mathrm{pOH}=-\lg K_w=-\lg(10^{-14})=14
+= \mathrm{pH}\approx-\lg\big(c(\mathrm{H^+})/c^\circ\big)
+# 弱酸和弱碱的解离
+HAc 为乙酸的简写。以下为浓度式，c₀ 为初浓度，近似式适用于解离度较小的情况。
+= K_a=\frac{c(\mathrm{H^+})c(\mathrm{Ac^-})}{c(\mathrm{HAc})}
+= c(\mathrm{H^+})\approx\sqrt{K_a c_0}
+= K_b=\frac{c(\mathrm{NH_4^+})c(\mathrm{OH^-})}{c(\mathrm{NH_3})}
+= c(\mathrm{OH^-})\approx\sqrt{K_b c_0}
+弱酸和弱碱的解离度分别近似为
+= \alpha=\frac{c(\mathrm{H^+})}{c_0}\approx\frac{\sqrt{K_a c_0}}{c_0}=\sqrt{\frac{K_a}{c_0}}
+= \alpha=\frac{c(\mathrm{OH^-})}{c_0}\approx\frac{\sqrt{K_b c_0}}{c_0}=\sqrt{\frac{K_b}{c_0}}
+@7
+# 盐的水解常数
+弱酸强碱盐
+= K_h=\frac{K_w}{K_a}
+强酸弱碱盐
+= K_h=\frac{K_w}{K_b}
+弱酸弱碱盐
+= K_h=\frac{K_w}{K_a K_b}
+# 溶度积
+若难溶盐按下式溶解，其溶度积可用饱和溶液中离子的平衡浓度表示。
+= \mathrm{A}_n\mathrm{B}_m(s)\rightleftharpoons n\mathrm{A}^{m+}+m\mathrm{B}^{n-}
+= K_{\rm sp}=[c(\mathrm{A}^{m+})]^n[c(\mathrm{B}^{n-})]^m
+@8
+# 吉布斯自由能与反应方向
+= \Delta_\mathrm{r}G_\mathrm{m}^\circ=\Delta_\mathrm{r}H_\mathrm{m}^\circ-T\Delta_\mathrm{r}S_\mathrm{m}^\circ
+等温等压且只做体积功时，实际反应吉布斯自由能变小于零，反应可正向自发进行。在标准态近似的温度范围内，可依据焓变和熵变比较。
+| 焓变 | 熵变 | 正向自发反应的温度条件 |
+| 负 | 正 | 各温度下均有利 |
+| 正 | 负 | 各温度下均不利 |
+| 正 | 正 | 高温有利 |
+| 负 | 负 | 低温有利 |
+以焓变和熵变近似恒定求得转折温度
+= T_c=\frac{\Delta H}{\Delta S}
+与标准平衡常数的关系
+= \ln K^\circ=-\frac{\Delta_\mathrm{r}G_\mathrm{m}^\circ}{RT}=-\frac{\Delta_\mathrm{r}H_\mathrm{m}^\circ}{RT}+\frac{\Delta_\mathrm{r}S_\mathrm{m}^\circ}{R}
+@9
+# 标准平衡常数
+对于以下反应
+= a\mathrm A+b\mathrm B\rightleftharpoons g\mathrm G+d\mathrm D
+液相以理想稀溶液浓度比近似活度。
+= K^\circ=\frac{[c(\mathrm G)/c^\circ]^g[c(\mathrm D)/c^\circ]^d}{[c(\mathrm A)/c^\circ]^a[c(\mathrm B)/c^\circ]^b},\qquad c^\circ=1\,\mathrm{mol/L}
+理想气相用分压比表示。
+= K^\circ=\frac{[p(\mathrm G)/p^\circ]^g[p(\mathrm D)/p^\circ]^d}{[p(\mathrm A)/p^\circ]^a[p(\mathrm B)/p^\circ]^b},\qquad p^\circ=100\,\mathrm{kPa}
+计量数同乘 n 时，平衡常数变为原值的 n 次方；反应逆转时，平衡常数变为倒数。
+= K_{\text{新}}^\circ=(K^\circ)^n,\qquad K_{\text{逆}}^\circ=1/K^\circ
+两个反应相加或相减时，相应的平衡常数分别相乘或相除。
+= K_{1+2}^\circ=K_1^\circ K_2^\circ
+= K_{1-2}^\circ=K_1^\circ/K_2^\circ

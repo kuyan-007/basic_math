@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>平行移轴公式、组合截面与惯性积</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="组合截面惯性矩的计算"><figcaption>组合截面惯性矩的计算</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((组合截面惯性矩的计算))
+    拆分
+      把实际截面分解为简单图形及孔洞
+    移轴
+      各部分的形心轴与公共参考轴平行时使用移轴公式
+    合成
+      对同一参考轴相加
+      扣除孔洞部分的惯性矩</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>惯性矩平行轴定理</h3>
+<p>某轴与形心轴平行，两轴相距 a，则截面对该轴的惯性矩等于形心轴惯性矩与面积乘以轴间距平方之和。矩形截面的例子为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mi>z</mi></msub><mo>=</mo><msub><mi>I</mi><mrow><mi>z</mi><mi>C</mi></mrow></msub><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mi>A</mi><mo>=</mo><mfrac><mrow><mi>b</mi><msup><mi>h</mi><mn>3</mn></msup></mrow><mn>12</mn></mfrac><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mi>b</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">I_z=I_{zC}+a^2 A=\frac{bh^3}{12}+a^2bh</annotation></semantics></math></div>
+<p>在一组平行轴中，对形心轴的惯性矩最小。截面沿与所取轴平行的方向平移，对该轴的惯性矩保持不变。</p>
+<h3>平行轴与直径轴</h3>
+<p>矩形图中宽 b 平行于水平形心轴，高 h 垂直于该轴。红线为与水平形心轴平行、通过边缘的轴，两轴间距为高度的一半。</p>
+<p>圆截面图在同一面内画出两条互相垂直的直径轴。圆心极惯性矩等于这两条直径轴惯性矩之和。</p>
+</section>
+<section id="part-2">
+<h3>惯性矩的加减法则</h3>
+<p>对同一参考轴，组合截面的惯性矩为各部分惯性矩之和，开孔部分的惯性矩应扣除。圆形截面挖去矩形孔时作差，圆形与矩形拼接时作和，圆环也可用外圆减内圆计算。各部分给出形心轴惯性矩时，应先用平行轴定理移至公共参考轴。</p>
+<h3>2.4 惯性积</h3>
+<p>对一对相互垂直的轴，截面惯性积为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mrow><mi>y</mi><mi>z</mi></mrow></msub><mo>=</mo><msub><mo>∫</mo><mi>A</mi></msub><mi>y</mi><mi>z</mi><mtext> </mtext><mi mathvariant="normal">d</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">I_{yz}=\int_A yz\,\mathrm dA</annotation></semantics></math></div>
+<p>惯性积的量纲为长度四次方；其数值可能为正、负或零。</p>
+</section>
+<section id="part-3">
+<h3>组合截面的拆分与扣除</h3>
+<p>矩形轴线图标出形心轴和与其平行的移轴，计算轴距时沿两线的垂直方向量取。</p>
+<p>组合截面图中涂色区域才是保留材料。中心方孔从圆中挖去时扣除方孔；半圆与矩形相连时，应先按同一参考轴求两部分惯性矩再相加；圆环则扣去内孔。</p>
+</section>
+</article>
+</body></html>

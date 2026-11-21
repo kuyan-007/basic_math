@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>梁的支座、剪力与弯矩</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="怎样求梁截面的剪力和弯矩"><figcaption>怎样求梁截面的剪力和弯矩</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((怎样求梁截面的剪力和弯矩))
+    先取整梁
+      列力和力矩平衡方程，确定支座反力
+    再取局部
+      在待求截面切开梁，保留一侧
+    分别求内力
+      平行于截面的内力为剪力
+      纵向对称面内的内力偶为弯矩</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>3. 弯曲</h3>
+<p>梁在横向荷载作用下，原来为直线的轴线弯曲，称为弯曲变形。</p>
+</section>
+<section id="part-2">
+<p>平面弯曲时，横向外力垂直于梁轴线；外力或力偶的作用平面位于梁的纵向对称面内；变形后的梁轴线仍位于该平面内，称为挠曲线。</p>
+<h3>3.2 梁的内力</h3>
+<p>梁弯曲时，截面上平行于截面的内力称为剪力，位于纵向对称平面内的内力偶称为弯矩。</p>
+<p>例：15 m 长简支梁上，距左支座 5 m 处作用向下 3 kN 集中力。支座传力但不传递力偶。由整体力矩平衡和竖向力平衡可得左右支座反力。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∑</mo><msub><mi>F</mi><mi>y</mi></msub><mo>=</mo><mn>0</mn><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><msub><mi>F</mi><mi>A</mi></msub><mo>+</mo><msub><mi>F</mi><mi>B</mi></msub><mo>=</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">\sum F_y=0\implies F_A+F_B=F</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><msub><mi>F</mi><mi>A</mi></msub><mo>=</mo><mn>2</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">N</mi></mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><msub><mi>F</mi><mi>B</mi></msub><mo>=</mo><mn>1</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">N</mi></mrow></mrow></mstyle></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">\begin{cases} F_A=2\,\mathrm{kN} \\ F_B=1\,\mathrm{kN} \end{cases}</annotation></semantics></math></div>
+<p>再在左支座右侧 3 m 处切开，取截面任一侧列平衡方程，所得剪力大小为 2 kN，弯矩大小为 6 kN·m。</p>
+<h3>简支梁在两处支座之间受集中力</h3>
+<p>简支梁左端 A、右端 B 支承，总跨 15 m。3 kN 竖向集中力向下，作用点距 A 为 5 m、距 B 为 10 m。A、B 的竖向支反力分别向上 2 kN 和 1 kN。</p>
+<p>截面 m–m 取在距 A 为 3 m 处，位于集中力左侧。取左段时只计入 A 支反力；取右段时同时计入 B 支反力与集中力。</p>
+</section>
+<section id="part-3">
+<p>从截面右侧写力矩平衡，可得同一弯矩。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∑</mo><msub><mi>M</mi><mrow><mi>m</mi><mo separator="true">,</mo><mtext>右</mtext></mrow></msub><mo>=</mo><mn>0</mn><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>M</mi><mo>=</mo><msub><mi>F</mi><mi>B</mi></msub><mo>⋅</mo><mn>12</mn><mo>−</mo><mi>F</mi><mo>⋅</mo><mo stretchy="false">(</mo><mn>12</mn><mo>−</mo><mn>10</mn><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mtext> </mtext><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">N</mi><mo>⋅</mo><mi mathvariant="normal">m</mi></mrow></mrow><annotation encoding="application/x-tex">\sum M_{m,\mathrm{右}}=0\implies M=F_B\cdot12-F\cdot(12-10)=6\,\mathrm{kN\cdot m}</annotation></semantics></math></div>
+</section>
+</article>
+</body></html>

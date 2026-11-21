@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>圆轴扭转切应力与极惯性矩</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="圆轴纯扭转时的切应力"><figcaption>圆轴纯扭转时的切应力</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((圆轴纯扭转时的切应力))
+    方向
+      横截面上沿圆周切向
+    径向分布
+      线弹性范围内与半径成正比
+      实心轴中心为零，外缘最大
+    截面形状
+      圆环只在内外径之间承载
+      极惯性矩反映截面面积相对轴线的分布
+    强度校核
+      比较外缘最大切应力与许用切应力</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>1.4 圆轴扭转时的横截面应力</h3>
+<p>圆轴在纯扭转下横截面只有切应力，没有正应力。</p>
+<h3>1.5 截面惯性矩</h3>
+<p>截面惯性矩是截面面积的二次矩，单位为 m⁴。它是几何量，区别于理论力学中的质量转动惯量，后者的单位是</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mo>⋅</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathrm{kg\cdot m^2}</annotation></semantics></math></div>
+<p>到圆心距离为 ρ 的微面积 dA 对圆心的极惯性矩为 ρ²dA。积分可得实心圆和圆环的极惯性矩，D 为外径，d 为内径。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mi>p</mi></msub><mo>=</mo><msub><mo>∫</mo><mi>A</mi></msub><msup><mi>ρ</mi><mn>2</mn></msup><mtext> </mtext><mi mathvariant="normal">d</mi><mi>A</mi><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><mrow><mn>2</mn><mi>π</mi></mrow></msubsup><mtext> ⁣</mtext><msubsup><mo>∫</mo><mn>0</mn><mrow><mi>D</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msubsup><msup><mi>ρ</mi><mn>3</mn></msup><mtext> </mtext><mi mathvariant="normal">d</mi><mi>ρ</mi><mtext> </mtext><mi mathvariant="normal">d</mi><mi>θ</mi><mo>=</mo><mn>2</mn><mi>π</mi><msubsup><mrow><mo fence="true">[</mo><mfrac><msup><mi>ρ</mi><mn>4</mn></msup><mn>4</mn></mfrac><mo fence="true">]</mo></mrow><mn>0</mn><mrow><mi>D</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msubsup><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>D</mi><mn>4</mn></msup></mrow><mn>32</mn></mfrac></mrow><annotation encoding="application/x-tex">I_p=\int_A\rho^2\,\mathrm dA=\int_0^{2\pi}\!\int_0^{D/2}\rho^3\,\mathrm d\rho\,\mathrm d\theta=2\pi\left[\frac{\rho^4}{4}\right]_0^{D/2}=\frac{\pi D^4}{32}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mrow><mi>p</mi><mo separator="true">,</mo><mtext>环</mtext></mrow></msub><mo>=</mo><mfrac><mrow><mi>π</mi><mo stretchy="false">(</mo><msup><mi>D</mi><mn>4</mn></msup><mo>−</mo><msup><mi>d</mi><mn>4</mn></msup><mo stretchy="false">)</mo></mrow><mn>32</mn></mfrac></mrow><annotation encoding="application/x-tex">I_{p,\mathrm{环}}=\frac{\pi(D^4-d^4)}{32}</annotation></semantics></math></div>
+</section>
+<section id="part-2">
+<h3>1.6 圆轴扭转时的切应力</h3>
+<p>在线弹性圆轴中，同一横截面的切应变随与轴线的距离 ρ 线性增加，切应力也与该距离成正比。T 为扭矩，Iₚ 为极惯性矩。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>τ</mi><mo>=</mo><mfrac><mi>T</mi><msub><mi>I</mi><mi>p</mi></msub></mfrac><mi>ρ</mi></mrow><annotation encoding="application/x-tex">\tau=\frac{T}{I_p}\rho</annotation></semantics></math></div>
+<p>外圆周处的切应力最大。引入抗扭截面系数 Wₜ 后可写出扭转强度条件。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>τ</mi><mi>max</mi><mo>⁡</mo></msub><mo>=</mo><mfrac><mi>T</mi><msub><mi>I</mi><mi>p</mi></msub></mfrac><mfrac><mi>D</mi><mn>2</mn></mfrac><mo>≤</mo><mo stretchy="false">[</mo><mi>τ</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\tau_{\max}=\frac{T}{I_p}\frac{D}{2}\leq[\tau]</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>W</mi><mi>t</mi></msub><mo>=</mo><mfrac><msub><mi>I</mi><mi>p</mi></msub><mrow><mi>D</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">W_t=\frac{I_p}{D/2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>τ</mi><mi>max</mi><mo>⁡</mo></msub><mo>=</mo><mfrac><mi>T</mi><msub><mi>W</mi><mi>t</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">\tau_{\max}=\frac{T}{W_t}</annotation></semantics></math></div>
+<p>实心圆轴中心的切应力为零，向外缘线性增大；空心轴内外表面的切应力按各自半径由同一关系求得。</p>
+</section>
+<section id="part-3">
+<h3>实心轴和空心轴的切应力分布</h3>
+<p>切应力在横截面上沿圆周的切向作用；其大小随到圆心的径向距离增大。实心截面在圆心为零，在外圆最大；圆环截面只有内、外圆之间的材料承受应力，内孔区域没有材料。</p>
+<p>截面尺寸图中的 D 为外径，空心轴的 d 为内径。</p>
+</section>
+</article>
+</body></html>

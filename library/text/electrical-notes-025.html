@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>逻辑门与 D 触发器</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<p>“非门”是数字逻辑中实现逻辑“非”的逻辑门，功能见下方真值表。只要输入为高电平，则输出为低电平；</p>
+<p>非门将输入取反。输入为 0 时输出 1，输入为 1 时输出 0。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mi mathvariant="normal">¬</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">F=\neg A</annotation></semantics></math></div>
+<h3>（4）“与非门”电路</h3>
+<p>将“与门”与“非门”结合起来可以看作“与非门”电路。其真值表及电路符号如下所示：</p>
+<h3>（5）“或非门”电路</h3>
+<p>将“或门”和“非门”结合起来可以看作“或非门”电路。其真值表及电路符号如下所示：</p>
+<h3>（6）“异或门”电路</h3>
+<p>异或门比较两个输入：两输入不同输出 1，相同输出 0。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mi>A</mi><mo>⊕</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">F=A\oplus B</annotation></semantics></math></div>
+<h3>3.2D触发器</h3>
+<p>D触发器是一个具有记忆功能的，具有两个稳定状态的信息存储器件，是构成多种时序电路的最基本逻辑单元，也是数字逻辑电路中一种重要的单元电路。因此在数字系统和计算机中有着广泛的应用。</p>
+<h3>（1）正边沿触发的D触发器</h3>
+<p>正边沿触发的 D 触发器在 CP 从 0 变为 1 的瞬间采样 D；两次有效边沿之间，Q 保持原有状态。</p>
+<h3>带反相标记的逻辑门和异或门</h3>
+<p>非门只有一个输入。输出端的小圆圈表示取反，输入 0 输出 1，输入 1 输出 0。与非、或非分别在与门和或门的输出端加小圆圈；异或门检测两个输入是否不同。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">A</th><th scope="col">B</th><th scope="col">与非</th><th scope="col">或非</th><th scope="col">异或</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td></tr></tbody></table></div>
+</article>
+</body></html>

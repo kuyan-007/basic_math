@@ -1,0 +1,69 @@
+001.0 F=k\frac{|q_1q_2|}{r^2}
+001.1 E=k\frac{|q|}{r^2}
+001.2 \Phi_e=\frac{1}{\varepsilon_0}\sum_i q_i
+002.0 \oint\boldsymbol H\cdot\mathrm d\boldsymbol l=\sum I
+002.1 E=-N\frac{\mathrm d\Phi}{\mathrm dt}
+002.2 R=\frac{U}{I}
+004.0 U_{a3b}+U_{b4c}+U_{c2a}=0
+004.1 U_{aa}=0
+005.0 p=ui=i^2R=\frac{u^2}{R}
+005.1 -
+005.2 u=L\frac{\mathrm di}{\mathrm dt}
+005.3 i=C\frac{\mathrm du}{\mathrm dt}
+006.0 i=I_m\sin(\omega t+\varphi_i)
+006.1 \varphi=(\omega t+\varphi_u)-(\omega t+\varphi_i)=\varphi_u-\varphi_i
+007.0 \varphi=\varphi_u-\varphi_i>0
+007.1 \varphi=\varphi_u-\varphi_i=0
+007.2 \varphi=\varphi_u-\varphi_i=90^\circ=\frac{\pi}{2}
+007.3 \varphi=\varphi_u-\varphi_i=180^\circ=\pi
+007.4 u=U_m\sin(\omega t+\varphi_u)
+007.5 i=I_m\sin(\omega t+\varphi_i)
+007.6 I=\frac{I_m}{\sqrt2}
+007.7 U=\frac{U_m}{\sqrt2}
+007.8 \dot U_1=200\angle45^\circ\,\mathrm V
+007.9 \dot U_2=150\angle(-30^\circ)\,\mathrm V
+008.0 \dot U_1=200\cos45^\circ+j200\sin45^\circ=(141.4+j141.4)\,\mathrm V
+008.1 -
+008.2 \dot U_1+\dot U_2=141.4+j141.4+129.9-j75=(271.3+j66.4)\,\mathrm V
+008.3 \sqrt{271.3^2+66.4^2}\approx279.3 ; \arctan\frac{66.4}{271.3}\approx13.8^\circ ; \dot U_1+\dot U_2=279.3\angle13.8^\circ\,\mathrm V
+008.4 u_1+u_2=279.3\sqrt{2}\sin(100\pi t+13.8^\circ)\,\mathrm V
+008.5 X_L=2\pi fL=\omega L
+008.6 \dot U_1=200\angle45^\circ\,\mathrm V
+008.7 \dot I_1=\frac{\dot U_1}{jX_L}=\frac{141.4+j141.4}{j100}=(1.414-j1.414)\,\mathrm A=2\angle(-45^\circ)\,\mathrm A
+008.8 X_C=\frac{1}{2\pi f C}=\frac{1}{\omega C}
+008.9 \dot U_1=200\angle45^\circ\,\mathrm V
+008.10 \dot I_1=\frac{\dot U_1}{-jX_C}=\frac{200\angle45^\circ}{100\angle(-90^\circ)}=2\angle135^\circ\,\mathrm A
+009.0 \dot I_1=\frac{141.4+j141.4}{-j100}=(-1.414+j1.414)\,\mathrm A=2\angle135^\circ\,\mathrm A
+009.1 u_U=\sqrt2 U_p\sin\omega t ; u_V=\sqrt2 U_p\sin(\omega t-120^\circ) ; u_W=\sqrt2 U_p\sin(\omega t-240^\circ)
+009.2 \dot U_{UV}=\dot U_U-\dot U_V=U_p(\cos0+j\sin0)-U_p(\cos(-120^\circ)+j\sin(-120^\circ))=\frac32U_p+j\frac{\sqrt3}{2}U_p=\sqrt3 U_p\angle30^\circ
+009.3 \dot U_{VW}=\sqrt3 U_p\angle(-90^\circ)
+009.4 \sqrt3
+010.0 \dot U_U=U_p\angle0^\circ
+010.1 \dot U_V=U_p\angle(-120^\circ)
+010.2 \dot U_W=U_p\angle(-240^\circ)
+010.3 Z=Z_p\angle\varphi
+010.4 \dot I_U=\frac{U_p}{Z_p}\angle(-\varphi) ; \dot I_V=\frac{U_p}{Z_p}\angle(-120^\circ-\varphi) ; \dot I_W=\frac{U_p}{Z_p}\angle(-240^\circ-\varphi)
+010.5 i_U+i_V+i_W=0
+010.6 u=\sqrt2 U\sin(\omega t+\varphi_u) ; i=\sqrt2 I\sin(\omega t+\varphi_i)
+010.7 u=\sqrt2 U\sin(\omega t+\varphi_u)
+011.0 S=\sqrt{P^2+Q^2}=UI
+011.1 \lambda=\cos\varphi_1\in(0,1)
+011.2 0^\circ<\varphi_1<90^\circ
+011.3 i_C=C\frac{\mathrm du}{\mathrm dt} ; \dot I_C=j\omega C\dot U
+011.4 \dot I'_C
+012.0 \frac{U_1}{U_{20}}=\frac{N_1}{N_2}=K
+012.1 \dot U_1=-\frac{N_1}{N_2}\dot U_{20}=-K\dot U_{20}
+012.2 \frac{I_1}{I_2}=\frac{N_2}{N_1}=\frac{1}{K}
+017.0 H(t)=\begin{cases}1&t\geq0\\0&t<0\end{cases}
+017.1 \delta(t)=0\quad(t\ne0) ; \int_{-\infty}^{+\infty}\delta(t)\,\mathrm dt=1
+018.0 f(t)=\frac{a_0}{2}+\sum_{n=1}^{\infty}\left[a_n\cos(n\omega t)+b_n\sin(n\omega t)\right] ; f(t)=\frac{a_0}{2}+\sum_{n=1}^\infty A_n\sin(n\omega t+\psi_n)
+020.0 U=\frac{10}{\sqrt2}\,\mathrm V
+020.1 0.45\,\frac{10}{\sqrt2}\approx3.18\,\mathrm V
+020.2 u_i=10\sin\omega t
+020.3 0.9\,\frac{10}{\sqrt2}\approx6.36\,\mathrm V
+020.4 u_i=10\sin\omega t
+026.0 \overline{S_D}
+026.1 \overline{R_D}
+026.2 \overline{S_D}
+026.3 \overline{R_D}
+026.4 \overline{S_D}

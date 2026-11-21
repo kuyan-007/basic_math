@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>触发器与时序逻辑电路</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<p>D 触发器在指定时钟沿采样输入。在非有效时刻，不接收新的 D 值，Q 保持。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><msub><mi>R</mi><mi>D</mi></msub><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{R_D}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><msub><mi>S</mi><mi>D</mi></msub><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{S_D}</annotation></semantics></math></div>
+<p>异步置零端或置一端分别在低电平有效，可供初始化使用。</p>
+<h3>（2）负边沿触发的D触发器</h3>
+<p>D 触发器在指定时钟沿采样输入。在非有效时刻，不接收新的 D 值，Q 保持。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><msub><mi>S</mi><mi>D</mi></msub><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{S_D}</annotation></semantics></math></div>
+<p>异步置零或置一端可用于给触发器设定初值。</p>
+<h3>3.3JK触发器</h3>
+<p>D 触发器在指定时钟沿采样输入。在非有效时刻，不接收新的 D 值，Q 保持。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><msub><mi>R</mi><mi>D</mi></msub><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{R_D}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><msub><mi>S</mi><mi>D</mi></msub><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{S_D}</annotation></semantics></math></div>
+<p>JK 触发器在没有有效边沿时保持原状态，异步置零和置一端可用于初始化。</p>
+<h3>4.时序逻辑电路</h3>
+<p>时序逻辑电路虽然三年会出两题左右，但是相关真题比较复杂，需要对D触发器、JK触发器进行多次循环判断，并且需要记忆各类寄存器、计数器的相关波形特点，一般做一题需要5分钟以上。即使掌握原理，依然会有粗心、不熟练，导致判断错误的情况。综上所述，建议放弃该小节相关知识内容。</p>
+<h3>D 触发器和 JK 触发器的状态表</h3>
+<p>D 触发器的两幅时序图从上到下依次画时钟 CP、数据 D 和输出 Q。先选定上升沿或下降沿，在该沿读取 D；Q 在其余时间保持前值。表中假设异步置位、复位端均无效。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">时钟条件</th><th scope="col">D</th><th scope="col">下一状态 Q</th><th scope="col">互补输出</th></tr></thead><tbody><tr><td>有效边沿</td><td>0</td><td>0</td><td>1</td></tr><tr><td>有效边沿</td><td>1</td><td>1</td><td>0</td></tr><tr><td>未出现有效边沿</td><td>任意</td><td>保持</td><td>保持</td></tr></tbody></table></div>
+<p>JK 图示为下降沿触发。每个有效下降沿读取 J、K。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">J</th><th scope="col">K</th><th scope="col">下一状态 Q</th><th scope="col">功能</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>原 Q</td><td>保持</td></tr><tr><td>0</td><td>1</td><td>0</td><td>清零</td></tr><tr><td>1</td><td>0</td><td>1</td><td>置位</td></tr><tr><td>1</td><td>1</td><td>原 Q 的反值</td><td>翻转</td></tr></tbody></table></div>
+</article>
+</body></html>

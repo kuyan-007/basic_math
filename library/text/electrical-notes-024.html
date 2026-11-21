@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>BCD 码与基本门电路</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<h3>2.2BCD码的概念</h3>
+<p>BCD码（8421码)，用4位二进制数来表示1位十进制数中的0～9这10个数码。这是一种二进制的数字编码形式，用二进制编码的十进制代码，使二进制和十进制之间的转换得以快捷的进行。例如：</p>
+<p>8421 码每一组四位分别表示一个十进制数字。例如 32、89、56 的编码分别为 0011 0010、1000 1001、0101 0110。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>0011</mn><msub><mo stretchy="false">)</mo><mn>2</mn></msub><mo>=</mo><msup><mn>2</mn><mn>1</mn></msup><mo>+</mo><msup><mn>2</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">(0011)_2=2^1+2^0=3</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>0010</mn><msub><mo stretchy="false">)</mo><mn>2</mn></msub><mo>=</mo><msup><mn>2</mn><mn>1</mn></msup><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">(0010)_2=2^1=2</annotation></semantics></math></div>
+<h3>3.基本门电路与集成触发器</h3>
+<h3>3.1基本门电路</h3>
+<p>逻辑门的输入与输出之间有确定的逻辑关系。基本门为与门、或门和非门；它们可以组合成与非门、或非门、异或门等。</p>
+<p>在分析各种门电路的工作过程时，只用两种相反的工作状态，并用“1”和“0”来代表电位（电平）的高低。</p>
+<p>通常规定，高电位为“1”，低电位为“0”（正逻辑）。</p>
+<h3>（1）“与门”电路</h3>
+<p>“与门”是数字逻辑中实现逻辑“与”的逻辑门，功能见下方真值表。仅当输入均为高电压时，输出才为高电压；若输入中至多有一个高电压时，则输出为低电压。换句话说，若“与门”输入的2个信号用A、B来表示，则输出的信号为A·B，从而全1为1，有0为0。</p>
+<h3>（2）“或门”电路</h3>
+<p>或门在至少一个输入为高电平时输出 1，两个输入均为低电平时输出 0。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mi>A</mi><mo>∨</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">F=A\lor B</annotation></semantics></math></div>
+<h3>（3）“非门”电路</h3>
+<h3>8421 BCD 与基本逻辑门</h3>
+<div class="table-scroll"><table><thead><tr><th scope="col">十进制数字</th><th scope="col">8421 BCD 码</th></tr></thead><tbody><tr><td>0</td><td>0000</td></tr><tr><td>1</td><td>0001</td></tr><tr><td>2</td><td>0010</td></tr><tr><td>3</td><td>0011</td></tr><tr><td>4</td><td>0100</td></tr><tr><td>5</td><td>0101</td></tr><tr><td>6</td><td>0110</td></tr><tr><td>7</td><td>0111</td></tr><tr><td>8</td><td>1000</td></tr><tr><td>9</td><td>1001</td></tr></tbody></table></div>
+<p>每个十进制位分别转成一组四位 BCD 码。例如十进制 32 的十位、个位分别为 0011 和 0010。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">输入 A</th><th scope="col">输入 B</th><th scope="col">与门输出</th><th scope="col">或门输出</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td><td>1</td></tr></tbody></table></div>
+<p>图中的“&amp;”表示与门，“≥1”表示只要至少一个输入为 1，输出便为 1 的或门。</p>
+</article>
+</body></html>

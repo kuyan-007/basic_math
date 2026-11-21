@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>静水压力与能量方程</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<h3>绝对压强、相对压强与真空值</h3>
+<p>绝对压强以绝对真空为零点。表压以当地大气压为零点，真空值表示当地大气压超过绝对压强的部分。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>p</mi><mtext>表</mtext></msub><mo>=</mo><msub><mi>p</mi><mtext>绝</mtext></msub><mo>−</mo><msub><mi>p</mi><mi mathvariant="normal">a</mi></msub></mrow><annotation encoding="application/x-tex">p_{\mathrm{表}}=p_{\mathrm{绝}}-p_{\mathrm a}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>p</mi><mi mathvariant="normal">v</mi></msub><mo>=</mo><msub><mi>p</mi><mi mathvariant="normal">a</mi></msub><mo>−</mo><msub><mi>p</mi><mtext>绝</mtext></msub></mrow><annotation encoding="application/x-tex">p_{\mathrm v}=p_{\mathrm a}-p_{\mathrm{绝}}</annotation></semantics></math></div>
+<p>压力合力大小等于受压面形心处的表压乘以面积。上沿与自由液面齐平、竖直放置时，矩形的压力中心距液面为高度的三分之二，圆形为直径的八分之五。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mi>p</mi><mi>C</mi></msub><mi>A</mi></mrow><annotation encoding="application/x-tex">P=p_C A</annotation></semantics></math></div>
+<h3>连续性方程</h3>
+<p>恒定流动中，进入控制体的质量流量等于流出的质量流量。不可压缩流体一进两出的分流示例为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><msub><mi>A</mi><mn>1</mn></msub><mo>=</mo><msub><mi>v</mi><mn>2</mn></msub><msub><mi>A</mi><mn>2</mn></msub><mo>+</mo><msub><mi>v</mi><mn>3</mn></msub><msub><mi>A</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">v_1 A_1=v_2 A_2+v_3 A_3</annotation></semantics></math></div>
+<h3>伯努利方程</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>+</mo><mfrac><msub><mi>p</mi><mn>1</mn></msub><mrow><mi>ρ</mi><mi>g</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><msub><mi>α</mi><mn>1</mn></msub><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><mi>g</mi></mrow></mfrac><mo>=</mo><msub><mi>z</mi><mn>2</mn></msub><mo>+</mo><mfrac><msub><mi>p</mi><mn>2</mn></msub><mrow><mi>ρ</mi><mi>g</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><msub><mi>α</mi><mn>2</mn></msub><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><mi>g</mi></mrow></mfrac><mo>+</mo><msub><mi>h</mi><mrow><mi>l</mi><mo separator="true">,</mo><mn>1</mn><mo>−</mo><mn>2</mn></mrow></msub></mrow><annotation encoding="application/x-tex">z_1+\frac{p_1}{\rho g}+\frac{\alpha_1 v_1^2}{2g}=z_2+\frac{p_2}{\rho g}+\frac{\alpha_2 v_2^2}{2g}+h_{l,1-2}</annotation></semantics></math></div>
+<p>有泵输入能量时，在方程左侧加泵扬程 Hₑ。</p>
+<h3>动量方程</h3>
+<p>合外力等于动量的变化率。在一个进口与一个出口之间，有</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∑</mo><mi mathvariant="bold-italic">F</mi><mo>=</mo><mi>ρ</mi><mi>Q</mi><mrow><mo fence="true">(</mo><msub><mi>β</mi><mn>2</mn></msub><msub><mi mathvariant="bold-italic">v</mi><mn>2</mn></msub><mo>−</mo><msub><mi>β</mi><mn>1</mn></msub><msub><mi mathvariant="bold-italic">v</mi><mn>1</mn></msub><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sum\boldsymbol F=\rho Q\left(\beta_2\boldsymbol v_2-\beta_1\boldsymbol v_1\right)</annotation></semantics></math></div>
+<h3>雷诺数</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">R</mi><mi mathvariant="normal">e</mi></mrow><mo>=</mo><mfrac><mrow><mi>v</mi><mi>d</mi></mrow><mi>ν</mi></mfrac></mrow><annotation encoding="application/x-tex">\mathrm{Re}=\frac{vd}{\nu}</annotation></semantics></math></div>
+<p>v 为管道断面平均流速（m/s），d 为管径（m），ν 为运动黏度（m²/s）。</p>
+</article>
+</body></html>

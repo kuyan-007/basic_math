@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>斜面物体受力分析</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="斜面上的受力分析"><figcaption>斜面上的受力分析</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((斜面上的受力分析))
+    重力
+      竖直向下，分解到斜面及法线方向
+    支持力
+      垂直斜面并指向物体
+    摩擦力
+      沿斜面，阻碍相对滑动或滑动趋势
+      静摩擦力按平衡需要取值，达到上限后可能滑动
+    列平衡方程
+      沿切向与法向分别投影</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>1.6 斜面上刚体的受力分析</h3>
+<p>斜面上的物体可受到重力、斜面的法向支持力和摩擦力。重力竖直向下，沿斜面方向的分量向下，法向分量指向斜面。支持力垂直于斜面并指向物体。</p>
+<p>摩擦力沿斜面，与接触面间的相对运动或其趋势相反。静摩擦力的大小随平衡所需的切向力变化，其上限由静摩擦系数 μₛ 和法向支持力 N 确定。φ 为摩擦角。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>f</mi><mrow><mi>s</mi><mo separator="true">,</mo><mi>max</mi><mo>⁡</mo></mrow></msub><mo>=</mo><msub><mi>μ</mi><mi>s</mi></msub><mi>N</mi><mo>=</mo><mi>N</mi><mi>tan</mi><mo>⁡</mo><mi>φ</mi></mrow><annotation encoding="application/x-tex">f_{s,\max}=\mu_sN=N\tan\varphi</annotation></semantics></math></div>
+<p>超过该上限会发生相对滑动。滑动摩擦力的大小由动摩擦系数 μₖ 决定。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>=</mo><msub><mi>μ</mi><mi>k</mi></msub><mi>N</mi></mrow><annotation encoding="application/x-tex">f_k=\mu_kN</annotation></semantics></math></div>
+<p>物体平衡时合力为零，可沿斜面和法线方向列平衡方程，也可选水平与竖直方向。</p>
+<h3>斜面上的物体</h3>
+<p>斜面向右上方倾斜。以物体为研究对象，重力竖直向下，支持力垂直斜面向外。物体有沿斜面下滑的趋势，因此图中静摩擦力沿斜面向上。沿斜面的下滑分力和垂直斜面的分力都是同一个重力的分量。</p>
+</section>
+<section id="part-2">
+<p>设斜面倾角为 α，重力大小为 G。在仅受重力、支持力和摩擦力作用的平衡状态下，支持力抵消重力的法向分量，静摩擦力抵消其切向分量。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>N</mi><mo>=</mo><mi>G</mi><mi>cos</mi><mo>⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">N=G\cos\alpha</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>f</mi><mi>s</mi></msub><mo>=</mo><mi>G</mi><mi>sin</mi><mo>⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">f_s=G\sin\alpha</annotation></semantics></math></div>
+<p>若在水平方向和竖直方向列平衡方程，同样可得静止所需条件。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>N</mi><mi>cos</mi><mo>⁡</mo><mi>α</mi><mo>+</mo><msub><mi>f</mi><mi>s</mi></msub><mi>sin</mi><mo>⁡</mo><mi>α</mi><mo>=</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">N\cos\alpha+f_s\sin\alpha=G</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>N</mi><mi>sin</mi><mo>⁡</mo><mi>α</mi><mo>=</mo><msub><mi>f</mi><mi>s</mi></msub><mi>cos</mi><mo>⁡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">N\sin\alpha=f_s\cos\alpha</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mi>α</mi><mo>≤</mo><msub><mi>μ</mi><mi>s</mi></msub><mo>=</mo><mi>tan</mi><mo>⁡</mo><mi>φ</mi></mrow><annotation encoding="application/x-tex">\tan\alpha\leq\mu_s=\tan\varphi</annotation></semantics></math></div>
+</section>
+<section id="part-3">
+<h3>两组坐标轴</h3>
+<p>第一种分解取一轴沿斜面、一轴垂直斜面，重力需要分解。第二种分解取水平轴和竖直轴，重力仅有竖直分量，支持力和摩擦力各有水平、竖直分量。两幅图描述同一个平衡状态。</p>
+</section>
+</article>
+</body></html>

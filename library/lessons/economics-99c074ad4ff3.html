@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>方案比较与效益分析</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="互斥方案的效益比较"><figcaption>互斥方案的效益比较</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((互斥方案的效益比较))
+    直接比较
+      按共同口径比较净现值或净年值
+    增量比较
+      差额净现值
+        较大投资相对较小投资的差额净现值为正时选较大投资
+      差额内部收益率
+        与基准收益率比较判断追加投资是否合算</pre></study-mind-map></figure>
+<p class="source-label">工程经济学习笔记</p>
+<section id="part-1">
+<p>1.7 方案比选</p>
+<p>方案之间的关系：互斥关系、独立关系、相互关系。</p>
+<p>分类：局部、整体；综合、专项；定性、定量。</p>
+<p>比选的方法：效益比选法、费用比选法、最低价格法。</p>
+<p>效益比选法有4种方法。净现值比较法（转成现值来比较）、净年值法（第一种方法的基础上算年值来比较）、差额净现值法（先求各个方案的净值，收入减支出，再求差额，求差额现值，若大于0，优选投资大的方案）差额内部收益率法（第三种的现值等于0来求收益率，若是大于ic，说明投资大的方案优选，若是小于ic，说明投资小的方案优选）</p>
+</section>
+<p class="source-label">工程经济重点与例题</p>
+<section id="part-2">
+<h3>课堂总结</h3>
+<p>复习效益、费用方案的比选方法，计算互斥方案。</p>
+<p>掌握项目层次分析的原则。</p>
+<p>掌握价值工程的四种分析方法，计算价值系数与现实成本。</p>
+</section>
+<section id="part-3">
+<h3>效益比选</h3>
+<p>方法包括净现值法、净年值法、差额内部收益率法和差额净现值法。</p>
+<p>净现值比较法</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">V</mi></mrow><mo stretchy="false">(</mo><msub><mi>i</mi><mi>c</mi></msub><mo stretchy="false">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false">(</mo><mi>C</mi><mi>I</mi><mo>−</mo><mi>C</mi><mi>O</mi><msub><mo stretchy="false">)</mo><mi>t</mi></msub><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub><mi>i</mi><mi>c</mi></msub><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathrm{NPV}(i_c)=\sum_{t=1}^{n}(CI-CO)_t(1+i_c)^{-t}</annotation></semantics></math></div>
+<p>净年值比较法</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">A</mi><mi mathvariant="normal">V</mi></mrow><mo stretchy="false">(</mo><msub><mi>i</mi><mi>c</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">V</mi></mrow><mo stretchy="false">(</mo><msub><mi>i</mi><mi>c</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">/</mi><mi>P</mi><mo separator="true">,</mo><msub><mi>i</mi><mi>c</mi></msub><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{NAV}(i_c)=\mathrm{NPV}(i_c)(A/P,i_c,n)</annotation></semantics></math></div>
+<p>净现值、净年值均为正的方案可选。在可比条件下，其值越大越优。比较寿命期不等且可重复实施的互斥方案时，采用净年值较方便。</p>
+</section>
+<section id="part-4">
+<h3>差额内部收益率与差额净现值</h3>
+<p>用投资大的方案减去投资小的方案，构造增量净现金流量。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>C</mi><msub><mi>F</mi><mi>t</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mi>C</mi><mi>I</mi><mo>−</mo><mi>C</mi><mi>O</mi><msub><mo stretchy="false">)</mo><mrow><mtext>大</mtext><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo>−</mo><mo stretchy="false">(</mo><mi>C</mi><mi>I</mi><mo>−</mo><mi>C</mi><mi>O</mi><msub><mo stretchy="false">)</mo><mrow><mtext>小</mtext><mo separator="true">,</mo><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\Delta CF_t=(CI-CO)_{\text{大},t}-(CI-CO)_{\text{小},t}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi mathvariant="normal">Δ</mi><mi>C</mi><msub><mi>F</mi><mi>t</mi></msub><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi mathvariant="normal">Δ</mi><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">I</mi><mi mathvariant="normal">R</mi><mi mathvariant="normal">R</mi></mrow><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mi>t</mi></mrow></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sum_{t=1}^{n}\Delta CF_t(1+\Delta\mathrm{FIRR})^{-t}=0</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">V</mi></mrow><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi mathvariant="normal">Δ</mi><mi>C</mi><msub><mi>F</mi><mi>t</mi></msub><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub><mi>i</mi><mi>c</mi></msub><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\Delta\mathrm{NPV}=\sum_{t=1}^{n}\Delta CF_t(1+i_c)^{-t}</annotation></semantics></math></div>
+<p>在常规增量现金流条件下，若差额内部收益率高于基准收益率，或差额净现值为正，增投部分可接受，宜选投资较大的方案。</p>
+</section>
+</article>
+</body></html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>明渠均匀流与水力最优断面</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="明渠均匀流的计算关系"><figcaption>明渠均匀流的计算关系</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((明渠均匀流的计算关系))
+    坡度
+      均匀流的水力坡度等于渠底坡度
+    流量
+      用谢才公式求平均流速，再乘过水面积
+      可用曼宁公式把糙率引入流量计算
+    水力最优断面
+      矩形底宽取水深的两倍
+      梯形最优宽深比还取决于边坡系数</pre></study-mind-map></figure>
+<p class="source-label">流体力学基础公式</p>
+<section id="part-1">
+<h3>明渠均匀流</h3>
+<p>谢才公式中，均匀流的水力坡度 J 与渠底坡度 i 相等。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>v</mi><mo>=</mo><mi>C</mi><msqrt><mrow><mi>R</mi><mi>J</mi></mrow></msqrt><mo>=</mo><mi>C</mi><msqrt><mrow><mi>R</mi><mi>i</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">v=C\sqrt{RJ}=C\sqrt{Ri}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>A</mi><mi>v</mi><mo>=</mo><mi>A</mi><mi>C</mi><msqrt><mrow><mi>R</mi><mi>i</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">Q=Av=AC\sqrt{Ri}</annotation></semantics></math></div>
+</section>
+<section id="part-2">
+<p>曼宁公式给出谢才系数与糙率 n 的关系，并可据此计算流量。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>C</mi><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><msup><mi>R</mi><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>6</mn></mrow></msup></mrow><annotation encoding="application/x-tex">C=\frac{1}{n}R^{1/6}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>Q</mi><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mi>A</mi><msup><mi>R</mi><mrow><mn>2</mn><mi mathvariant="normal">/</mi><mn>3</mn></mrow></msup><msup><mi>i</mi><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup><mo>=</mo><mfrac><mrow><msup><mi>A</mi><mrow><mn>5</mn><mi mathvariant="normal">/</mi><mn>3</mn></mrow></msup><msup><mi>i</mi><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup></mrow><mrow><mi>n</mi><msup><mi>χ</mi><mrow><mn>2</mn><mi mathvariant="normal">/</mi><mn>3</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">Q=\frac{1}{n}AR^{2/3}i^{1/2}=\frac{A^{5/3}i^{1/2}}{n\chi^{2/3}}</annotation></semantics></math></div>
+<h3>水力最优断面的宽深比</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mi>b</mi><mi>h</mi></mfrac><mo>=</mo><mn>2</mn><mrow><mo fence="true">(</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></msqrt><mo>−</mo><mi>m</mi><mo fence="true">)</mo></mrow><mspace width="1em"/><mo stretchy="false">(</mo><mtext>梯形</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{b}{h}=2\left(\sqrt{1+m^2}-m\right)\quad(\text{梯形})</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mi>b</mi><mi>h</mi></mfrac><mo>=</mo><mn>2</mn><mspace width="1em"/><mo stretchy="false">(</mo><mtext>矩形</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{b}{h}=2\quad(\text{矩形})</annotation></semantics></math></div>
+</section>
+<p class="source-label">流体力学公式与例图</p>
+<section id="part-3">
+<h3>明渠均匀流</h3>
+<p>谢才公式中，均匀流的水力坡度 J 与渠底坡度 i 相等。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>v</mi><mo>=</mo><mi>C</mi><msqrt><mrow><mi>R</mi><mi>J</mi></mrow></msqrt><mo>=</mo><mi>C</mi><msqrt><mrow><mi>R</mi><mi>i</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">v=C\sqrt{RJ}=C\sqrt{Ri}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>A</mi><mi>v</mi><mo>=</mo><mi>A</mi><mi>C</mi><msqrt><mrow><mi>R</mi><mi>i</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">Q=Av=AC\sqrt{Ri}</annotation></semantics></math></div>
+<p>曼宁公式给出谢才系数与糙率 n 的关系，并可据此计算流量。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>C</mi><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><msup><mi>R</mi><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>6</mn></mrow></msup></mrow><annotation encoding="application/x-tex">C=\frac{1}{n}R^{1/6}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>Q</mi><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mi>A</mi><msup><mi>R</mi><mrow><mn>2</mn><mi mathvariant="normal">/</mi><mn>3</mn></mrow></msup><msup><mi>i</mi><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup><mo>=</mo><mfrac><mrow><msup><mi>A</mi><mrow><mn>5</mn><mi mathvariant="normal">/</mi><mn>3</mn></mrow></msup><msup><mi>i</mi><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup></mrow><mrow><mi>n</mi><msup><mi>χ</mi><mrow><mn>2</mn><mi mathvariant="normal">/</mi><mn>3</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">Q=\frac{1}{n}AR^{2/3}i^{1/2}=\frac{A^{5/3}i^{1/2}}{n\chi^{2/3}}</annotation></semantics></math></div>
+<h3>水力最优断面的宽深比</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mi>b</mi><mi>h</mi></mfrac><mo>=</mo><mn>2</mn><mrow><mo fence="true">(</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></msqrt><mo>−</mo><mi>m</mi><mo fence="true">)</mo></mrow><mspace width="1em"/><mo stretchy="false">(</mo><mtext>梯形</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{b}{h}=2\left(\sqrt{1+m^2}-m\right)\quad(\text{梯形})</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mi>b</mi><mi>h</mi></mfrac><mo>=</mo><mn>2</mn><mspace width="1em"/><mo stretchy="false">(</mo><mtext>矩形</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{b}{h}=2\quad(\text{矩形})</annotation></semantics></math></div>
+</section>
+</article>
+</body></html>

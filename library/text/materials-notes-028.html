@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>欧拉公式与临界压力</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<h3>3.3 欧拉公式</h3>
+<p>细长弹性压杆的临界压力可用欧拉公式计算。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mrow><mi>c</mi><mi>r</mi></mrow></msub><mo>=</mo><mfrac><mrow><msup><mi>π</mi><mn>2</mn></msup><mi>E</mi><mi>I</mi></mrow><mrow><mo stretchy="false">(</mo><mi>μ</mi><mi>l</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">F_{cr}=\frac{\pi^2EI}{(\mu l)^2}</annotation></semantics></math></div>
+<p>F_cr 为临界压力（N），E 为材料弹性模量（Pa），I 为受约束条件下与屈曲方向对应的截面惯性矩（m⁴），μ 为长度因数，l 为杆长（m）。通常比较最易屈曲的方向。</p>
+<p>由平行轴定理，在一组平行轴中，对形心轴的惯性矩最小。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mi>z</mi></msub><mo>=</mo><msub><mi>I</mi><mrow><mi>z</mi><mi>C</mi></mrow></msub><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mi>A</mi></mrow><annotation encoding="application/x-tex">I_z=I_{zC}+a^2A</annotation></semantics></math></div>
+<p>矩形截面宽 b、高 h，两个形心主轴的惯性矩取较小值。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mi>min</mi><mo>⁡</mo></msub><mo>=</mo><mi>min</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence="true">(</mo><mfrac><mrow><mi>b</mi><msup><mi>h</mi><mn>3</mn></msup></mrow><mn>12</mn></mfrac><mo separator="true">,</mo><mfrac><mrow><msup><mi>b</mi><mn>3</mn></msup><mi>h</mi></mrow><mn>12</mn></mfrac><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">I_{\min}=\min\!\left(\frac{bh^3}{12},\frac{b^3h}{12}\right)</annotation></semantics></math></div>
+<p>对于圆形截面，任一直径都是形心主轴。压杆屈曲属于弯曲，采用直径轴的惯性矩。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mi>min</mi><mo>⁡</mo></msub><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>D</mi><mn>4</mn></msup></mrow><mn>64</mn></mfrac></mrow><annotation encoding="application/x-tex">I_{\min}=\frac{\pi D^4}{64}</annotation></semantics></math></div>
+<p>长度因数由杆端约束决定。其余条件相同时，计算长度越小，临界压力越大。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mrow><mi>c</mi><mi>r</mi></mrow></msub><mo>=</mo><mfrac><mrow><msup><mi>π</mi><mn>2</mn></msup><mi>E</mi><mi>I</mi></mrow><mrow><mo stretchy="false">(</mo><mi>μ</mi><mi>l</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">F_{cr}=\frac{\pi^2EI}{(\mu l)^2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>l</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">f</mi></mrow></msub><mo>=</mo><mi>μ</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">l_{\mathrm{eff}}=\mu l</annotation></semantics></math></div>
+<h3>比较同一截面绕两条轴的稳定性</h3>
+<p>矩形截面的水平形心轴与边 b 平行，竖直形心轴与边 h 平行。两轴的惯性矩通常不同，应检查较易弯曲的方向，同时考虑该方向的端部约束。</p>
+<p>圆截面的任一直径轴均通过圆心，在其他条件相同时，各直径方向的形心惯性矩相同。</p>
+</article>
+</body></html>

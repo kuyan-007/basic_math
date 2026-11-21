@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>弹性振子与等效弹簧刚度</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="弹簧怎样等效"><figcaption>弹簧怎样等效</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((弹簧怎样等效))
+    串联
+      各弹簧受力相同，总变形为各段变形之和
+      等效刚度的倒数为各刚度倒数之和
+    并联
+      各弹簧变形相同，各支路回复力相加
+      等效刚度为各刚度之和</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>3. 质点的直线振动</h3>
+<h3>3.1 胡克定律</h3>
+<p>线弹性范围内，弹簧的回复力与伸长或压缩量成正比，方向相反。k 为刚度，伸长量 x 可取正值或负值。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mo>−</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">F=-kx</annotation></semantics></math></div>
+<p>振动是物体在稳定平衡位置附近作的往复运动。忽略摩擦时，水平弹簧所连物块离开平衡位置后释放，弹簧交替产生拉力和压力，物块在平衡位置两侧运动。</p>
+<h3>3.3 弹簧串联与并联</h3>
+<p>串联时，各弹簧内力相同，总形变量是各弹簧形变量之和。将弹簧组等效为一根弹簧，其总刚度为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><msub><mi>k</mi><mtext>总</mtext></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>k</mi><mn>2</mn></msub></mfrac><mo>+</mo><mo>⋯</mo><mo>+</mo><mfrac><mn>1</mn><msub><mi>k</mi><mi>n</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{k_{\mathrm{总}}}=\frac{1}{k_1}+\frac{1}{k_2}+\cdots+\frac{1}{k_n}</annotation></semantics></math></div>
+<h3>转动惯量与弹簧振子的示意</h3>
+<ul><li>细杆的端部轴通过杆的一端且垂直杆身；圆环和圆板的中心轴均过圆心且垂直圆面。圆环的质量集中在半径 R 处，圆板的质量分布在整个圆面上。</li><li>水平弹簧左端固定，右端接物块。以平衡位置 O 为原点，向右为正；物块移到 O 的右边时，回复力指向左边。</li></ul>
+</section>
+<section id="part-2">
+<p>两根弹簧串联，刚度为 k₁、k₂，内力均为 F。各弹簧伸长量分别为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mfrac><mi>F</mi><msub><mi>k</mi><mn>1</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">x_1=\frac{F}{k_1}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mfrac><mi>F</mi><msub><mi>k</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">x_2=\frac{F}{k_2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mi>F</mi><mrow><mo fence="true">(</mo><mfrac><mn>1</mn><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>k</mi><mn>2</mn></msub></mfrac><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">x=x_1+x_2=F\left(\frac1{k_1}+\frac1{k_2}\right)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>k</mi><mtext>总</mtext></msub><mo>=</mo><mfrac><mi>F</mi><mi>x</mi></mfrac><mo>=</mo><mfrac><mrow><msub><mi>k</mi><mn>1</mn></msub><msub><mi>k</mi><mn>2</mn></msub></mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">k_{\mathrm{总}}=\frac{F}{x}=\frac{k_1 k_2}{k_1+k_2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><msub><mi>k</mi><mtext>总</mtext></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>k</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>k</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{k_{\mathrm{总}}}=\frac{1}{k_1}+\frac{1}{k_2}</annotation></semantics></math></div>
+<p>并联时，各弹簧的形变量相同，各支路内力相加得到总力，总刚度等于各弹簧刚度之和。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>k</mi><mtext>总</mtext></msub><mo>=</mo><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>k</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">k_{\mathrm{总}}=k_1+k_2+\cdots+k_n</annotation></semantics></math></div>
+<p>两根并联弹簧的力和等效刚度为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><msub><mi>k</mi><mn>1</mn></msub><mi>x</mi></mrow><annotation encoding="application/x-tex">F_1=k_1x</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mn>2</mn></msub><mo>=</mo><msub><mi>k</mi><mn>2</mn></msub><mi>x</mi></mrow><annotation encoding="application/x-tex">F_2=k_2x</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><msub><mi>F</mi><mn>1</mn></msub><mo>+</mo><msub><mi>F</mi><mn>2</mn></msub><mo>=</mo><msub><mi>k</mi><mn>1</mn></msub><mi>x</mi><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub><mi>x</mi></mrow><annotation encoding="application/x-tex">F=F_1+F_2=k_1x+k_2x</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>k</mi><mtext>总</mtext></msub><mo>=</mo><mfrac><mi>F</mi><mi>x</mi></mfrac><mo>=</mo><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">k_{\mathrm{总}}=\frac{F}{x}=k_1+k_2</annotation></semantics></math></div>
+<p>物块两侧各连一根弹簧且物块运动时两弹簧的形变量大小相同，两弹簧对物块的等效刚度按并联计算。</p>
+</section>
+<section id="part-3">
+<h3>辨认弹簧的串联与并联</h3>
+<p>两弹簧首尾相接、末端连接物块时，两者受力大小相同，总伸长量等于两段伸长量之和。两根弹簧共同约束同一物块且随物块位移产生等量形变时，回复力叠加；即使两弹簧分列物块两侧，也属于等效并联。</p>
+</section>
+</article>
+</body></html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>处理器与系统总线</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="取指令与传送信息"><figcaption>取指令与传送信息</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((取指令与传送信息))
+    程序计数器
+      指出下一条指令的位置
+    指令寄存器
+      保存当前指令
+    译码与控制
+      解释操作码
+      产生控制各部件的信号
+    系统总线
+      地址总线指明位置
+      数据总线传送数据
+      控制总线传送控制信号</pre></study-mind-map></figure>
+<p class="source-label">计算机技术知识梳理</p>
+<section id="part-1" class="native-text">
+<h3>13.控制器：分析和执行指令的部件，包括：</h3>
+<p>①程序计数器（PC）：存放下一条要执行的指令</p>
+<p>②指令寄存器（IR）：保存当前正在执行的一条指令</p>
+<p>③指令译码器：负责对指令的指令码部分进行译码，产生该指令所需要的一系列微操作</p>
+<p>④控制部件：按微操作信号控制计算机中的所有部件</p>
+<p>⑤地址寄存器：保存当前CPU所访问的内存单元的地址</p>
+<h3>14.运算器：完成算术和逻辑运算的部件，包括：</h3>
+<p>①算数逻辑单元（ALU）：主要完成算术和各种逻辑运算</p>
+<p>②数据寄存器：存放操作数、运算结果、运算的中间结果，减少访问存储器的次数</p>
+</section>
+<section id="part-2" class="native-text">
+<h3>8.计算机中存在数据、地址、控制三种信息，分别在其相应的总线</h3>
+<p>上流动。</p>
+<h3>9.总线在计算机系统中被视为一个独立部件，由一组导线+相关的</h3>
+<p>控制驱动电路组成。</p>
+<h3>10.数据总线：传输数据和程序信息，数据所包含的二进制位数为</h3>
+<p>字长。</p>
+<p>11.地址总线：</p>
+<div class="native-equation"><div class="native-layout" style="width:22.5333em;height:1.2433em"><span class="native-glyph" style="left:0.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">专</span></span><span class="native-glyph" style="left:1.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">门</span></span><span class="native-glyph" style="left:2.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">用</span></span><span class="native-glyph" style="left:3.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">来</span></span><span class="native-glyph" style="left:4.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">传</span></span><span class="native-glyph" style="left:5.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">送</span></span><span class="native-glyph" style="left:6.1931em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">地</span></span><span class="native-glyph" style="left:7.1931em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">址</span></span><span class="native-glyph" style="left:8.1931em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">，</span></span><span class="native-glyph" style="left:9.2144em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">C</span></span><span class="native-glyph" style="left:9.7144em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">P</span></span><span class="native-glyph" style="left:10.2144em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">U</span></span><span class="native-glyph" style="left:10.7144em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">→</span></span><span class="native-glyph" style="left:11.7144em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">存</span></span><span class="native-glyph" style="left:12.7144em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">储</span></span><span class="native-glyph" style="left:13.7144em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">器</span></span><span class="native-glyph" style="left:14.7144em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">为</span></span><span class="native-glyph" style="left:15.7964em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">地</span></span><span class="native-glyph" style="left:16.7964em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">址</span></span><span class="native-glyph" style="left:17.7964em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">码</span></span><span class="native-glyph" style="left:18.7964em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">，</span></span><span class="native-glyph" style="left:19.8089em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">C</span></span><span class="native-glyph" style="left:20.3089em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">P</span></span><span class="native-glyph" style="left:20.8089em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">U</span></span><span class="native-glyph" style="left:21.3111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">→</span></span></div></div>
+<p>I/O接口为设备码。</p>
+<h3>12.控制总线：用来传送控制信号。</h3>
+</section>
+<p class="source-label">计算机系统与技术基础</p>
+<section id="part-3">
+<h3>2.2控制器</h3>
+<p>控制器主要由指令寄存器、译码器、程序计数器（PC）、地址寄存器和操作控制器等组成，其功能是从存储器取出指令、分析解释指令，按照指令要求依次向其他各部件发出控制信号，并保证各部件协调一致的工作。</p>
+<p>（1）寄存器的功能：存储二进制代码。</p>
+<p>（2）译码器的功能：将输入二进制代码的状态翻译成输出信号。</p>
+<p>（3）程序计数器（PC）的功能：用于存放下一条指令所在单元的地址的地方。</p>
+<p>（4）地址寄存器的功能：保存当前CPU所访问的内存单元的地址。</p>
+<p>（5）操作控制器的功能：产生各种操作控制信号。</p>
+<h3>2.3运算器</h3>
+<p>运算器是对信息进行加工和处理的主要部件，其功能是完成算术与逻辑运算。比如常规的加、减、乘、除等基本的算术运算，还能进行“与”、“或”、“非”这样的基本逻辑运算以及数据的比较、移位等操作。</p>
+</section>
+<section id="part-4">
+<h3>2.7总线</h3>
+<p>在计算机系统中，CPU、内存、输入、输出设备之间传送信息的公共通路叫总线。总线是一种内部结构，属于计算机硬件系统的一个组成部分，并将硬件系统中的各个部件连接起来。</p>
+<p>按照功能划分，总线（Bus）大致可以分为地址总线（AB）、数据总线（DB）和控制总线（CB)。其中，地址总线用于传送主存储器地址码或外围设备码；数据总线用于传送程序或数据；控制总线用来传送控制信息。</p>
+</section>
+<section id="part-5">
+<p>地址由处理器传至存储器或 I/O 端口；数据总线可双向传输。控制总线含不同方向的控制信号线。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">总线类型</th><th scope="col">功能</th><th scope="col">传输方向</th></tr></thead><tbody><tr><td>地址总线（AB）</td><td>传送主存储器地址码或外围设备码</td><td>单向</td></tr><tr><td>数据总线（DB）</td><td>传送程序或数据信息</td><td>双向</td></tr><tr><td>控制总线（CB）</td><td>传送控制信息</td><td>一般为双向</td></tr></tbody></table></div>
+</section>
+</article>
+</body></html>

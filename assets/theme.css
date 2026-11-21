@@ -1,0 +1,95 @@
+.theme-switch { display:inline-flex; align-items:center; justify-content:center; white-space:nowrap; min-height:40px; padding:4px 8px; border:0; border-radius:8px; font:inherit; font-size:14px; background:transparent; color:inherit; cursor:pointer; }
+.theme-switch .to-day, [data-theme=night] .theme-switch .to-night { display:none; }
+[data-theme=night] .theme-switch .to-day { display:inline; }
+.course-switch { display:none; }
+.topbar .date { margin-left:auto; }
+@media(max-width:700px) {
+  .home-view .topbar { gap:4px; padding-inline:8px; flex-wrap:wrap; }
+  .home-view .mobile-nav { gap:0; }
+  .home-view .mobile-nav a { padding-inline:4px; }
+}
+@media(max-width:700px),(max-height:500px) and (pointer:coarse) {
+  .course-switch { display:block; float:right; }
+}
+:root[data-theme=night] {
+  color-scheme:dark; --ink:#e4edf8; --muted:#afc0d6; --line:#33465d;
+  --paper:#0c1727; --surface:#132338; --raised:#1d3149; --blue:#9bbaff;
+  color:var(--ink); background:var(--paper);
+}
+[data-theme=night] :is(.topbar,.cards,.subject,.chapter-group,.search,.doc,.reading-shell,.focus-card.reviewCard,.panel,.empty,.btn,.selector,.review-filters select,.toolbar button,.quiet,dialog,.board-wrap,.map-size,.skip) {
+  background:var(--surface); color:var(--ink); border-color:var(--line);
+}
+[data-theme=night] :is(.focus-room,.focus-frame) { background:var(--paper); color:var(--ink); }
+[data-theme=night] :is(.answer,.focus-card .answer,.focus-exit,.tab.on,.study-text .formula,.card-formula,.study-text .math-scroll,.study-text th,.native-table thead,.lesson-link:hover,.btn:hover) { background:var(--raised); color:var(--ink); }
+[data-theme=night] :is(.hero .btn,.btn.blue,.focus-card .btn.blue) { background:#335c9c; color:white; }
+[data-theme=night] :is(.study-text,.search input,.focus-stage details > summary,.review-filters select,.chapter-review) { color:var(--ink); }
+[data-theme=night] :is(.back,.tab,.section-number,.chapter-number,.cat,.meta,.lesson-breadcrumb,.source-label,.focus-card .count,.native-figure-text,.law-source summary,dialog p,#status) { color:var(--muted); }
+[data-theme=night] .home-view .mobile-nav a:first-child { color:var(--blue); }
+[data-theme=night] .study-text .study-map,[data-theme=night] .map-viewport { background:var(--surface); }
+[data-theme=night] .map-viewport .topic-box { fill:var(--raised)!important; }
+[data-theme=night] .map-viewport .topic-label { fill:var(--ink)!important; }
+[data-theme=night] .map-viewport .topic-link { stroke:var(--muted)!important; }
+[data-theme=night] .curve-panel svg { fill:var(--muted); }
+[data-theme=night] .retention { stroke:#8ec6fa; }
+[data-theme=night] .curve-dots { fill:#8ec6fa; }
+[data-theme=night] .arrow:not(.blocked) path[vector-effect] { stroke:#dce8f6; }
+[data-theme=night] .arrow:not(.blocked) polygon { fill:#dce8f6; }
+[data-theme=night] .arrow.blocked path[vector-effect] { stroke:#ff777d; }
+[data-theme=night] .arrow.blocked polygon { fill:#ff777d; }
+[data-theme=night] #dots circle { fill:#304358; }
+[data-theme=night] #hearts { color:#ff777d; }
+[data-theme=night] #hearts .lost { color:#56637a; }
+
+#app .mainwrap { display:block; margin-left:28px; }
+.nav-toggle {
+  position:fixed; z-index:2; left:0; top:45%; display:grid; place-content:center;
+  width:28px; min-height:64px; padding:4px; writing-mode:vertical-rl;
+  color:white; background:#203952; border:0; border-radius:0 7px 7px 0;
+  font-size:14px; letter-spacing:.15em;
+}
+#study-nav .drawer-footer {
+  display:flex; justify-content:space-between; align-items:center;
+  margin-top:6px; padding:3px 5px 0; border-top:1px solid #ffffff24;
+}
+#study-nav .date { display:flex; font-size:12px; color:#c8d4e7; }
+#study-nav { display:none; }
+#study-nav:popover-open {
+  display:block; position:fixed; inset:0 auto 0 0; margin:0; padding:10px;
+  width:min(264px,calc(100vw - 16px)); height:100dvh; max-height:100%;
+  overflow:auto; scrollbar-width:none;
+  background:#203952; color:white; border:0; border-right:1px solid #ffffff24; border-radius:0;
+  box-shadow:0 6px 24px #14243c40;
+}
+#study-nav::-webkit-scrollbar { display:none; }
+#study-nav .brand { display:flex; gap:8px; margin:0; width:fit-content; }
+#study-nav .brand img { width:30px; height:30px; }
+#study-nav .brand strong { font-size:18px; }
+#study-nav .brand small { display:none; }
+#study-nav > nav { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:2px; }
+#study-nav .side-subjects { padding:3px; grid-auto-rows:auto; }
+#study-nav :is(.side-subjects a,.navlink) {
+  height:auto; min-height:32px; margin:0; padding:4px 7px; gap:6px;
+  font-size:.875rem; line-height:1.35;
+}
+#study-nav .group-label { display:block; margin:6px 6px 3px; }
+#study-nav .games-nav { margin:5px 0 0; align-items:center; }
+#study-nav .games-nav .group-label { margin:0 6px; }
+@media (max-height:440px) and (min-width:480px) {
+  #study-nav:popover-open { width:min(480px,calc(100vw - 16px)); padding-block:4px; }
+  #study-nav .side-subjects { grid-template-columns:repeat(4,minmax(0,1fr)); }
+}
+#study-nav .nav-close {
+  display:block; float:right; min-width:34px; min-height:30px; font-size:22px;
+  color:white; background:transparent; border:0; border-radius:8px;
+}
+#study-nav :is(.profile,.sidehr) { display:none; }
+#study-nav::backdrop { background:#14243c40; }
+.course-view main { padding-top:8px; }
+.course-view .pageHeading {
+  clear:both; align-items:center; justify-content:space-between;
+  flex-wrap:wrap; gap:6px 14px; margin:0 0 8px;
+}
+.course-view .pageHeading h1 { margin:0; font-size:clamp(1.16rem,2vw,1.45rem); line-height:1.4; }
+.course-view .pageHeading .actions { margin:0; }
+.course-view .sectionHead { margin:12px 0 8px; }
+.course-view .reading-shell { margin-top:10px; }

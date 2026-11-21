@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>费用比较与寿命期处理</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="效益相同时如何比费用"><figcaption>效益相同时如何比费用</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((效益相同时如何比费用))
+    寿命期相同
+      折算投资、运行费用和期末残值
+        费用现值较小者较优
+    使用年值
+      将费用换算为等额年费用
+        费用年值较小者较优
+    计算期不同
+      统一研究期、最小公倍数法或年值法</pre></study-mind-map></figure>
+<p class="source-label">工程经济学习笔记</p>
+<section id="part-1">
+<p>费用比选法：费用现值法与费用年值法。</p>
+<p>费用现值法，就是每一年的投资与运行费用折算成现值，扣去残值的现值来比较，越小越好。用于相同寿命期的方案比选。</p>
+<p>费用年值法，也可用于不同寿命期的方案比选。就是前面求出的现值再变换成年值，越小越好。</p>
+<p>互斥的方案不能用内部收益率来比选。</p>
+<p>计算期不等的互斥方案比选：最小公倍数法、年值法、研究期法。</p>
+</section>
+<p class="source-label">工程经济重点与例题</p>
+<section id="part-2">
+<h3>费用现值法</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mi>C</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mo stretchy="false">(</mo><msub><mi>C</mi><mi>t</mi></msub><mo>+</mo><msub><mi>V</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub><mi>i</mi><mi>c</mi></msub><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mi>t</mi></mrow></msup><mo>−</mo><mi>S</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub><mi>i</mi><mi>c</mi></msub><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">PC=\sum_{t=0}^{n}(C_t+V_t)(1+i_c)^{-t}-S(1+i_c)^{-n}</annotation></semantics></math></div>
+<p>PC 是方案的费用现值，Cₜ 是第 t 年的投资，Vₜ 是第 t 年的运行费用，S 是期末残值，i𝑐 是基准收益率，n 是计算期。效益相同时，费用现值较小者较优。</p>
+</section>
+<section id="part-3">
+<h3>费用现值法的应用</h3>
+<p>例题：工艺管道有 A、B 两个设计方案。二者寿命均为 8 年，基准收益率 10%。金额单位为万元。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">方案</th><th scope="col">投资额</th><th scope="col">年运行费用</th><th scope="col">期末残值</th></tr></thead><tbody><tr><td>A</td><td>1000</td><td>400</td><td>200</td></tr><tr><td>B</td><td>1500</td><td>300</td><td>100</td></tr></tbody></table></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><msub><mi>C</mi><mi>A</mi></msub><mo>=</mo><mn>1000</mn><mo>+</mo><mn>400</mn><mo stretchy="false">(</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>A</mi><mo separator="true">,</mo><mn>10</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>8</mn><mo stretchy="false">)</mo><mo>−</mo><mn>200</mn><mo stretchy="false">(</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>F</mi><mo separator="true">,</mo><mn>10</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>8</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">PC_A=1000+400(P/A,10\%,8)-200(P/F,10\%,8)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><msub><mi>C</mi><mi>A</mi></msub><mo>=</mo><mn>1000</mn><mo>+</mo><mn>400</mn><mo>×</mo><mn>5.3349</mn><mo>−</mo><mn>200</mn><mo>×</mo><mn>0.4665</mn><mo>=</mo><mn>3040.66</mn><mtext> 万元</mtext></mrow><annotation encoding="application/x-tex">PC_A=1000+400\times5.3349-200\times0.4665=3040.66\ \text{万元}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><msub><mi>C</mi><mi>B</mi></msub><mo>=</mo><mn>1500</mn><mo>+</mo><mn>300</mn><mo stretchy="false">(</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>A</mi><mo separator="true">,</mo><mn>10</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>8</mn><mo stretchy="false">)</mo><mo>−</mo><mn>100</mn><mo stretchy="false">(</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>F</mi><mo separator="true">,</mo><mn>10</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>8</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">PC_B=1500+300(P/A,10\%,8)-100(P/F,10\%,8)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><msub><mi>C</mi><mi>B</mi></msub><mo>=</mo><mn>1500</mn><mo>+</mo><mn>300</mn><mo>×</mo><mn>5.3349</mn><mo>−</mo><mn>100</mn><mo>×</mo><mn>0.4665</mn><mo>=</mo><mn>3053.82</mn><mtext> 万元</mtext></mrow><annotation encoding="application/x-tex">PC_B=1500+300\times5.3349-100\times0.4665=3053.82\ \text{万元}</annotation></semantics></math></div>
+<p>方案 A 的费用现值较小，选 A。</p>
+</section>
+<section id="part-4">
+<h3>费用年值法</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mrow><mo fence="true">[</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mo stretchy="false">(</mo><msub><mi>C</mi><mi>t</mi></msub><mo>+</mo><msub><mi>V</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mi>t</mi></mrow></msup><mo>−</mo><mi>S</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mi>n</mi></mrow></msup><mo fence="true">]</mo></mrow><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">/</mi><mi>P</mi><mo separator="true">,</mo><mi>i</mi><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">AC=\left[\sum_{t=0}^{n}(C_t+V_t)(1+i)^{-t}-S(1+i)^{-n}\right](A/P,i,n)</annotation></semantics></math></div>
+<p>例题：基准收益率为 15%，比较两个设备工程方案。金额单位为万元。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">方案</th><th scope="col">投资额</th><th scope="col">寿命</th><th scope="col">年运行费用</th><th scope="col">残值</th></tr></thead><tbody><tr><td>甲</td><td>1800</td><td>6 年</td><td>550</td><td>200</td></tr><tr><td>乙</td><td>2600</td><td>10 年</td><td>400</td><td>300</td></tr></tbody></table></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><msub><mi>C</mi><mtext>甲</mtext></msub><mo>=</mo><mo stretchy="false">[</mo><mn>1800</mn><mo>+</mo><mn>550</mn><mo stretchy="false">(</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>A</mi><mo separator="true">,</mo><mn>15</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>6</mn><mo stretchy="false">)</mo><mo>−</mo><mn>200</mn><mo stretchy="false">(</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>F</mi><mo separator="true">,</mo><mn>15</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>6</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">/</mi><mi>P</mi><mo separator="true">,</mo><mn>15</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">AC_{\text{甲}}=[1800+550(P/A,15\%,6)-200(P/F,15\%,6)](A/P,15\%,6)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><msub><mi>C</mi><mtext>甲</mtext></msub><mo>≈</mo><mo stretchy="false">(</mo><mn>1800</mn><mo>+</mo><mn>550</mn><mo>×</mo><mn>3.784</mn><mo>−</mo><mn>200</mn><mo>×</mo><mn>0.432</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>3.784</mn><mo>≈</mo><mn>1002.85</mn><mtext> 万元/年</mtext></mrow><annotation encoding="application/x-tex">AC_{\text{甲}}\approx(1800+550\times3.784-200\times0.432)/3.784\approx1002.85\ \text{万元/年}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><msub><mi>C</mi><mtext>乙</mtext></msub><mo>=</mo><mo stretchy="false">[</mo><mn>2600</mn><mo>+</mo><mn>400</mn><mo stretchy="false">(</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>A</mi><mo separator="true">,</mo><mn>15</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>10</mn><mo stretchy="false">)</mo><mo>−</mo><mn>300</mn><mo stretchy="false">(</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>F</mi><mo separator="true">,</mo><mn>15</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">/</mi><mi>P</mi><mo separator="true">,</mo><mn>15</mn><mi mathvariant="normal">%</mi><mo separator="true">,</mo><mn>10</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">AC_{\text{乙}}=[2600+400(P/A,15\%,10)-300(P/F,15\%,10)](A/P,15\%,10)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><msub><mi>C</mi><mtext>乙</mtext></msub><mo>≈</mo><mo stretchy="false">(</mo><mn>2600</mn><mo>+</mo><mn>400</mn><mo>×</mo><mn>5.019</mn><mo>−</mo><mn>300</mn><mo>×</mo><mn>0.247</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>5.019</mn><mo>≈</mo><mn>903.27</mn><mtext> 万元/年</mtext></mrow><annotation encoding="application/x-tex">AC_{\text{乙}}\approx(2600+400\times5.019-300\times0.247)/5.019\approx903.27\ \text{万元/年}</annotation></semantics></math></div>
+<p>乙方案费用年值较低，选乙。</p>
+</section>
+<section id="part-5">
+<h3>计算期不同的互斥方案</h3>
+<p>最小公倍数法：在方案可重复实施的假设下，把各方案重复到寿命期的最小公倍数，再比较净现值。计算较繁，且技术进步可能使原样重复的假设脱离实际。</p>
+<p>年值法：用净年值比较各方案。</p>
+<p>研究期法：当备选方案的计算期不能向后延续时，人为选取同一个研究期，计算研究期内现金流量的净现值并比较。</p>
+</section>
+</article>
+</body></html>

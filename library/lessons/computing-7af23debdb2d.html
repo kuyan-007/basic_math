@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>存储器与存储层次</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="从访问速度和用途区分存储器"><figcaption>从访问速度和用途区分存储器</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((从访问速度和用途区分存储器))
+    高速缓存
+      缓解处理器与主存的速度差距
+    内存
+      随机存储器用于读写，断电后数据丢失
+      只读存储器可保留固化内容
+    外存
+      适合长期保存大量数据
+      容量大，单位容量成本低</pre></study-mind-map></figure>
+<p class="source-label">计算机技术知识梳理</p>
+<section id="part-1" class="native-text">
+<h3>15.RAM：随机存储器</h3>
+<p>ROM：只读存储器</p>
+<p>Cache:高速缓存</p>
+<div class="native-equation"><div class="native-layout" style="width:9.8422em;height:1.2433em"><span class="native-glyph" style="left:0.1111em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">1</span></span><span class="native-glyph" style="left:0.6111em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">6</span></span><span class="native-glyph" style="left:1.1111em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">.</span></span><span class="native-glyph" style="left:1.6111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">存</span></span><span class="native-glyph" style="left:2.6111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">储</span></span><span class="native-glyph" style="left:3.6111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">器</span></span><span class="native-glyph" style="left:4.6167em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">=</span></span><span class="native-glyph" style="left:5.1167em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">内</span></span><span class="native-glyph" style="left:6.1167em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">存</span></span><span class="native-glyph" style="left:7.1200em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">+</span></span><span class="native-glyph" style="left:7.6200em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">外</span></span><span class="native-glyph" style="left:8.6200em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">存</span></span></div></div>
+<p>①内存：短暂存储程序和数据，关闭电源/断电，数据丢失，量小、速快、价高</p>
+<p>②外存：量大、速慢、价低。</p>
+</section>
+<p class="source-label">计算机系统与技术基础</p>
+<section id="part-2">
+<h3>2.4存储器</h3>
+<h3>（1）存储器的作用及分类</h3>
+<p>存储器是用来存储程序和数据的。存储器分为内存储器和外存储器以及高速缓冲存储器（Cache）。</p>
+<p>内存储器又称主存储器，特点是：半导体存储器，容量相对于外存储器容量小，存取速度快，CPU可直接对它进行访问。内存储器可分为两类：一种是随机存取存储器RAM(Random Access Memory)，该存储器的CPU访问方式为读写，断电后信息丢失；另一种是只读存储器ROM(Read Only Memory)，该存储器的CPU访问方式为只读，断电后信息不丢失。</p>
+<p>外存储器用来扩充存储器容量和存放“暂时不用”的程序和数据。其特点是：容量大，存取信息的速度要比内存慢，CPU不可对它直接访问。常用的外存储器有硬盘、软盘、光盘和U盘等。</p>
+<p>为了解决CPU和内存之间速度不匹配问题，引入了高速缓冲存储器（Cache）。</p>
+<h3>（2）存储器的基本单元</h3>
+<p>字节是存储器容量的基本单元，1个字节等于8个二进制位（bit，比特），如“01001000”便为1个字节。</p>
+<p>每个单元（字节）有一个地址（一般称为存储器的地址)，是一个整数编码，可以表示为二进制整数。</p>
+</section>
+</article>
+</body></html>

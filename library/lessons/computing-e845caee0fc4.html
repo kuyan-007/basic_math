@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>协议与开放系统互连模型</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="开放系统互连模型中的分工"><figcaption>开放系统互连模型中的分工</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((开放系统互连模型中的分工))
+    物理层与数据链路层
+      传送比特
+      按帧组织链路上的传输
+    网络层与传输层
+      选择网络路径
+      提供端到端传输
+    会话层与表示层
+      管理会话
+      处理数据的表示形式
+    应用层
+      向用户应用提供网络服务</pre></study-mind-map></figure>
+<p class="source-label">计算机技术知识梳理</p>
+<section id="part-1" class="native-text">
+<h3>100.网络协议是管理管理计算机通信的规则。</h3>
+<h3>101.网络协议组成：语法+语义+同步（定时）</h3>
+<h3>02.计算机网络功能分层目的：方便开发、设计、故障排除。</h3>
+<h3>03.计算机网络功能分层原则：</h3>
+<p>每个层实现特定的功能</p>
+</section>
+<section id="part-2" class="native-text">
+<p>②各层之间有清晰的边界，层接口清晰，便于理解</p>
+<p>③层的数目适中，便于实施</p>
+<p>④层层都使用下层的服务为上层提供服务，即N层使用（N-1）层为N+1层服务，是N-2用户</p>
+<p>⑤在层中可以再设置子层，当不需要时可以绕过子层</p>
+</section>
+<section id="part-3" class="native-text">
+<h3>104.OSI参考模型将网络协议分为7层，各层功能及名称依次是：</h3>
+<p>①物理层（第一层）：负责传输比特流</p>
+<p>②数据链接层：信号同步、查错校验（CRC）、流向控制</p>
+<p>③网络层：确定传送地址、选择传输路径</p>
+<p>④传输层：分组、流量控制、查错与错误处理</p>
+<p>⑤会话层：建立传输规则、约定，不同主机进程间的通信/会话</p>
+<p>⑥表示层：数据转换、压缩与解压缩、加密与解密</p>
+<p>⑦应用层：提供各种应用和服务：文件传输、电子邮件、万维网等</p>
+</section>
+<p class="source-label">计算机系统与技术基础</p>
+<section id="part-4">
+<h3>2.10计算机网络协议的三要素</h3>
+</section>
+<section id="part-5">
+<p>①语义：语义是解释控制信息每个部分的意义。它规定了需要发出何种控制信息，以及完成的动作与做出什么样的响应。</p>
+<p>②语法：语法是用户数据与控制信息的结构与格式，以及数据出现的顺序。</p>
+<p>③时序（同步)：时序是对事件发生顺序的详细说明。</p>
+<p>人们形象地把这三个要素描述为：语义表示要做什么，语法表示要怎么做，时序表示做的顺序。</p>
+</section>
+</article>
+</body></html>

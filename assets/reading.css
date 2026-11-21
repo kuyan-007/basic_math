@@ -1,0 +1,92 @@
+@font-face {
+  font-family: StudyMath;
+  src: url("math-font/DejaVuMathTeXGyre.ttf") format("truetype");
+  font-display: swap;
+}
+.reading-shell {
+  min-width: 0;
+  margin-top: 16px;
+  padding: clamp(18px, 4vw, 48px);
+  border: 1px solid #dce3ed;
+  border-radius: 12px;
+  background: white;
+}
+.reading-title {
+  margin: 0 auto 22px;
+  max-width: 56rem;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e1e6ee;
+  font-size: clamp(20px, 2.4vw, 30px);
+}
+.study-text {
+  max-width: 56rem;
+  min-width: 0;
+  margin: auto;
+  color: #202e40;
+  font: 1.05rem/1.85 "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  overflow-wrap: anywhere;
+}
+.study-text p { margin: .6em 0; }
+.study-text :is(h2, h3, h4) { margin: 1.25em 0 .45em; line-height: 1.45; }
+.study-text > :first-child { margin-top: 0; }
+.study-text li { margin: .25em 0; }
+.study-text ul, .study-text ol { padding-left: 1.7em; }
+.study-text table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+.study-text th, .study-text td { padding: .45em .7em; border: 1px solid #cbd6e2; }
+.study-text th { background: #edf3fa; }
+.study-text .formula, .card-formula, .study-text .math-scroll {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: .7em 0;
+  padding: .55em .8em;
+  border-left: 2px solid #b8c9eb;
+  background: #f6f8fc;
+  font-size: 1.07em;
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+.study-text math[display="block"], .card-formula math {
+  display: block math;
+  margin: .15em 0;
+  width: max-content;
+  max-width: none;
+  font-family: StudyMath, "STIX Two Math", "Cambria Math", math;
+}
+.reading-local { display: block; width: 100%; min-height: 72vh; border: 0; }
+.standalone-reading { margin: 0; padding: 12px; background: white; }
+.reading-status { margin: 0; color: #596a80; }
+@media (max-width: 700px) {
+  .reading-shell { padding: 16px 12px; }
+  .study-text { font-size: 1rem; }
+  .study-text .formula, .card-formula { padding-inline: .5em; }
+}
+.table-scroll { max-width: 100%; overflow-x: auto; margin-block: 1em; }
+.study-text .table-scroll table { display: table; width: max-content; max-width: none; margin: 0; }
+.study-text .table-scroll :is(td, th) { min-width: 3em; max-width: 27em; }
+
+.study-text .study-map {
+  margin: 1rem 0 .5rem;
+  padding: clamp(.65rem, 2vw, 1.4rem);
+  background: #fff;
+  font: 1rem/1.5 "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+}
+.study-map figcaption { margin-bottom: 1.2rem; font-weight: 650; }
+.mermaid-map { display: block; min-width: 0; }
+.mermaid-map pre { white-space: pre-wrap; font: inherit; }
+.map-viewport { max-width: 100%; overflow: auto; }
+.map-viewport svg { display: block; margin-inline: auto; }
+.map-size { margin-bottom: .6rem; padding: .35rem .7rem; color: #294b70; background: white; border: 1px solid #bccad9; border-radius: .4rem; cursor: pointer; font: inherit; }
+.law-source { margin: 0 0 1.25rem; }
+.law-source summary { cursor: pointer; color: #405a75; font-size: .95rem; }
+
+.map-viewport { background: #fff; }
+.map-viewport .topic-box { fill: #f1f1f1 !important; stroke: none !important; }
+.map-viewport .topic-link { fill: none; stroke: #191919; stroke-width: 1.25px; stroke-linecap: round; }
+.map-viewport .topic-label { fill: #171717 !important; }

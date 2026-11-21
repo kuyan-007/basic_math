@@ -1,0 +1,101 @@
+@1
+# 理想气体状态方程
+分子数密度为 n，热力学温度为 T，k 为玻尔兹曼常数。ν 为物质的量，m 为气体质量，M 为摩尔质量。
+= p=nkT
+= pV=\nu RT=\frac{m}{M}RT
+# 理想气体的压强和温度
+设分子的平均平动动能为 ω̄。
+= p=\frac{2}{3}n\bar\omega
+= \bar\omega=\frac{3}{2}kT
+分子的平均动能包括平动和转动部分，自由度 i 可取 3、5、6。
+= \bar\varepsilon=\frac{i}{2}kT
+质量为 m 的理想气体的内能为
+= E=\frac{m}{M}\frac{i}{2}RT=\frac{i}{2}pV
+@2
+# 分子平均速率
+式中 m 为单个分子的质量，M 为气体的摩尔质量。
+= \bar v=\sqrt{\frac{8kT}{\pi m}}\approx 1.60\sqrt{\frac{RT}{M}}
+# 热力学第一定律
+Q 为系统吸收的热量，W 为系统对外所做的功。
+= Q=\Delta E+W
+# 热机效率
+Q₁ 为从高温热源吸收的热量，Q₂ 为向低温热源放出的热量的大小。
+= \eta=\frac{W}{Q_1}=\frac{Q_1-Q_2}{Q_1}=1-\frac{Q_2}{Q_1}
+卡诺热机的高温、低温热源热力学温度分别为 T₁、T₂。
+= \eta_{\rm C}=\frac{T_1-T_2}{T_1}=1-\frac{T_2}{T_1}
+@3
+# 波长、波速、周期与频率
+= \nu=\frac{1}{T}
+= \omega=2\pi\nu=\frac{2\pi}{T}
+= u=\frac{\lambda}{T}=\lambda\nu=\frac{\lambda\omega}{2\pi}
+# 沿 x 轴正方向传播的简谐波
+A 为振幅，φ 为初相位。以下形式等价。
+= y=A\cos\!\left[\omega\left(t-\frac{x}{u}\right)+\varphi\right]
+= y=A\cos\!\left[2\pi\left(\nu t-\frac{x}{\lambda}\right)+\varphi\right]
+= y=A\cos\!\left[2\pi\left(\frac{t}{T}-\frac{x}{\lambda}\right)+\varphi\right]
+= y=A\cos\!\left(\omega t-\frac{2\pi x}{\lambda}+\varphi\right)
+@4
+# 干涉加强与减弱
+相位差满足下式时合振幅最大，发生干涉加强。
+= \Delta\varphi=\pm 2k\pi,\qquad k=0,1,2,\ldots
+相位差满足下式时合振幅最小，发生干涉减弱。
+= \Delta\varphi=\pm(2k+1)\pi,\qquad k=0,1,2,\ldots
+两波源初相位相同时，分别用波程差表述这两个条件。
+= \delta=r_2-r_1=\pm k\lambda\quad\text{（加强）}
+= \delta=r_2-r_1=\pm\frac{(2k+1)\lambda}{2}\quad\text{（减弱）}
+# 多普勒效应
+= f'=f\,\frac{u\pm v_o}{u\pm v_s}
+u 是波速。观察者向波源运动时，分子中观察者速度前取正号，远离时取负号。波源向观察者运动时，分母中波源速度前取负号，远离时取正号。两者接近时接收频率升高，远离时接收频率降低。
+@5
+# 双缝干涉
+两缝到观察点的光程差为 δ，缝间距为 d，双缝至屏的距离为 D。亮纹和暗纹的条件分别为
+= \delta=r_1-r_2=k\lambda
+= \delta=r_1-r_2=\frac{(2k+1)\lambda}{2}
+= k=0,\pm1,\pm2,\ldots
+亮纹中心的位置
+= x_k=\frac{k\lambda D}{d}
+暗纹中心的位置
+= x_k=\frac{(2k+1)\lambda D}{2d}
+第零级亮纹位于屏上的中央 O 点。相邻亮纹或相邻暗纹的间距为
+= \Delta x=\frac{\lambda D}{d}
+@6
+# 薄膜干涉
+在讲义所示的对称介质、反射光干涉条件下，两束反射光之间有半波损失。近于正入射时，折射率为 n₂、厚度为 e 的薄膜产生的光程差为
+= \delta=2n_2e+\frac{\lambda}{2}
+干涉相长形成明纹，干涉相消形成暗纹。
+= \delta=k\lambda\quad\text{（明纹）}
+= \delta=(2k+1)\frac{\lambda}{2}\quad\text{（暗纹）}
+# 劈尖干涉
+考虑反射时的半波损失。明纹条件
+= 2ne+\frac{\lambda}{2}=k\lambda,\qquad k=1,2,3,\ldots
+暗纹条件
+= 2ne+\frac{\lambda}{2}=(2k+1)\frac{\lambda}{2},\qquad k=0,1,2,\ldots
+劈尖角 θ 很小时，相邻同类条纹的间距为
+= l=\frac{\lambda}{2n\theta}
+@7
+# 单缝夫琅禾费衍射
+缝宽为 a，透镜焦距为 f。暗纹条件
+= a\sin\theta=\pm k\lambda,\qquad k=1,2,3,\ldots
+次级明纹的近似条件
+= a\sin\theta\approx\pm(2k+1)\frac{\lambda}{2},\qquad k=1,2,3,\ldots
+中央明纹中心对应零衍射角。
+= \theta=0,\qquad a\sin\theta=0
+中央明纹及其余明纹的宽度（小角度近似）
+= \Delta x_{\rm center}=\frac{2\lambda f}{a}
+= \Delta x_{\rm other}\approx\frac{\lambda f}{a}
+# 光栅衍射
+光栅常数为 a＋b。主极大满足
+= (a+b)\sin\varphi=\pm k\lambda,\qquad k=0,1,2,\ldots
+若同时满足单缝暗纹条件，相应级次消失。
+= a\sin\varphi=\pm k'\lambda,\qquad k'=1,2,3,\ldots
+= \frac{a+b}{a}=\frac{k}{k'}
+@8
+# 马吕斯定律
+线偏振光通过检偏器，α 为偏振方向与透振方向的夹角。
+= I=I_0\cos^2\alpha
+= \alpha=0^\circ\ \text{或}\ 180^\circ:\quad I=I_0
+= \alpha=90^\circ\ \text{或}\ 270^\circ:\quad I=0
+自然光通过理想偏振片后，透射光强为入射光强的一半。
+# 布儒斯特定律
+光从折射率为 n₁ 的介质射向折射率为 n₂ 的介质，反射光完全偏振的入射角为
+= i_0=\arctan\!\left(\frac{n_2}{n_1}\right)

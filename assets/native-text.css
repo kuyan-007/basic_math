@@ -1,0 +1,26 @@
+@import url("native-fonts/faces.css");
+@font-face {
+  font-family: nativeBody;
+  src: local("Noto Serif CJK SC"), local("SimSun"), local("Songti SC"), local("Microsoft YaHei"), local("Arial");
+  ascent-override: 100%;
+  descent-override: 0%;
+  line-gap-override: 0%;
+}
+.native-text { max-width: 75ch; margin-inline: auto; min-width: 0; }
+.native-text p { margin: .45rem 0; line-height: 1.85; overflow-wrap: anywhere; }
+.native-text h3 { margin: 1.15rem 0 .5rem; font-size: 1.12rem; line-height: 1.6; }
+.native-equation { display: block; max-width: 100%; overflow-x: auto; overflow-y: hidden; margin: .65rem 0; padding: .2rem .1rem; }
+.native-equation math { width: max-content; min-width: 0; text-align: left; }
+.native-layout { position: relative; display: block; box-sizing: content-box; color: inherit; }
+.native-glyph { position: absolute; line-height: 0; display: block; white-space: pre; }
+.native-glyph > span { display: block; letter-spacing: 0; }
+.native-rule { position: absolute; display: block; background: currentColor; }
+.native-brace { position: absolute; display: block; font-family: Georgia, serif; font-style: normal; line-height: .83; transform-origin: top left; }
+.native-figure-text { color: #43566c; }
+.native-glyph > .native-variant { color: transparent; }
+.native-variant::after { content: attr(data-glyph); position: absolute; left: 0; top: 0; color: var(--ink, #1c2a41); }
+.native-determinant { border-inline: .065em solid currentColor; padding-inline: .18em; margin-inline: .12em; }
+.native-table { overflow-x: auto; margin-block: 1em; }
+.native-table table { border-collapse: collapse; min-width: 39rem; }
+.native-table th, .native-table td { border: 1px solid #d8e0e8; text-align: left; padding: .45rem .65rem; }
+.native-table thead { background: #f2f5fa; }

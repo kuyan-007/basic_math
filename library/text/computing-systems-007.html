@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>信息数量单位与字符编码</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<h3>1. 信息在计算机内的表示</h3>
+<h3>1.1 信息的数量单位及换算</h3>
+<p>信息的最小单位是位（bit，比特），一个二进制数位就是一位。二进制数 0100 含 4 位。8 个二进制位组成一个字节（B）。下表按资料采用的二进制倍率换算。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">容量单位（教材按二进制换算）</th><th scope="col">换算关系</th></tr></thead><tbody><tr><td>bit</td><td>一个二进制位</td></tr><tr><td>B</td><td>8 bit = 1 B</td></tr><tr><td>KB</td><td>2¹⁰ B = 1024 B</td></tr><tr><td>MB</td><td>2²⁰ B = 1024 KB</td></tr><tr><td>GB</td><td>2³⁰ B = 1024 MB</td></tr><tr><td>TB</td><td>2⁴⁰ B = 1024 GB</td></tr></tbody></table></div>
+<h3>1.2 机器数</h3>
+<p>机器数是数值信息在计算机中的编码，符号也用二进制位表示。计算机可用原码、反码和补码表示有符号整数。</p>
+<p>原码的最高位是符号位，0 表示正、1 表示负，其余位表示绝对值。正数的反码和补码都与原码相同。负数的反码由原码的数值位逐位取反得到，负数的补码由反码加 1 得到。</p>
+<p>以 8 位整数为例。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">真值</th><th scope="col">原码</th><th scope="col">反码</th><th scope="col">补码</th></tr></thead><tbody><tr><td>+91</td><td>01011011</td><td>01011011</td><td>01011011</td></tr><tr><td>−91</td><td>11011011</td><td>10100100</td><td>10100101</td></tr><tr><td>−92</td><td>11011100</td><td>10100011</td><td>10100100</td></tr></tbody></table></div>
+<h3>1.3 BCD 码</h3>
+<p>8421 BCD 码用 4 个二进制位表示一个十进制数字，四位从高到低的权分别为 8、4、2、1。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>0011</mn><msub><mo stretchy="false">)</mo><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>1</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">(0011)_{2}=0\times2^3+0\times2^2+1\times2^1+1\times2^0=3</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>0010</mn><msub><mo stretchy="false">)</mo><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>1</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mn>0</mn></msup><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">(0010)_{2}=0\times2^3+0\times2^2+1\times2^1+0\times2^0=2</annotation></semantics></math></div>
+<p>十进制数 32 的 BCD 码是 0011 0010；89 的 BCD 码是 1000 1001；56 的 BCD 码是 0101 0110。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">十进制数字</th><th scope="col">8421 BCD 码</th></tr></thead><tbody><tr><td>0</td><td>0000</td></tr><tr><td>1</td><td>0001</td></tr><tr><td>2</td><td>0010</td></tr><tr><td>3</td><td>0011</td></tr><tr><td>4</td><td>0100</td></tr><tr><td>5</td><td>0101</td></tr><tr><td>6</td><td>0110</td></tr><tr><td>7</td><td>0111</td></tr><tr><td>8</td><td>1000</td></tr><tr><td>9</td><td>1001</td></tr></tbody></table></div>
+</article>
+</body></html>

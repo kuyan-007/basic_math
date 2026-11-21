@@ -1,0 +1,25 @@
+:root{font-family:"PingFang SC","Microsoft YaHei",sans-serif;color:#202321;background:#fbfbf7;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}
+button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}button:focus-visible,svg g:focus-visible{outline:3px solid #477b67;outline-offset:3px}
+.game{width:100%;max-width:min(560px,calc(70dvh - 64px));height:100vh;height:100dvh;margin:auto;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:4px;padding:max(2px,env(safe-area-inset-top)) max(4px,env(safe-area-inset-right)) max(6px,env(safe-area-inset-bottom)) max(4px,env(safe-area-inset-left))}
+header{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;margin:0 12px}
+h1{margin:0;font-size:1.16rem;font-weight:650;letter-spacing:.06em}
+#hearts{color:#bd5145;font:17px/1 Arial;letter-spacing:2px}#hearts .lost{color:#d9dbd4}
+.menu{justify-self:end;width:44px;height:44px;background:transparent;border:0;font:bold 25px/1 sans-serif;letter-spacing:2px}
+.board-wrap{min-width:0;min-height:0;overflow:hidden;border:1.5px solid #adb5a7;border-radius:24px;background:#fff;box-shadow:0 4px 14px #2735230d}
+#board{display:block;width:100%;height:100%;user-select:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation;overflow:hidden}
+.arrow{cursor:pointer;outline:none}.arrow .halo{opacity:0}.arrow:focus-visible .halo,.arrow.hinted .halo{opacity:.85}.arrow.hinted .halo{animation:glow .8s ease-in-out infinite alternate}@keyframes glow{from{opacity:.38}to{opacity:1}}
+footer{display:flex;align-items:center;gap:6px;padding-inline:6px}#status{flex:1;color:#586153;margin:0;font-size:.8rem;line-height:1.35}
+.toolbar{display:flex;gap:6px}
+.toolbar button,.quiet{background:#f2f3ec;border:1px solid #dce0d4;border-radius:14px;min-height:44px;padding:8px 18px;font-size:.94rem}
+.toolbar button{min-width:60px;padding-inline:10px}.toolbar button:active,.quiet:active{background:#e4e9db}
+dialog{border:1px solid #d9ddcf;background:#fffffa;border-radius:18px;padding:24px;width:min(350px,90vw);max-height:82svh;overflow:auto}
+dialog::backdrop{background:#20282055}dialog h2{margin:0;font-size:1.3rem}dialog p{line-height:1.7;color:#535d50}#dialog-actions{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:8px}
+.arrow.moving, .arrow.moving *{pointer-events:none}
+.arrow.blocked path[vector-effect]{stroke:#c73737}.arrow.blocked polygon{fill:#c73737}
+@media(prefers-reduced-motion:reduce){.arrow.hinted .halo{animation:none}}
+.game-options { display:flex; align-items:center; justify-self:end; }
+#board .card-face { fill:white; stroke:#adb5a7; }
+[data-theme=night] #board .card-face { fill:var(--surface); stroke:var(--line); }
+:root .game .board-wrap.four-cards { background:transparent; border-color:transparent; box-shadow:none; border-radius:0; }
+.arrow.moving .halo { opacity:0; animation:none; }

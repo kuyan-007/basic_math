@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>存储管理</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="存储空间的组织方法"><figcaption>存储空间的组织方法</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((存储空间的组织方法))
+    分段
+      按程序的逻辑结构划分
+      段长可以不同
+    分页
+      系统将空间划分为页进行管理
+    段页式
+      结合分段和分页两种方式
+    虚拟存储
+      利用内存和外存配合扩大可用空间</pre></study-mind-map></figure>
+<p class="source-label">计算机技术知识梳理</p>
+<section id="part-1" class="native-text">
+<h3>82.操作系统的存储管理技术：</h3>
+<p>①分段存储管理</p>
+<p>特点：用户自己划分，数据共享及段大小不同</p>
+<p>②分页存储管理</p>
+<p>特点：系统划分，数据不共享及大小不同</p>
+<p>③分段分页存储管理</p>
+<p>特点：具有分段和分页存储管理的优点避免了两者的缺点</p>
+<p>④虚拟存储：内存和外存结合使用，得到一个容量很大的“内存”，实现存储扩充</p>
+</section>
+<p class="source-label">计算机系统与技术基础</p>
+<section id="part-2">
+<h3>2.4储存管理</h3>
+<p>存储器管理的对象是主存，也称内存。它的主要功能包括分配和回收主存空间、提高主存利用率、扩充主存、对主存信息实现有效保护。其存储管理方案主要包括分区存储管理、分页存储管理、分段存储管理、段页式存储管理以及虚拟存储管理。</p>
+<p>Windows中，对存储器的管理采取分段存储、分页存储技术。每一个存储器段可以小至1个字节，大至4G字节；一个页的大小规定为4K字节。</p>
+<p>当程序的存储空间要求大于实际的内存空间时，就使得程序难以运行了。操作系统中采用虚拟存储技术是为了给用户提供更大的随机存取空间而采用的一种存储技术。所谓虚拟存储，就是把内存与外存有机的结合起来使用，从而得到一个容量很大的“内存”，即对内存进行一个容量的扩充，这就称之为虚拟存储，程序就运行在这个虚拟存储空间中。采用该技术，能在一个较小内存储空间上，运行一个较大的程序。</p>
+</section>
+</article>
+</body></html>

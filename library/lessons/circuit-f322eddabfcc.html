@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>信号分类与典型波形</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="按时间和取值识别信号"><figcaption>按时间和取值识别信号</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((按时间和取值识别信号))
+    模拟信号
+      时间和幅值连续变化
+    数字信号
+      用离散值表示信息
+    周期信号
+      波形按固定周期重复
+    非周期信号
+      没有固定重复周期</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>四、信号与信息</h3>
+<h3>1.基本概念</h3>
+<h3>1.1信号和信息</h3>
+<p>信号和信息是两种概念。</p>
+<p>（1）信息：通过感官接收的关于客观事物的存在形式或变化情况，是一种事物运动与状态特征，是提供判断或决策的资料，它既不是物质也不是能量，但可以识别、转换、存储、传输。如声音、图形、图像、文字等。</p>
+</section>
+<section id="part-2">
+<p>比如“十字路口处看到红灯亮了不能过马路”，就是一个信息。</p>
+<p>（2）信号：是传递信息的一种物理现象和过程，属于运载信息的工具，是信息的载体，也是信息的表现形式。如随信息做相应变化的电压或电流等。从广义上讲，它包含光信号、声信号和电信号等。人们通过对光、声、电信号进行接收，才知道对方要表达的信息。比如“红灯亮了”，就是一个信号。</p>
+<h3>1.2连续时间信号与离散时间信号</h3>
+<p>信号和信息是两种概念。</p>
+<p>（1）连续时间信号：指时间自变量在其定义的范围内，除若干不连续点以外均是连续的，且信号幅值在自变量的连续值上都有定义的信号，当然信号幅值可以是连续的也可以是离散的。</p>
+<p>（2）离散时间信号：大多数是由对连续时间信号采样得到的，时间只能取离散值的信号。</p>
+<h3>1.3各类常见信号的介绍</h3>
+<p>①模拟信号：指用连续变化的物理量所表达的信号，其波形在幅值与时间均是连续的。</p>
+<p>② 采样信号由模拟信号按一定时间间隔取样得到。取样使时间离散；若尚未量化，样值仍可以连续取值。</p>
+<p>③ 采样保持信号在采样时记录输入的瞬时值，保持至下一次采样。输出随时间呈阶梯状；保持本身不等同于幅值量化。</p>
+<p>④数字信号：这种信号的时间一般用离散的整数表示，幅值一般用两种物理状态0和1表示。其波形在时间与幅值均是离散的。</p>
+</section>
+<section id="part-3">
+<h3>连续、离散与采样保持</h3>
+<p>连续时间信号用连续曲线绘出；离散时间信号只在选定时刻给出点值。下方三图按时间顺序显示模拟原波形、各个采样值、在两个采样点之间保持前一采样值的阶梯形输出。</p>
+</section>
+<section id="part-4">
+<h3>3.单位阶跃函数与单位冲激函数</h3>
+<h3>3.1单位阶跃函数</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>t</mi><mo>&lt;</mo><mn>0</mn></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">H(t)=\begin{cases}1&amp;t\geq0\\0&amp;t&lt;0\end{cases}</annotation></semantics></math></div>
+<p>3.2单位冲激函数</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>δ</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn><mspace width="1em"/><mo stretchy="false">(</mo><mi>t</mi><mo mathvariant="normal">≠</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\delta(t)=0\quad(t\ne0)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mi>δ</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">d</mi><mi>t</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{+\infty}\delta(t)\,\mathrm dt=1</annotation></semantics></math></div>
+<h3>3.3单位阶跃函数与单位冲激函数的性质</h3>
+<p>单位冲激为偶函数。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>δ</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>δ</mi><mo stretchy="false">(</mo><mo>−</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\delta(t)=\delta(-t)</annotation></semantics></math></div>
+<p>单位冲激是单位阶跃对时间的广义导数。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">d</mi><mi>H</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mrow><mi mathvariant="normal">d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>δ</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{\mathrm dH(t)}{\mathrm dt}=\delta(t)</annotation></semantics></math></div>
+<p>注：</p>
+<p>1）若单位阶跃函数表示长度(L)物理量，则单位冲激函数表示速度(L/t)物理量；</p>
+<p>若阶跃变化的物理量是速度，对时间求导后得到的冲激项具有加速度的量纲。</p>
+<h3>放大、阶跃与冲激波形</h3>
+</section>
+<section id="part-5">
+<p>单位阶跃在零时刻由 0 跳至 1。单位冲激用位于零时刻的一根竖箭头表示，箭头表示单位面积的集中作用，不能按它在图上的高度读取有限峰值。</p>
+</section>
+</article>
+</body></html>

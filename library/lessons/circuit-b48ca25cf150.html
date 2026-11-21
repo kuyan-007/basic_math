@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>运算放大器、比较器与反馈</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="放大与比较如何区分"><figcaption>放大与比较如何区分</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((放大与比较如何区分))
+    线性负反馈
+      理想运放可用虚短和虚断分析
+      两输入端电位近似相等，输入电流近似为零
+    电压比较
+      同相端较高时输出趋于正饱和
+      反相端较高时输出趋于负饱和</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>2.运算放大器</h3>
+</section>
+<section id="part-2">
+<h3>2.1运算放大器的概念</h3>
+<p>运算放大器是一种常用的集成电路，在实际电路中，通常结合反馈网络共同组成某种功能模块。它是一种带有特殊耦合电路及反馈的放大器，其输出信号可以是输入信号加、减或微分、积分等数学运算的结果。由于早期应用于模拟计算机中用以实现数学运算，因而得名“运算放大器”。运算放大器的电路符号如上图所示。</p>
+<h3>2.2运算放大器的特性</h3>
+<p>运算放大器有两个输入端和一个输出端，输出由同相端与反相端的电压差决定。图示差模增益为 10000；输入差为＋0.5 mV 时，输出为＋5 V。输入差超过约±1 mV 后输出进入饱和，限于约±10 V。</p>
+<h3>2.3电压比较器的概念</h3>
+<p>电压比较器是一种常用的集成电路，它可用于报警器电路、自动控制电路、测量技术等。简单地说，其作用是对两个模拟电压比较其大小，并判断出其中哪一个电压高，电压比较器的电路符号如下图所示。</p>
+<h3>2.4电压比较器的特性</h3>
+<p>理想比较器的开环增益极高。同相端电压高于反相端时，输出趋于正饱和值；同相端电压低于反相端时，输出趋于负饱和值。</p>
+<h3>2.5运算放大器的简单应用电路分析</h3>
+<p>对在线性区且有负反馈的理想运放，可用虚短和虚断分析：两输入端电位近似相等，各输入端电流近似为零。</p>
+<h3>运放与比较器的传输曲线</h3>
+<p>普通运放曲线在原点附近有一段斜直线，对应线性放大区；两端转为水平，表示正、负饱和输出。比较器曲线在差模输入过零时由一个饱和值跳至另一个饱和值，因此用于比较电压大小。</p>
+</section>
+<section id="part-3">
+<p>将理想运放的虚短、虚断与外部电路的结点电流关系列在一起，可求出输出电压。</p>
+<h3>2.6运算放大器的加法、减法、积分、微分运算电路</h3>
+<p>这类题目非常难，需要很扎实的电路分析能力，并且需要背很多公式，考虑到这类题型数年才出一题，建议大家放弃这类题目。</p>
+</section>
+<section id="part-4">
+<h3>运算放大器的反馈路径</h3>
+<p>A 端经上方的输入电阻 R₁ 接反相输入端（−），B 端经下方的 R₁ 接同相输入端（＋）。从输出 Uₒ 经 R₂ 返回反相输入节点的支路构成负反馈。两个输入端的圆圈只强调极性，不表示短接。</p>
+</section>
+</article>
+</body></html>

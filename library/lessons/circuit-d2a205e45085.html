@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>JK触发器与时序状态分析</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="有效时钟沿怎样决定 JK 触发器的下一状态"><figcaption>有效时钟沿怎样决定 JK 触发器的下一状态</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((有效时钟沿怎样决定 JK 触发器的下一状态))
+    两个输入均为零
+      保持原状态
+    只有 K 为一
+      清零
+    只有 J 为一
+      置位
+    两个输入均为一
+      翻转原状态</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>3.3JK触发器</h3>
+<p>D 触发器在指定时钟沿采样输入。在非有效时刻，不接收新的 D 值，Q 保持。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><msub><mi>R</mi><mi>D</mi></msub><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{R_D}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><msub><mi>S</mi><mi>D</mi></msub><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{S_D}</annotation></semantics></math></div>
+<p>JK 触发器在没有有效边沿时保持原状态，异步置零和置一端可用于初始化。</p>
+<h3>4.时序逻辑电路</h3>
+<p>时序逻辑电路虽然三年会出两题左右，但是相关真题比较复杂，需要对D触发器、JK触发器进行多次循环判断，并且需要记忆各类寄存器、计数器的相关波形特点，一般做一题需要5分钟以上。即使掌握原理，依然会有粗心、不熟练，导致判断错误的情况。综上所述，建议放弃该小节相关知识内容。</p>
+</section>
+<section id="part-2">
+<p>JK 图示为下降沿触发。每个有效下降沿读取 J、K。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">J</th><th scope="col">K</th><th scope="col">下一状态 Q</th><th scope="col">功能</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>原 Q</td><td>保持</td></tr><tr><td>0</td><td>1</td><td>0</td><td>清零</td></tr><tr><td>1</td><td>0</td><td>1</td><td>置位</td></tr><tr><td>1</td><td>1</td><td>原 Q 的反值</td><td>翻转</td></tr></tbody></table></div>
+</section>
+</article>
+</body></html>

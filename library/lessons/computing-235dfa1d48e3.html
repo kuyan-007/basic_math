@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>批处理、分时与实时系统</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="按作业处理方式区分操作系统"><figcaption>按作业处理方式区分操作系统</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((按作业处理方式区分操作系统))
+    批处理
+      按作业说明自动执行
+      执行期间用户难以及时干预
+    分时
+      轮流分配处理器时间
+      多个用户可交互使用
+    实时
+      在规定时限内响应事件</pre></study-mind-map></figure>
+<section id="part-1" class="native-text">
+<h3>24.批处理操作系统：按照预先写好的作业说明书控制作业的执行，</h3>
+<p>执行作业时无需人为干预，不允许用户和作业交互。</p>
+<h3>25.批处理操作系统的缺点：程序出现错误，用户不能及时加以控</h3>
+<p>制，只能由操作系统输出信息，再由操作员通知用户修改程序，再</p>
+<div class="native-equation"><div class="native-layout" style="width:29.0967em;height:1.2433em"><span class="native-glyph" style="left:0.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">次</span></span><span class="native-glyph" style="left:1.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">提</span></span><span class="native-glyph" style="left:2.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">交</span></span><span class="native-glyph" style="left:3.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">给</span></span><span class="native-glyph" style="left:4.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">系</span></span><span class="native-glyph" style="left:5.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">统</span></span><span class="native-glyph" style="left:6.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">重</span></span><span class="native-glyph" style="left:7.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">新</span></span><span class="native-glyph" style="left:8.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">装</span></span><span class="native-glyph" style="left:9.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">入</span></span><span class="native-glyph" style="left:10.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">运</span></span><span class="native-glyph" style="left:11.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">行</span></span><span class="native-glyph" style="left:11.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">（</span></span><span class="native-glyph" style="left:12.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">程</span></span><span class="native-glyph" style="left:13.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">序</span></span><span class="native-glyph" style="left:14.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">错</span></span><span class="native-glyph" style="left:15.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">误</span></span><span class="native-glyph" style="left:16.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">→</span></span><span class="native-glyph" style="left:17.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">输</span></span><span class="native-glyph" style="left:18.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">出</span></span><span class="native-glyph" style="left:19.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">信</span></span><span class="native-glyph" style="left:20.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">息</span></span><span class="native-glyph" style="left:21.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">→</span></span><span class="native-glyph" style="left:22.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">修</span></span><span class="native-glyph" style="left:23.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">改</span></span><span class="native-glyph" style="left:24.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">程</span></span><span class="native-glyph" style="left:25.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">序</span></span><span class="native-glyph" style="left:26.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">→</span></span><span class="native-glyph" style="left:27.8744em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">重</span></span></div></div>
+<p>新运行）。</p>
+<h3>26.批处理操作系统包括：单道批处理系统、多道批处理系统</h3>
+<p>①单道批处理系统：一批作业能自动、顺序的进行（宏观串行）</p>
+<p>②多道批处理系统：各个作业可以同时使用各自所需的外部设备</p>
+<p>（宏观上并行），轮流的在中央处理机上运行（微观上串行）。</p>
+<h3>27.分时操作系统（又称交互式操作系统）的特点：</h3>
+<p>①同时性（系统主要特点）：若干用户同时使用计算机，微观上是各用户轮流使用计算机，宏观上是各用户同时工作。</p>
+<p>②交互性：用户可根据系统对请求的影响结果，进一步向系统发出新的请求。</p>
+<p>独立性：用户间可相互独立操作，互不干涉、互不影响。</p>
+<h3>8.分时处理系统的性能指标：及时对用户的输入作出响应。</h3>
+<h3>9.实时操作系统：收到信号及时处理，严格在规定的时间内结束</h3>
+</section>
+<section id="part-2" class="native-text">
+<p>处理，再输出反馈信号，一般是一种专用系统，为专门的应用而设计。</p>
+<h3>30.实时操作系统的目标：</h3>
+<p>（1）设计目标</p>
+<p>①对外部请求在严格时间范围内作出响应</p>
+<p>②有高可靠性和安全性</p>
+<p>（2）追求目标：实现实时响应及处理的能力和高可靠性。</p>
+<h3>31.衡量操作性能的指标：</h3>
+<p>①系统的RAS（RAS是可靠性、可维护性、可用性三者的简称）</p>
+<p>②系统的吞吐率③系统的响应时间</p>
+<p>④系统资源利用率⑤可移植性</p>
+</section>
+</article>
+</body></html>

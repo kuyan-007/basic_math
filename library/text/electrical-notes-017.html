@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>信号放大与失真</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<p>（1）放大器的作用：放大信号的幅值。</p>
+<p>（2）线性放大器：指输出信号幅度与输入信号幅度成正比的放大器。</p>
+<p>（3）频率失真：输入信号的频率不能大于放大器的截止频率f。若输入信号大于截止频率f，则会发生频率失真 (也称线性失真)。</p>
+<p>（4）非线性失真：放大器工作点进入非线性区，输出与输入不再成正比，波形发生畸变。</p>
+<h3>3.单位阶跃函数与单位冲激函数</h3>
+<h3>3.1单位阶跃函数</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>t</mi><mo>&lt;</mo><mn>0</mn></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">H(t)=\begin{cases}1&amp;t\geq0\\0&amp;t&lt;0\end{cases}</annotation></semantics></math></div>
+<p>3.2单位冲激函数</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>δ</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn><mspace width="1em"/><mo stretchy="false">(</mo><mi>t</mi><mo mathvariant="normal">≠</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\delta(t)=0\quad(t\ne0)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mi>δ</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">d</mi><mi>t</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{+\infty}\delta(t)\,\mathrm dt=1</annotation></semantics></math></div>
+<h3>3.3单位阶跃函数与单位冲激函数的性质</h3>
+<p>单位冲激为偶函数。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>δ</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>δ</mi><mo stretchy="false">(</mo><mo>−</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\delta(t)=\delta(-t)</annotation></semantics></math></div>
+<p>单位冲激是单位阶跃对时间的广义导数。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">d</mi><mi>H</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mrow><mi mathvariant="normal">d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>δ</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{\mathrm dH(t)}{\mathrm dt}=\delta(t)</annotation></semantics></math></div>
+<p>注：</p>
+<p>1）若单位阶跃函数表示长度(L)物理量，则单位冲激函数表示速度(L/t)物理量；</p>
+<p>若阶跃变化的物理量是速度，对时间求导后得到的冲激项具有加速度的量纲。</p>
+<h3>放大、阶跃与冲激波形</h3>
+<p>放大器示例中，正常放大保持输入波形形状；若正、负峰值一侧或两侧变平，说明幅度已受限。</p>
+<p>单位阶跃在零时刻由 0 跳至 1。单位冲激用位于零时刻的一根竖箭头表示，箭头表示单位面积的集中作用，不能按它在图上的高度读取有限峰值。</p>
+</article>
+</body></html>

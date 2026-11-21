@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>质点运动微分方程</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="牛顿定律与质点动力学"><figcaption>牛顿定律与质点动力学</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((牛顿定律与质点动力学))
+    第一定律
+      外力改变静止或匀速直线运动状态
+    第二定律
+      加速度沿合外力方向
+      在坐标轴上投影列分量方程
+    第三定律
+      作用力与反作用力等大反向
+      分别作用于两个物体</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>三、动力学</h3>
+<h3>1. 动力学基本定律及质点运动微分方程</h3>
+<p>牛顿第一定律：物体保持静止或匀速直线运动状态，直到外力迫使它改变这种状态。</p>
+<p>牛顿第二定律：质点的加速度与合外力成正比，与质量成反比，方向与合外力相同。</p>
+<p>牛顿第三定律：两物体间的作用力与反作用力大小相等、方向相反，沿同一直线，分别作用于两个物体。</p>
+<h3>1.2 质点运动微分方程</h3>
+<p>将牛顿第二定律写为位置矢量对时间的二阶微分方程，得到质点运动微分方程。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mi>a</mi><mo>=</mo><mi>m</mi><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup><mi>x</mi></mrow><mrow><mi mathvariant="normal">d</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">F=ma=m\frac{\mathrm d^2x}{\mathrm dt^2}</annotation></semantics></math></div>
+<p>在空间直角坐标系中，分别沿三个轴投影，再由三个正交分量求合力或加速度的大小。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mi>x</mi></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mi>m</mi><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup><mi>x</mi></mrow><mrow><mi mathvariant="normal">d</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">F_x=ma_x=m\frac{\mathrm d^2x}{\mathrm dt^2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mi>y</mi></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>y</mi></msub><mo>=</mo><mi>m</mi><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi mathvariant="normal">d</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">F_y=ma_y=m\frac{\mathrm d^2y}{\mathrm dt^2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mi>z</mi></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>z</mi></msub><mo>=</mo><mi>m</mi><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup><mi>z</mi></mrow><mrow><mi mathvariant="normal">d</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">F_z=ma_z=m\frac{\mathrm d^2z}{\mathrm dt^2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><msqrt><mrow><msubsup><mi>F</mi><mi>x</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>F</mi><mi>y</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>F</mi><mi>z</mi><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding="application/x-tex">F=\sqrt{F_x^2+F_y^2+F_z^2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>a</mi><mo>=</mo><msqrt><mrow><msubsup><mi>a</mi><mi>x</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>a</mi><mi>y</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>a</mi><mi>z</mi><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding="application/x-tex">a=\sqrt{a_x^2+a_y^2+a_z^2}</annotation></semantics></math></div>
+<p>在自然坐标系中，切向加速度反映速率变化，法向加速度反映方向变化。质点在瞬时密切平面内的副法向加速度为零。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><mi>m</mi><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup><mi>s</mi></mrow><mrow><mi mathvariant="normal">d</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">F_t=ma_t=m\frac{\mathrm d^2s}{\mathrm dt^2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mi>n</mi></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mi>m</mi><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac><mo>=</mo><mi>m</mi><msup><mi>ω</mi><mn>2</mn></msup><mi>r</mi></mrow><annotation encoding="application/x-tex">F_n=ma_n=m\frac{v^2}{r}=m\omega^2r</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mi>b</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">F_b=0</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><msqrt><mrow><msubsup><mi>F</mi><mi>t</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>F</mi><mi>n</mi><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding="application/x-tex">F=\sqrt{F_t^2+F_n^2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>a</mi><mo>=</mo><msqrt><mrow><msubsup><mi>a</mi><mi>t</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>a</mi><mi>n</mi><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding="application/x-tex">a=\sqrt{a_t^2+a_n^2}</annotation></semantics></math></div>
+</section>
+</article>
+</body></html>

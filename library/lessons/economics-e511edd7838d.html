@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>财务净现值与内部收益率</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="两项动态盈利指标"><figcaption>两项动态盈利指标</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((两项动态盈利指标))
+    财务净现值
+      按基准收益率折现各期净现金流量
+        折现值合计不小于零时可接受
+    内部收益率
+      寻找使财务净现值为零的折现率
+      试算得到一正一负的净现值
+        在相应折现率之间插值估算</pre></study-mind-map></figure>
+<p class="source-label">工程经济学习笔记</p>
+<section id="part-1">
+<p>盈利能力指标  财务净现值FNPV</p>
+<p>画现金流量图的时候，投资都是年初投资，收益都是年末收益。</p>
+<p>财务内部收益率FIRR 是动态指标。与基准收益率ic对比。通过让财务净现值等于0的方法来计算内部收益率。也可以利用插值法进行计算。先算出FNPV大于0和小于0的利率，然后差值计算。</p>
+</section>
+<p class="source-label">工程经济重点与例题</p>
+<section id="part-2">
+<h3>五种盈利能力指标</h3>
+<p>财务净现值（FNPV）、财务内部收益率（FIRR）、静态投资回收期（Pₜ）、总投资收益率（ROI）和项目资本金净利润率（ROE）。</p>
+<p>财务净现值是各期净现金流量在基准时点折现值的代数和。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">N</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">V</mi></mrow><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mo stretchy="false">(</mo><mi>C</mi><mi>I</mi><mo>−</mo><mi>C</mi><mi>O</mi><msub><mo stretchy="false">)</mo><mi>t</mi></msub></mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub><mi>i</mi><mi>c</mi></msub><msup><mo stretchy="false">)</mo><mi>t</mi></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathrm{FNPV}=\sum_{t=1}^{n}\frac{(CI-CO)_t}{(1+i_c)^t}</annotation></semantics></math></div>
+<p>CI 为现金流入，CO 为现金流出，t 表示年份，n 为计算期，i𝑐 为折现率。财务净现值大于或等于零时，方案在该折现率下可接受；小于零时不可接受。</p>
+</section>
+<section id="part-3">
+<h3>财务内部收益率的插值计算</h3>
+<p>例题：根据各年年末的净现金流量估算该项目的内部收益率。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">年末</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th></tr></thead><tbody><tr><td>净现金流量</td><td>−1000</td><td>−800</td><td>500</td><td>500</td><td>500</td><td>1200</td></tr></tbody></table></div>
+<div class="table-scroll"><table><thead><tr><th scope="col">试算折现率</th><th scope="col">财务净现值</th></tr></thead><tbody><tr><td>10%</td><td>148.22</td></tr><tr><td>12%</td><td>38.87</td></tr><tr><td>13%</td><td>−11.89</td></tr></tbody></table></div>
+<p>取净现值一正一负的两个试算点进行线性插值。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">R</mi><mi mathvariant="normal">R</mi></mrow><mo>≈</mo><msub><mi>i</mi><mn>1</mn></msub><mo>+</mo><mo stretchy="false">(</mo><msub><mi>i</mi><mn>2</mn></msub><mo>−</mo><msub><mi>i</mi><mn>1</mn></msub><mo stretchy="false">)</mo><mfrac><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">V</mi></mrow><mn>1</mn></msub><mrow><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">V</mi></mrow><mn>1</mn></msub><mo>−</mo><msub><mrow><mi mathvariant="normal">N</mi><mi mathvariant="normal">P</mi><mi mathvariant="normal">V</mi></mrow><mn>2</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathrm{IRR}\approx i_1+(i_2-i_1)\frac{\mathrm{NPV}_1}{\mathrm{NPV}_1-\mathrm{NPV}_2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">R</mi><mi mathvariant="normal">R</mi></mrow><mo>≈</mo><mn>12</mn><mi mathvariant="normal">%</mi><mo>+</mo><mo stretchy="false">(</mo><mn>13</mn><mi mathvariant="normal">%</mi><mo>−</mo><mn>12</mn><mi mathvariant="normal">%</mi><mo stretchy="false">)</mo><mfrac><mn>38.87</mn><mrow><mn>38.87</mn><mo>+</mo><mn>11.89</mn></mrow></mfrac><mo>≈</mo><mn>12.77</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">\mathrm{IRR}\approx12\%+(13\%-12\%)\frac{38.87}{38.87+11.89}\approx12.77\%</annotation></semantics></math></div>
+</section>
+</article>
+</body></html>

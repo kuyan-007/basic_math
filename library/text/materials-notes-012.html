@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>惯性矩与平行轴定理</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<p>矩形截面的两个中心惯性矩分别含宽或高的三次方，计算时须确认所取轴向。</p>
+<h3>圆形截面对形心轴的惯性矩</h3>
+<p>半径 R、直径 D 的圆截面，可将截面分为垂直于 y 轴的微条积分。两条正交形心轴具有相同的惯性矩。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mi>z</mi></msub><mo>=</mo><msub><mo>∫</mo><mi>A</mi></msub><msup><mi>y</mi><mn>2</mn></msup><mtext> </mtext><mi mathvariant="normal">d</mi><mi>A</mi><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi>R</mi></mrow><mi>R</mi></msubsup><mn>2</mn><msup><mi>y</mi><mn>2</mn></msup><msqrt><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>−</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt><mtext> </mtext><mi mathvariant="normal">d</mi><mi>y</mi><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>R</mi><mn>4</mn></msup></mrow><mn>4</mn></mfrac><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>D</mi><mn>4</mn></msup></mrow><mn>64</mn></mfrac></mrow><annotation encoding="application/x-tex">I_z=\int_A y^2\,\mathrm dA=\int_{-R}^{R}2y^2\sqrt{R^2-y^2}\,\mathrm dy=\frac{\pi R^4}{4}=\frac{\pi D^4}{64}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mi>y</mi></msub><mo>=</mo><msub><mi>I</mi><mi>z</mi></msub><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>D</mi><mn>4</mn></msup></mrow><mn>64</mn></mfrac></mrow><annotation encoding="application/x-tex">I_y=I_z=\frac{\pi D^4}{64}</annotation></semantics></math></div>
+<p>由微面积到圆心的距离平方等于两直角坐标平方之和，可得极惯性矩等于两条正交中心轴惯性矩之和。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mo>=</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\rho^2=y^2+z^2</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mi>p</mi></msub><mo>=</mo><msub><mo>∫</mo><mi>A</mi></msub><mo stretchy="false">(</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">d</mi><mi>A</mi><mo>=</mo><msub><mi>I</mi><mi>y</mi></msub><mo>+</mo><msub><mi>I</mi><mi>z</mi></msub><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>D</mi><mn>4</mn></msup></mrow><mn>32</mn></mfrac></mrow><annotation encoding="application/x-tex">I_p=\int_A(y^2+z^2)\,\mathrm dA=I_y+I_z=\frac{\pi D^4}{32}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mi>p</mi></msub><mo>=</mo><msub><mi>I</mi><mi>y</mi></msub><mo>+</mo><msub><mi>I</mi><mi>z</mi></msub><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>D</mi><mn>4</mn></msup></mrow><mn>32</mn></mfrac></mrow><annotation encoding="application/x-tex">I_p=I_y+I_z=\frac{\pi D^4}{32}</annotation></semantics></math></div>
+<h3>惯性矩平行轴定理</h3>
+<p>某轴与形心轴平行，两轴相距 a，则截面对该轴的惯性矩等于形心轴惯性矩与面积乘以轴间距平方之和。矩形截面的例子为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mi>z</mi></msub><mo>=</mo><msub><mi>I</mi><mrow><mi>z</mi><mi>C</mi></mrow></msub><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mi>A</mi><mo>=</mo><mfrac><mrow><mi>b</mi><msup><mi>h</mi><mn>3</mn></msup></mrow><mn>12</mn></mfrac><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mi>b</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">I_z=I_{zC}+a^2 A=\frac{bh^3}{12}+a^2bh</annotation></semantics></math></div>
+<p>在一组平行轴中，对形心轴的惯性矩最小。截面沿与所取轴平行的方向平移，对该轴的惯性矩保持不变。</p>
+<h3>平行轴与直径轴</h3>
+<p>矩形图中宽 b 平行于水平形心轴，高 h 垂直于该轴。红线为与水平形心轴平行、通过边缘的轴，两轴间距为高度的一半。</p>
+<p>圆截面图在同一面内画出两条互相垂直的直径轴。圆心极惯性矩等于这两条直径轴惯性矩之和。</p>
+</article>
+</body></html>

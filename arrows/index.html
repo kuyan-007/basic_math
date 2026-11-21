@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fbfbf7"><title>箭头逃亡</title>
+<link rel="stylesheet" href="game.css?v=cards50"><script defer src="levels.js?v=interlock2"></script><script defer src="extra-levels.js"></script><script defer src="game.js?v=cards50"></script>
+<link rel="stylesheet" href="../assets/theme.css"><script src="../assets/theme.js"></script></head>
+<body>
+<main class="game">
+<header><div id="hearts" role="img" aria-label="剩余机会"></div><h1 id="level-number"></h1><div class="game-options"><button class="theme-switch" type="button"><span class="to-night">☾ 夜间</span><span class="to-day">☀ 日间</span></button><button id="help" class="menu" aria-label="游戏菜单" aria-haspopup="dialog">···</button></div></header>
+<div class="board-wrap"><svg id="board" role="group" aria-label="折线箭头棋盘" xmlns="http://www.w3.org/2000/svg"></svg></div>
+<footer><p id="status" aria-live="polite"></p><div class="toolbar"><button id="restart">重置</button><button id="hint">提示</button></div></footer>
+</main>
+<dialog id="modal" aria-labelledby="modal-title"><h2 id="modal-title"></h2><p id="message"></p><div id="dialog-actions"></div></dialog>
+<noscript>请启用 JavaScript 开始游戏。</noscript>
+</body></html>

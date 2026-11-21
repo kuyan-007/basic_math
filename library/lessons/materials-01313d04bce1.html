@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>挠度与转角</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="从弯矩求梁的变形"><figcaption>从弯矩求梁的变形</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((从弯矩求梁的变形))
+    挠度
+      截面形心垂直于原梁轴线的位移
+    转角
+      小变形时等于挠曲线斜率的近似值
+    积分求解
+      由弯矩及抗弯刚度求曲率
+      积分得到转角和挠度，用边界与连续条件确定积分常数</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>3.7 转角与挠度</h3>
+<p>梁轴线弯成连续光滑的挠曲线。截面绕中性轴转过的角度 θ 为转角；截面形心垂直于原梁轴线的位移 w 为挠度。</p>
+<p>小变形条件下，转角约等于挠度的一阶导数。选定坐标及正号后，曲率与截面弯矩和抗弯刚度有关。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>θ</mi><mo>≈</mo><mi>tan</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">d</mi><mi>w</mi></mrow><mrow><mi mathvariant="normal">d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mo>∫</mo><mfrac><mrow><mi>M</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mrow><mi>E</mi><msub><mi>I</mi><mi>z</mi></msub></mrow></mfrac><mtext> </mtext><mi mathvariant="normal">d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\theta\approx\tan\theta=\frac{\mathrm dw}{\mathrm dx}=\int\frac{M(x)}{EI_z}\,\mathrm dx</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup><mi>w</mi></mrow><mrow><mi mathvariant="normal">d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>M</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mrow><mi>E</mi><msub><mi>I</mi><mi>z</mi></msub></mrow></mfrac><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>w</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>E</mi><msub><mi>I</mi><mi>z</mi></msub></mrow></mfrac><mo>∫</mo><mtext> ⁣</mtext><mrow><mo fence="true">(</mo><mo>∫</mo><mi>M</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">d</mi><mi>x</mi><mo fence="true">)</mo></mrow><mi mathvariant="normal">d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\frac{\mathrm d^2 w}{\mathrm dx^2}=\frac{M(x)}{EI_z}\implies w=\frac{1}{EI_z}\int\!\left(\int M(x)\,\mathrm dx\right)\mathrm dx</annotation></semantics></math></div>
+<p>由弯矩函数积分求转角与挠度，积分常数由支承边界条件与连续条件确定。转角和挠度的正负代表方向，比较最大值时需结合绝对值。</p>
+</section>
+<section id="part-2">
+<h3>挠度与转角的几何意义</h3>
+<p>梁的未变形轴线作为坐标基线，变形后的轴线为挠曲线。某截面的挠度是对应点相对于原轴线的横向位移，转角是该点挠曲线切线与原轴线的夹角。</p>
+<p>矩形图标宽 b 和高 h，两者的位置相对于弯曲轴确定；圆截面通过圆心的直径线作为比较的抗弯轴。</p>
+</section>
+</article>
+</body></html>

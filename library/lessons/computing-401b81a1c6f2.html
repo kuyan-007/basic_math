@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>数制与进位计数</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="按基数区分进位计数制"><figcaption>按基数区分进位计数制</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((按基数区分进位计数制))
+    二进制
+      只使用零和一，逢二进一
+    八进制
+      数码从零到七，逢八进一
+    十进制
+      数码从零到九，逢十进一
+    十六进制
+      零至九和字母Ａ至Ｆ表示十六种数码</pre></study-mind-map></figure>
+<p class="source-label">计算机技术知识梳理</p>
+<section id="part-1" class="native-text">
+<h3>44.各数/进制特点：</h3>
+<p>①十进制：0~9，基数为10，逢十进一</p>
+<p>②二进制：0，1，基数为2，逢二进一</p>
+<p>③八进制：0~7，基数为8，逢八进一</p>
+<p>④十六进制：0~9，A~F（10~15）,基数为16，逢十六进一</p>
+</section>
+<p class="source-label">计算机系统与技术基础</p>
+<section id="part-2">
+<h3>十进制</h3>
+<p>使用 0 至 9，逢十进一。例如</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>571.34</mn><msub><mo stretchy="false">)</mo><mn>10</mn></msub><mo>=</mo><mn>5</mn><mo>×</mo><msup><mn>10</mn><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mn>10</mn><mn>1</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>10</mn><mn>0</mn></msup><mo>+</mo><mn>3</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">(571.34)_{10}=5\times10^2+7\times10^1+1\times10^0+3\times10^{-1}+4\times10^{-2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>500</mn><mo>+</mo><mn>70</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>0.3</mn><mo>+</mo><mn>0.04</mn><mo>=</mo><mn>571.34</mn></mrow><annotation encoding="application/x-tex">500+70+1+0.3+0.04=571.34</annotation></semantics></math></div>
+<h3>二进制</h3>
+<p>使用 0 和 1，逢二进一。计算机内部信息采用二进制表示。例如</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>110.01</mn><msub><mo stretchy="false">)</mo><mn>2</mn></msub><mo>=</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>1</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mn>0</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>=</mo><mn>6.25</mn></mrow><annotation encoding="application/x-tex">(110.01)_2=1\times2^2+1\times2^1+0\times2^0+0\times2^{-1}+1\times2^{-2}=6.25</annotation></semantics></math></div>
+<h3>八进制</h3>
+<p>使用 0 至 7，逢八进一。</p>
+</section>
+<section id="part-3">
+<h3>八进制转换示例</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>237.2</mn><msub><mo stretchy="false">)</mo><mn>8</mn></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>8</mn><mn>2</mn></msup><mo>+</mo><mn>3</mn><mo>×</mo><msup><mn>8</mn><mn>1</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mn>8</mn><mn>0</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>8</mn><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>159.25</mn></mrow><annotation encoding="application/x-tex">(237.2)_8=2\times8^2+3\times8^1+7\times8^0+2\times8^{-1}=159.25</annotation></semantics></math></div>
+<h3>十六进制与数值转换</h3>
+<p>使用 0 至 9 和 A 至 F，A 至 F 分别表示十进制 10 至 15。逢十六进一。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mi>A</mi><mi>F</mi><mi mathvariant="normal">.</mi><mi>C</mi><msub><mo stretchy="false">)</mo><mn>16</mn></msub><mo>=</mo><mn>3</mn><mo>×</mo><msup><mn>16</mn><mn>2</mn></msup><mo>+</mo><mn>10</mn><mo>×</mo><msup><mn>16</mn><mn>1</mn></msup><mo>+</mo><mn>15</mn><mo>×</mo><msup><mn>16</mn><mn>0</mn></msup><mo>+</mo><mn>12</mn><mo>×</mo><msup><mn>16</mn><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>943.75</mn></mrow><annotation encoding="application/x-tex">(3AF.C)_{16}=3\times16^2+10\times16^1+15\times16^0+12\times16^{-1}=943.75</annotation></semantics></math></div>
+<p>比较不同进制的数时，可以先按位权展开，分别换成十进制数，再比较数值。</p>
+</section>
+</article>
+</body></html>

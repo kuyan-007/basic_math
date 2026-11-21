@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>数据容量与计量单位</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="位、字节与字长"><figcaption>位、字节与字长</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((位、字节与字长))
+    位
+      表示一个二进制值
+    字节
+      存储容量的基本单位
+      一个字节等于八位
+    字长
+      指机器一次能够传输或运算的二进制位数</pre></study-mind-map></figure>
+<p class="source-label">计算机技术知识梳理</p>
+<section id="part-1" class="native-text">
+<h3>65.位bit是最小的存储单位，字节B是存储器的基本单位</h3>
+<div class="native-equation"><div class="native-layout" style="width:7.2647em;height:1.2433em"><span class="native-glyph" style="left:0.1111em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">6</span></span><span class="native-glyph" style="left:0.6111em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">6</span></span><span class="native-glyph" style="left:1.1111em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">.</span></span><span class="native-glyph" style="left:1.6111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">一</span></span><span class="native-glyph" style="left:2.6111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">个</span></span><span class="native-glyph" style="left:3.6111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">字</span></span><span class="native-glyph" style="left:4.6167em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">=</span></span><span class="native-glyph" style="left:5.1167em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">2</span></span><span class="native-glyph" style="left:5.6167em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">b</span></span><span class="native-glyph" style="left:6.1167em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">i</span></span><span class="native-glyph" style="left:6.6167em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">t</span></span></div></div>
+<p>16位机：采用16位的字运算，双字是2个字</p>
+<p>32位机：采用32位的双字运算，四字是2个双字</p>
+<h3>67.机器的字长是计算机的硬性指标，指同时传输和运算的二进制</h3>
+<p>位数</p>
+<div class="native-equation"><div class="native-layout" style="width:5.2591em;height:1.0443em"><span class="native-glyph" style="left:0.1111em;top:-0.1740em"><span style="font:1.0000em/1 nfd54749ada82b">6</span></span><span class="native-glyph" style="left:0.6111em;top:-0.1740em"><span style="font:1.0000em/1 nfd54749ada82b">8</span></span><span class="native-glyph" style="left:1.1111em;top:-0.1740em"><span style="font:1.0000em/1 nfd54749ada82b">.</span></span><span class="native-glyph" style="left:1.6111em;top:-0.1740em"><span style="font:1.0000em/1 nfd54749ada82b">1</span></span><span class="native-glyph" style="left:2.1111em;top:-0.1740em"><span style="font:1.0000em/1 nfd54749ada82b">B</span></span><span class="native-glyph" style="left:2.6111em;top:-0.1740em"><span style="font:1.0000em/1 nfd54749ada82b">=</span></span><span class="native-glyph" style="left:3.1111em;top:-0.1740em"><span style="font:1.0000em/1 nfd54749ada82b">8</span></span><span class="native-glyph" style="left:3.6111em;top:-0.1740em"><span style="font:1.0000em/1 nfd54749ada82b">b</span></span><span class="native-glyph" style="left:4.1111em;top:-0.1740em"><span style="font:1.0000em/1 nfd54749ada82b">i</span></span><span class="native-glyph" style="left:4.6111em;top:-0.1740em"><span style="font:1.0000em/1 nfd54749ada82b">t</span></span></div></div>
+</section>
+<p class="source-label">计算机系统与技术基础</p>
+<section id="part-2">
+<h3>1. 信息在计算机内的表示</h3>
+<h3>1.1 信息的数量单位及换算</h3>
+<p>信息的最小单位是位（bit，比特），一个二进制数位就是一位。二进制数 0100 含 4 位。8 个二进制位组成一个字节（B）。下表按资料采用的二进制倍率换算。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">容量单位（教材按二进制换算）</th><th scope="col">换算关系</th></tr></thead><tbody><tr><td>bit</td><td>一个二进制位</td></tr><tr><td>B</td><td>8 bit = 1 B</td></tr><tr><td>KB</td><td>2¹⁰ B = 1024 B</td></tr><tr><td>MB</td><td>2²⁰ B = 1024 KB</td></tr><tr><td>GB</td><td>2³⁰ B = 1024 MB</td></tr><tr><td>TB</td><td>2⁴⁰ B = 1024 GB</td></tr></tbody></table></div>
+</section>
+</article>
+</body></html>

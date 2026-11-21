@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>点的运动学</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<h3>二、运动学</h3>
+<h3>1. 点的运动学</h3>
+<p>运动学用几何方法描述物体位置随时间的变化、运动轨迹、速度和加速度。点的运动总是相对于选定的参考系描述。</p>
+<p>运动方程给出点在各瞬时的位置。消去运动方程中的时间参数，得到轨迹方程。例如</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn><mi>t</mi><mo separator="true">,</mo><mspace width="2em"/><mi>y</mi><mo>=</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x=2t,\qquad y=t^2</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">y=\frac{x^2}{4}</annotation></semantics></math></div>
+<h3>1.3 匀加速直线运动</h3>
+<p>加速度的大小和方向不变，初速度与加速度同向（或初速度为零）时，点作匀加速直线运动。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">v=v_0+at</annotation></semantics></math></div>
+<p>对速度积分得到位移，对速率积分得到路程。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi><mo>=</mo><msubsup><mo>∫</mo><msub><mi>t</mi><mn>0</mn></msub><msub><mi>t</mi><mn>1</mn></msub></msubsup><mi>v</mi><mtext> </mtext><mi mathvariant="normal">d</mi><mi>t</mi><mo>=</mo><msubsup><mrow><mo fence="true">[</mo><msub><mi>v</mi><mn>0</mn></msub><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup><mo fence="true">]</mo></mrow><msub><mi>t</mi><mn>0</mn></msub><msub><mi>t</mi><mn>1</mn></msub></msubsup></mrow><annotation encoding="application/x-tex">\Delta x=\int_{t_0}^{t_1}v\,\mathrm dt=\left[v_0t+\frac12 at^2\right]_{t_0}^{t_1}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>s</mi><mo>=</mo><msubsup><mo>∫</mo><msub><mi>t</mi><mn>0</mn></msub><msub><mi>t</mi><mn>1</mn></msub></msubsup><mi mathvariant="normal">∣</mi><mi>v</mi><mi mathvariant="normal">∣</mi><mtext> </mtext><mi mathvariant="normal">d</mi><mi>t</mi><mo>=</mo><msubsup><mo>∫</mo><msub><mi>t</mi><mn>0</mn></msub><msub><mi>t</mi><mn>1</mn></msub></msubsup><mi mathvariant="normal">∣</mi><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mi>t</mi><mi mathvariant="normal">∣</mi><mtext> </mtext><mi mathvariant="normal">d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">s=\int_{t_0}^{t_1}|v|\,\mathrm dt=\int_{t_0}^{t_1}|v_0+at|\,\mathrm dt</annotation></semantics></math></div>
+<p>对位移函数求一次导数得到速度，求二次导数得到加速度。该关系也适用于非匀加速运动。例：</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>t</mi><mn>4</mn></msup><mo>−</mo><msup><mi>t</mi><mn>3</mn></msup><mo>+</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x=t^4-t^3+3</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>v</mi><mo>=</mo><msup><mi>x</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>=</mo><mn>4</mn><msup><mi>t</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">v=x&#x27;=4t^3-3t^2</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>a</mi><mo>=</mo><msup><mi>x</mi><mrow><mo mathvariant="normal">′</mo><mo mathvariant="normal">′</mo></mrow></msup><mo>=</mo><msup><mi>v</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>=</mo><mn>12</mn><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>t</mi></mrow><annotation encoding="application/x-tex">a=x&#x27;&#x27;=v&#x27;=12t^2-6t</annotation></semantics></math></div>
+<h3>1.4 斜抛和平抛</h3>
+<p>物体以斜向或水平方向的初速度抛出，忽略空气阻力时只受重力，轨迹为抛物线。将初速度分为水平和竖直分量，水平分运动为匀速直线运动；竖直分运动具有向下的恒定加速度。</p>
+</article>
+</body></html>

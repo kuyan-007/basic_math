@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>组合变形的分解与偏心拉压</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="偏心拉压怎样分解"><figcaption>偏心拉压怎样分解</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((偏心拉压怎样分解))
+    力经过形心
+      只产生均匀轴向正应力
+    力偏离形心
+      除轴向拉压外还产生附加弯矩
+      两个方向均有偏心距时产生双向弯曲
+    应力叠加
+      在线弹性小变形条件下，分别计算并按符号叠加</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>2. 组合变形</h3>
+<p>同一构件可能同时发生轴向拉压、剪切、挤压、扭转或弯曲。在线弹性小变形条件下，可把不同内力引起的应力分别求出，再按符号叠加。</p>
+<h3>2.2 单元体的应力状态</h3>
+<p>先判断考察点承受拉应力还是压应力，是否还承受切应力；也可以用截面法、剪力图、弯矩图和扭矩图确定应力方向和大小。</p>
+<h3>2.3 偏心受拉或受压</h3>
+<p>轴向载荷通过截面形心时，截面承受均匀轴向正应力。力的作用线偏离形心时，产生附加弯矩。以下例中 y、z 两个方向都有偏心距，因此除拉伸外还发生双向弯曲。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/x-tex">\sigma=\frac FA</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>M</mi><mi>y</mi></msub><mo>=</mo><mi>F</mi><mi mathvariant="normal">Δ</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">M_y=F\Delta z</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>M</mi><mi>z</mi></msub><mo>=</mo><mi>F</mi><mi mathvariant="normal">Δ</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">M_z=F\Delta y</annotation></semantics></math></div>
+</section>
+<section id="part-2">
+<h3>矩形截面偏心受拉的最大拉应力</h3>
+<p>矩形宽 b、高 h。把偏心拉力等效为过形心的轴向拉力与关于两条形心轴的弯矩。轴向项在截面上均匀分布。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mrow><mtext>拉</mtext><mn>1</mn></mrow></msub><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding="application/x-tex">\sigma_{\mathrm{拉}1}=\frac FA</annotation></semantics></math></div>
+<p>关于 y 轴的弯矩在最远侧边缘产生最大弯曲拉应力；关于 z 轴的弯矩在另一最远侧边缘产生最大弯曲拉应力。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>M</mi><mi>y</mi></msub><mo>=</mo><mi>F</mi><mi mathvariant="normal">Δ</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">M_y=F\Delta z</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>M</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">M_y</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>M</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">M_y</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mrow><mtext>拉</mtext><mn>2</mn></mrow></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>y</mi></msub><msub><mi>W</mi><mi>y</mi></msub></mfrac><mo>=</mo><mfrac><mrow><msub><mi>M</mi><mi>y</mi></msub><msub><mi>z</mi><mi>max</mi><mo>⁡</mo></msub></mrow><msub><mi>I</mi><mi>y</mi></msub></mfrac><mo>=</mo><mfrac><mrow><mi>F</mi><mi mathvariant="normal">Δ</mi><mi>z</mi><mo>⋅</mo><mi>b</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow><mrow><msup><mi>b</mi><mn>3</mn></msup><mi>h</mi><mi mathvariant="normal">/</mi><mn>12</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>6</mn><mi>F</mi><mi mathvariant="normal">Δ</mi><mi>z</mi></mrow><mrow><msup><mi>b</mi><mn>2</mn></msup><mi>h</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\sigma_{\mathrm{拉}2}=\frac{M_y}{W_y}=\frac{M_yz_{\max}}{I_y}=\frac{F\Delta z\cdot b/2}{b^3h/12}=\frac{6F\Delta z}{b^2h}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>M</mi><mi>z</mi></msub></mrow><annotation encoding="application/x-tex">M_z</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mrow><mtext>拉</mtext><mn>3</mn></mrow></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>z</mi></msub><msub><mi>W</mi><mi>z</mi></msub></mfrac><mo>=</mo><mfrac><mrow><msub><mi>M</mi><mi>z</mi></msub><msub><mi>y</mi><mi>max</mi><mo>⁡</mo></msub></mrow><msub><mi>I</mi><mi>z</mi></msub></mfrac><mo>=</mo><mfrac><mrow><mi>F</mi><mi mathvariant="normal">Δ</mi><mi>y</mi><mo>⋅</mo><mi>h</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow><mrow><mi>b</mi><msup><mi>h</mi><mn>3</mn></msup><mi mathvariant="normal">/</mi><mn>12</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>6</mn><mi>F</mi><mi mathvariant="normal">Δ</mi><mi>y</mi></mrow><mrow><mi>b</mi><msup><mi>h</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\sigma_{\mathrm{拉}3}=\frac{M_z}{W_z}=\frac{M_zy_{\max}}{I_z}=\frac{F\Delta y\cdot h/2}{bh^3/12}=\frac{6F\Delta y}{bh^2}</annotation></semantics></math></div>
+<p>在两种弯曲拉应力均与轴向拉应力同号的角点，三项叠加得到最大拉应力。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mi>max</mi><mo>⁡</mo></msub><mo>=</mo><msub><mi>σ</mi><mrow><mtext>拉</mtext><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>σ</mi><mrow><mtext>拉</mtext><mn>2</mn></mrow></msub><mo>+</mo><msub><mi>σ</mi><mrow><mtext>拉</mtext><mn>3</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\sigma_{\max}=\sigma_{\mathrm{拉}1}+\sigma_{\mathrm{拉}2}+\sigma_{\mathrm{拉}3}</annotation></semantics></math></div>
+<h3>矩形截面偏心受压的最大压应力</h3>
+<p>轴向压应力均匀分布。关于 y、z 两轴的弯曲应力分别在对应边缘达到极值。在两项弯曲压应力与直接压应力同号的角点，三项按相同的压缩方向叠加。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>M</mi><mi>y</mi></msub><mo>=</mo><mi>F</mi><mi mathvariant="normal">Δ</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">M_y=F\Delta z</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>M</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">M_y</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>M</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">M_y</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mrow><mtext>压</mtext><mn>2</mn></mrow></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>y</mi></msub><msub><mi>W</mi><mi>y</mi></msub></mfrac><mo>=</mo><mfrac><mrow><msub><mi>M</mi><mi>y</mi></msub><msub><mi>z</mi><mi>max</mi><mo>⁡</mo></msub></mrow><msub><mi>I</mi><mi>y</mi></msub></mfrac><mo>=</mo><mfrac><mrow><mn>6</mn><mi>F</mi><mi mathvariant="normal">Δ</mi><mi>z</mi></mrow><mrow><msup><mi>b</mi><mn>2</mn></msup><mi>h</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\sigma_{\mathrm{压}2}=\frac{M_y}{W_y}=\frac{M_yz_{\max}}{I_y}=\frac{6F\Delta z}{b^2h}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mrow><mtext>压</mtext><mn>3</mn></mrow></msub><mo>=</mo><mfrac><msub><mi>M</mi><mi>z</mi></msub><msub><mi>W</mi><mi>z</mi></msub></mfrac><mo>=</mo><mfrac><mrow><msub><mi>M</mi><mi>z</mi></msub><msub><mi>y</mi><mi>max</mi><mo>⁡</mo></msub></mrow><msub><mi>I</mi><mi>z</mi></msub></mfrac><mo>=</mo><mfrac><mrow><mn>6</mn><mi>F</mi><mi mathvariant="normal">Δ</mi><mi>y</mi></mrow><mrow><mi>b</mi><msup><mi>h</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\sigma_{\mathrm{压}3}=\frac{M_z}{W_z}=\frac{M_zy_{\max}}{I_z}=\frac{6F\Delta y}{bh^2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><msub><mi>σ</mi><mrow><mtext>压</mtext><mo separator="true">,</mo><mi>max</mi><mo>⁡</mo></mrow></msub><mi mathvariant="normal">∣</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><mi>F</mi><mi mathvariant="normal">∣</mi></mrow><mi>A</mi></mfrac><mo>+</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><msub><mi>M</mi><mi>y</mi></msub><mi mathvariant="normal">∣</mi></mrow><msub><mi>W</mi><mi>y</mi></msub></mfrac><mo>+</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><msub><mi>M</mi><mi>z</mi></msub><mi mathvariant="normal">∣</mi></mrow><msub><mi>W</mi><mi>z</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">|\sigma_{\mathrm{压},\max}|=\frac{|F|}{A}+\frac{|M_y|}{W_y}+\frac{|M_z|}{W_z}</annotation></semantics></math></div>
+<p>原页部分化简式误把 Δy 写成 Δz；此处按弯矩 Mz 的定义使用 Δy。</p>
+<h3>偏心轴向力作用点与角点应力</h3>
+<p>梁横截面为矩形，图中标出形心和偏心力作用点，水平、竖向偏距要分别读取。轴向拉压带来的均匀正应力，与绕两轴弯曲带来的线性正应力按符号叠加。</p>
+<p>对各角点分别查看其相对于两条形心轴处在哪一侧，可判断两个弯曲分量在该角点同号还是异号，从而寻找最大拉应力和最大压应力。</p>
+</section>
+<section id="part-3">
+<h3>圆轴端部偏心载荷的分解</h3>
+<p>左端为固定端，外力作用于圆轴右端。将端载移至轴线或截面形心时，除原力外还应计及移动力作用线所产生的力偶。</p>
+<p>组合受力圆轴的危险截面上，轴向力、弯矩贡献正应力；扭矩贡献圆周切向的切应力。检查同一危险点上这些分量的组合。</p>
+</section>
+</article>
+</body></html>

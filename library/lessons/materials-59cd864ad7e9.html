@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>弯曲正应力与中性轴</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="纯弯曲时正应力如何分布"><figcaption>纯弯曲时正应力如何分布</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((纯弯曲时正应力如何分布))
+    判断区段
+      有弯矩而无剪力
+    正弯矩下的纤维
+      上部受压缩短，下部受拉伸长
+      中性层的纵向纤维长度不变
+    线弹性应力
+      中性轴处为零，随离轴距离线性变化
+      外缘最大值用抗弯截面系数校核</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>3.4 弯曲正应力</h3>
+<p>只存在弯矩、没有剪力的区段称为纯弯曲。以正弯矩为例，梁上部纵向纤维受压缩短，下部受拉伸长，中性层的纵向纤维既不伸长也不缩短。中性层与横截面的交线称中性轴。</p>
+<p>在线弹性纯弯曲中，正应力与到中性轴的有向距离成正比。在相应的正负号约定下，横截面上的应力由弯矩 M 与惯性矩 I_z 决定。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>M</mi><mi>y</mi></mrow><msub><mi>I</mi><mi>z</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">\sigma=\frac{My}{I_z}</annotation></semantics></math></div>
+<p>求 I_z 可结合平行轴定理和组合截面的加减法。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mi>z</mi></msub><mo>=</mo><msub><mi>I</mi><mrow><mi>z</mi><mi>C</mi></mrow></msub><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mi>A</mi></mrow><annotation encoding="application/x-tex">I_z=I_{zC}+a^2A</annotation></semantics></math></div>
+<p>抗弯截面系数是惯性矩除以截面边缘到中性轴的最大距离。由此得到最大正应力的计算式。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>W</mi><mi>z</mi></msub><mo>=</mo><mfrac><msub><mi>I</mi><mi>z</mi></msub><msub><mi>y</mi><mi>max</mi><mo>⁡</mo></msub></mfrac></mrow><annotation encoding="application/x-tex">W_z=\frac{I_z}{y_{\max}}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mi>max</mi><mo>⁡</mo></msub><mo>=</mo><mfrac><mrow><msub><mi>M</mi><mi>max</mi><mo>⁡</mo></msub><msub><mi>y</mi><mi>max</mi><mo>⁡</mo></msub></mrow><msub><mi>I</mi><mi>z</mi></msub></mfrac><mo>=</mo><mfrac><msub><mi>M</mi><mi>max</mi><mo>⁡</mo></msub><msub><mi>W</mi><mi>z</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">\sigma_{\max}=\frac{M_{\max}y_{\max}}{I_z}=\frac{M_{\max}}{W_z}</annotation></semantics></math></div>
+<h3>纯弯曲时的中性层与受拉、受压区</h3>
+<p>在图示弯矩作用下，梁上部的纵向纤维缩短，下部的纵向纤维伸长。中性层与横截面的交线为中性轴，该轴处弯曲正应力为零。</p>
+<p>截面上方为受压区，下方为受拉区；每侧离中性轴最远的纤维分别具有该侧最大的压应力或拉应力。</p>
+</section>
+<section id="part-2">
+<p>取梁上各截面弯矩绝对值中的最大值，可由弯矩图读出。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>M</mi><mi>max</mi><mo>⁡</mo></msub></mrow><annotation encoding="application/x-tex">M_{\max}</annotation></semantics></math></div>
+<p>若相同尺寸、相同材料的各梁叠合但层间不粘接，按题设共同受弯且各层等分弯矩时，每层以自身形心为中性轴，可单独计算其应力。n 层叠合时每层弯矩为总弯矩的 n 分之一。</p>
+</section>
+<section id="part-3">
+<h3>弯曲正应力的分布与计算轴</h3>
+<p>截面的应力分布图在中性轴处收拢至零，在最外纤维处达到最大；中性轴两侧的箭头方向相反。截面不对称时应分别量取两侧最外纤维到中性轴的距离。</p>
+<p>矩形截面和圆截面的图中，蓝色水平线 z 是计算弯曲惯性矩的形心轴；不同截面比较抗弯性能时，必须指定弯曲所绕的轴。</p>
+</section>
+</article>
+</body></html>

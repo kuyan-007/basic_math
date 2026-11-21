@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>静矩与形心</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="怎样由静矩确定形心"><figcaption>怎样由静矩确定形心</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((怎样由静矩确定形心))
+    计算静矩
+      面积微元乘到参考轴的有向距离，再积分
+    求形心
+      静矩除以面积得到形心到相应轴的有向距离
+    利用对称性
+      形心在对称轴上
+      关于形心轴的静矩为零</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>2. 截面的几何性质</h3>
+<p>本节涉及静矩、形心、惯性矩和惯性积。弯曲计算还需用到截面对指定轴的惯性矩。</p>
+<h3>2.2 静矩、形心和对称轴</h3>
+<p>静矩是微面积与其到坐标轴的有向距离的乘积在整个截面上的积分。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>S</mi><mi>z</mi></msub><mo>=</mo><msub><mo>∫</mo><mi>A</mi></msub><mi>y</mi><mtext> </mtext><mi mathvariant="normal">d</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">S_z=\int_A y\,\mathrm dA</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>S</mi><mi>y</mi></msub><mo>=</mo><msub><mo>∫</mo><mi>A</mi></msub><mi>z</mi><mtext> </mtext><mi mathvariant="normal">d</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">S_y=\int_A z\,\mathrm dA</annotation></semantics></math></div>
+<p>静矩可能为正、负或零。不同截面对同一坐标轴、同一截面对不同坐标轴的静矩一般不同。</p>
+<p>形心是截面图形的几何中心，形心坐标可由静矩和面积求得。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>y</mi><mi>C</mi></msub><mo>=</mo><mfrac><msub><mi>S</mi><mi>z</mi></msub><mi>A</mi></mfrac></mrow><annotation encoding="application/x-tex">y_C=\frac{S_z}{A}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>z</mi><mi>C</mi></msub><mo>=</mo><mfrac><msub><mi>S</mi><mi>y</mi></msub><mi>A</mi></mfrac></mrow><annotation encoding="application/x-tex">z_C=\frac{S_y}{A}</annotation></semantics></math></div>
+<p>截面对某轴的静矩为零，当且仅当该轴通过形心。矩形、圆形和等腰三角形等截面具有对称轴；多条对称轴的交点即为形心。</p>
+</section>
+<section id="part-2">
+<p>对称轴必通过形心，因此截面对任一对称轴的静矩为零。但经过形心的轴不一定是对称轴。</p>
+</section>
+</article>
+</body></html>

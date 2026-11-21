@@ -1,0 +1,139 @@
+002.0 \delta=\frac{l_1-l}{l}\times100\%
+003.0 \psi=\frac{A-A_1}{A}\times100\%
+004.0 F_1=10\,\mathrm{kN}
+005.0 F_{N2}=F_1-F_2=-10\,\mathrm{kN}
+005.1 F_{N3}=F_4=F_1+F_3-F_2=25\,\mathrm{kN}
+005.2 \sigma=\frac{F_N}{A}
+005.3 \varepsilon=\frac{\Delta l}{l}=\frac{l_1-l}{l}
+005.4 \sigma=E\varepsilon\implies\frac{F_N}{A}=E\frac{\Delta l}{l}\implies\Delta l=\frac{F_Nl}{EA}
+005.5 \varepsilon=\frac{\Delta l}{l}=\frac{F_N}{EA}
+005.6 \mu=-\frac{\varepsilon'}{\varepsilon}
+005.7 \varepsilon'=\frac{\Delta b}{b}=\frac{b_1-b}{b}
+005.8 \sigma=\frac{F_N}{A}\leq[\sigma]
+006.0 F_S=F
+006.1 \tau=\frac{F_S}{A}
+006.2 A=\frac{\pi d^2}{4}
+006.3 0.5F_p=F_{pC}=F_{pD}=F_Q
+006.4 F_p
+007.0 \sigma_{bs}=\frac{F}{A_{bs}}
+007.1 \sigma_{bs}\leq[\sigma_{bs}]
+007.2 A_{bs}
+007.3 M=9549\frac{P}{n}
+008.0 \mathrm{kg\cdot m^2}
+008.1 I_p=\int_A\rho^2\,\mathrm dA=\int_0^{2\pi}\!\int_0^{D/2}\rho^3\,\mathrm d\rho\,\mathrm d\theta=2\pi\left[\frac{\rho^4}{4}\right]_0^{D/2}=\frac{\pi D^4}{32}
+008.2 -
+009.0 \tau=\frac{T}{I_p}\rho
+009.1 \tau_{\max}=\frac{T}{I_p}\frac{D}{2}\leq[\tau]
+009.2 \tau_{\max}=\frac{T}{W_t}
+009.3 W_t=\frac{I_p}{D/2}
+009.4 \varphi'=\frac{\varphi}{l}=\frac{T}{GI_p}
+009.5 \tau=\frac{T}{I_p}\rho
+009.6 \varphi'=\frac{\varphi}{l}=\frac{T}{GI_p}
+009.7 \tau=\varphi'G\rho
+009.8 \tau_{\max}=\varphi'G\frac{D}{2}\leq[\tau]
+009.9 \gamma\approx\tan\gamma\approx\frac{\varphi\rho}{l}=\varphi'\rho
+009.10 \tau=G\gamma
+010.0 \varphi'_1=\frac{0.5\varphi}{0.5l}=\frac{\varphi}{l}=\varphi'_2
+010.1 S_z=\int_A y\,\mathrm dA ; S_y=\int_A z\,\mathrm dA
+010.2 y_C=\frac{S_z}{A} ; z_C=\frac{S_y}{A}
+011.0 I_p=\int_A\rho^2\,\mathrm dA=\int_0^{2\pi}\!\int_0^{D/2}\rho^3\,\mathrm d\rho\,\mathrm d\theta=\frac{\pi D^4}{32}
+011.1 I_p=\int_0^{2\pi}\!\int_{d/2}^{D/2}\rho^3\,\mathrm d\rho\,\mathrm d\theta=\frac{\pi(D^4-d^4)}{32}
+011.2 -
+011.3 I_y=\int_Az^2\,\mathrm dA
+011.4 I_z=\int_Ay^2\,\mathrm dA
+011.5 \mathrm dA=b\,\mathrm dy ; I_z=\int_{-h/2}^{h/2}y^2b\,\mathrm dy=\left[\frac{by^3}{3}\right]_{-h/2}^{h/2}=\frac{bh^3}{12}
+011.6 -
+011.7 -
+011.8 I_y=\int_{-b/2}^{b/2} z^2h\,\mathrm dz=\left[\frac{hz^3}{3}\right]_{-b/2}^{b/2}=\frac{b^3h}{12}
+012.0 I_z=\int_A y^2\,\mathrm dA=\int_{-R}^{R}2y^2\sqrt{R^2-y^2}\,\mathrm dy=\frac{\pi R^4}{4}=\frac{\pi D^4}{64}
+012.1 I_y=I_z=\frac{\pi D^4}{64}
+012.2 \rho^2=y^2+z^2
+012.3 I_p=\int_A(y^2+z^2)\,\mathrm dA=I_y+I_z=\frac{\pi D^4}{32}
+012.4 I_p=I_y+I_z=\frac{\pi D^4}{32}
+012.5 I_z=I_{zC}+a^2 A=\frac{bh^3}{12}+a^2bh
+013.0 I_{yz}=\int_A yz\,\mathrm dA
+014.0 \sum F_y=0\implies F_A+F_B=F ; \begin{cases} F_A=2\,\mathrm{kN} \\ F_B=1\,\mathrm{kN} \end{cases}
+015.0 \sum M_{m,\mathrm{右}}=0\implies M=F_B\cdot12-F\cdot(12-10)=6\,\mathrm{kN\cdot m}
+015.1 M=qx\frac{x}{2}=\frac{qx^2}{2}
+016.0 F_s(x)=1 ; M(x)=\begin{cases}x & 0\leq x\leq5 \\ x-15 & 5<x\leq15\end{cases}
+016.1 F_s(x)=1
+016.2 \frac{\mathrm d M(x)}{\mathrm dx}=M'(x)=F_s(x)
+017.0 \sigma=\frac{My}{I_z}
+017.1 I_z=I_{zC}+a^2A
+017.2 W_z=\frac{I_z}{y_{\max}}
+017.3 \sigma_{\max}=\frac{M_{\max}y_{\max}}{I_z}=\frac{M_{\max}}{W_z}
+018.0 M_{\max}
+018.1 M_{\max}
+018.2 \sigma_{\max}=\frac{M_{\max}y_{\max}}{I_z}=\frac{M_{\max}}{W_z}
+018.3 W_z=\frac{I_z}{y_{\max}}
+018.4 W_z=\frac{I_z}{y_{\max}}
+019.0 a^2=\frac{\pi D^2}{4} ; \frac{W_{z,\mathrm{方}}}{W_{z,\mathrm{圆}}}=\frac{a^3/6}{\pi D^3/32}=\frac{2\sqrt{\pi}}{3}>1
+019.1 F_z
+020.0 \theta\approx\tan\theta=\frac{\mathrm dw}{\mathrm dx}=\int\frac{M(x)}{EI_z}\,\mathrm dx
+020.1 \frac{\mathrm d^2 w}{\mathrm dx^2}=\frac{M(x)}{EI_z}\implies w=\frac{1}{EI_z}\int\!\left(\int M(x)\,\mathrm dx\right)\mathrm dx
+021.0 \sigma_x>0,\quad\sigma_y>0,\quad\tau_{xy}>0,\quad\tau_{yx}<0
+021.1 \tau_{xy}>0
+021.2 \sigma_\alpha=\frac{\sigma_x+\sigma_y}{2}+\frac{\sigma_x-\sigma_y}{2}\cos2\alpha-\tau_{xy}\sin2\alpha ; \tau_\alpha=\frac{\sigma_x-\sigma_y}{2}\sin2\alpha+\tau_{xy}\cos2\alpha
+021.3 \tau_{\alpha,\max/\min}=\pm\frac{\sigma_x-\sigma_y}{2}
+021.4 \tau_{xy}=\tau_{yx}=0
+022.0 \sigma_m
+022.1 \sigma_\alpha-\frac{\sigma_x+\sigma_y}{2}=\frac{\sigma_x-\sigma_y}{2}\cos2\alpha-\tau_{xy}\sin2\alpha ; \tau_\alpha=\frac{\sigma_x-\sigma_y}{2}\sin2\alpha+\tau_{xy}\cos2\alpha
+022.2 -
+022.3 -
+022.4 -
+022.5 \left(\sigma_\alpha-\frac{\sigma_x+\sigma_y}{2}\right)^2+\tau_\alpha^2=\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2
+022.6 \tau_{xy}
+022.7 \sigma_{\alpha,\max/\min}=\frac{\sigma_x+\sigma_y}{2}\pm\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}
+022.8 \tau_\alpha=0
+022.9 \tau_\alpha=0
+022.10 \sigma_n,\quad\sigma_m,\quad\sigma_z=0
+022.11 \sigma_z=0
+022.12 \tau_{\alpha,\max/\min}=\pm\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}
+022.13 \sigma_\alpha=\frac{\sigma_x+\sigma_y}{2}
+022.14 \sigma_{r1}=\sigma_1\leq[\sigma]
+022.15 \sigma_{r2}=\sigma_1-\mu(\sigma_2+\sigma_3)\leq[\sigma]
+022.16 \sigma_{r3}=\sigma_1-\sigma_3\leq[\sigma]
+022.17 \sigma_{r4}=\sqrt{\frac{(\sigma_1-\sigma_2)^2+(\sigma_2-\sigma_3)^2+(\sigma_3-\sigma_1)^2}{2}}\leq[\sigma]
+023.0 \left(\sigma_\alpha-\frac{\sigma_x+\sigma_y}{2}\right)^2+\tau_\alpha^2=\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2
+023.1 \tau_{xy}
+023.2 R=\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}
+023.3 \sigma_C=\frac{\sigma_x+\sigma_y}{2}
+023.4 C(\sigma_x,\tau_{xy})
+023.5 D(\sigma_y,\tau_{yx})
+023.6 \tau_{xy}=-\tau_{yx}
+023.7 \angle COD=180^\circ
+023.8 \angle COD=2\angle xOy
+023.9 C(\sigma_x,\tau_{xy})
+023.10 \sigma_\alpha
+023.11 \tau_{xy}<0
+024.0 M_y=F\Delta z
+024.1 M_z=F\Delta y
+025.0 M_y=F\Delta z
+025.1 M_y
+025.2 M_y
+025.3 \sigma_{\mathrm{拉}2}=\frac{M_y}{W_y}=\frac{M_yz_{\max}}{I_y}=\frac{F\Delta z\cdot b/2}{b^3h/12}=\frac{6F\Delta z}{b^2h}
+025.4 M_z
+025.5 \sigma_{\mathrm{拉}3}=\frac{M_z}{W_z}=\frac{M_zy_{\max}}{I_z}=\frac{F\Delta y\cdot h/2}{bh^3/12}=\frac{6F\Delta y}{bh^2}
+025.6 \sigma_{\max}=\sigma_{\mathrm{拉}1}+\sigma_{\mathrm{拉}2}+\sigma_{\mathrm{拉}3}
+025.7 M_y
+025.8 M_y=F\Delta z
+025.9 M_y
+025.10 \sigma_{\mathrm{压}2}=\frac{M_y}{W_y}=\frac{M_yz_{\max}}{I_y}=\frac{6F\Delta z}{b^2h}
+025.11 \sigma_{\mathrm{压}3}=\frac{M_z}{W_z}=\frac{M_zy_{\max}}{I_z}=\frac{6F\Delta y}{bh^2}
+026.0 \sigma_{\alpha,\max/\min}=\frac{\sigma_x+\sigma_y}{2}\pm\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}
+026.1 \sigma_{\alpha,\max/\min}=\frac{\sigma_x}{2}\pm\sqrt{\left(\frac{\sigma_x}{2}\right)^2+\tau_{xy}^2}
+026.2 \sigma_y=0
+026.3 \sigma_{\alpha,\max}>0
+026.4 \sigma_{\alpha,\min}<0
+026.5 \sigma_3=\frac{\sigma_x}{2}-\sqrt{\left(\frac{\sigma_x}{2}\right)^2+\tau_{xy}^2}
+026.6 \sigma_1=\frac{\sigma_x}{2}+\sqrt{\left(\frac{\sigma_x}{2}\right)^2+\tau_{xy}^2} ; \sigma_3=\frac{\sigma_x}{2}-\sqrt{\left(\frac{\sigma_x}{2}\right)^2+\tau_{xy}^2}
+026.7 -
+026.8 \sigma_{r3}=\sigma_1-\sigma_3=2\sqrt{\left(\frac{\sigma_x}{2}\right)^2+\tau_{xy}^2}=\sqrt{\sigma_x^2+4\tau_{xy}^2}\leq[\sigma]
+026.9 \sigma_x=\sigma=\frac{F}{A}+\frac{M}{W}=\frac{F}{A}+\frac{My_{\max}}{I_z}
+026.10 \tau_{xy}=\tau=\frac{T}{W_t}=\frac{T\rho_{\max}}{I_p}
+026.11 \tau_{xy}=\tau
+026.12 \sigma_{r3}=\sqrt{\sigma^2+4\tau^2}=\sqrt{\left(\frac{F}{A}+\frac{M}{W}\right)^2+4\left(\frac{T}{W_t}\right)^2}\leq[\sigma]
+027.0 I_p=2I_z ; \rho_{\max}=y_{\max}=d/2
+028.0 F_{cr}=\frac{\pi^2EI}{(\mu l)^2}
+028.1 I_z=I_{zC}+a^2A
+028.2 F_{cr}=\frac{\pi^2EI}{(\mu l)^2}

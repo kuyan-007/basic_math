@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ASCII 码与汉字编码</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="字符在输入、存储和输出中的编码"><figcaption>字符在输入、存储和输出中的编码</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((字符在输入、存储和输出中的编码))
+    西文字符
+      标准 ASCII 用七位表示一百二十八种字符
+    汉字输入
+      可按读音、字形或音形组合编码
+    存储与交换
+      机内码用于内部表示
+      国标码用于信息交换
+    显示输出
+      字形码描述汉字点阵</pre></study-mind-map></figure>
+<p class="source-label">计算机技术知识梳理</p>
+<section id="part-1" class="native-text">
+<p>51.7位版本的ASCII码：</p>
+<div class="native-equation"><div class="native-layout" style="width:21.2750em;height:1.2751em"><span class="native-glyph" style="left:17.6339em;top:-0.0471em"><span style="font:0.5000em/1 nfd54749ada82b">7</span></span><span class="native-glyph" style="left:0.1111em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">①</span></span><span class="native-glyph" style="left:1.1139em;top:-0.0471em"><span style="font:1.0000em/1 nfd54749ada82b">1</span></span><span class="native-glyph" style="left:1.6139em;top:-0.0471em"><span style="font:1.0000em/1 nfd54749ada82b">2</span></span><span class="native-glyph" style="left:2.1139em;top:-0.0471em"><span style="font:1.0000em/1 nfd54749ada82b">8</span></span><span class="native-glyph" style="left:2.8667em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">个</span></span><span class="native-glyph" style="left:3.8667em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">元</span></span><span class="native-glyph" style="left:4.8667em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">素</span></span><span class="native-glyph" style="left:5.8667em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">，</span></span><span class="native-glyph" style="left:6.8667em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">用</span></span><span class="native-glyph" style="left:8.1217em;top:-0.0471em"><span style="font:1.0000em/1 nfd54749ada82b">7</span></span><span class="native-glyph" style="left:8.8717em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">个</span></span><span class="native-glyph" style="left:10.1250em;top:-0.0471em"><span style="font:1.0000em/1 nfd54749ada82b">2</span></span><span class="native-glyph" style="left:10.8750em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">进</span></span><span class="native-glyph" style="left:11.8750em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">制</span></span><span class="native-glyph" style="left:12.8750em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">位</span></span><span class="native-glyph" style="left:13.8750em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">，</span></span><span class="native-glyph" style="left:14.8750em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">共</span></span><span class="native-glyph" style="left:15.8750em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">有</span></span><span class="native-glyph" style="left:17.1339em;top:-0.0471em"><span style="font:1.0000em/1 nfd54749ada82b">2</span></span><span class="native-glyph" style="left:18.0528em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">个</span></span><span class="native-glyph" style="left:19.0528em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">编</span></span><span class="native-glyph" style="left:20.0528em;top:-0.0471em"><span style="font:1.0000em/1 nativeBody">码</span></span></div></div>
+<p>②一个字节的最高位存0</p>
+<p>③数码数值范围（00000000~01111111）2、（0~7F）16、</p>
+<p>（0~127）10</p>
+<h3>52.ASCII码特点：</h3>
+<p>①A~Z的ASCII码：</p>
+<p>2进制：01000001~01011010</p>
+<p>16进制：41H~5AH</p>
+<p>10进制：65~90</p>
+<p>②a~z的ASCII码：</p>
+<p>2进制：01100001~01111010</p>
+<p>16进制：61H~7AH</p>
+<p>10进制：97~122</p>
+<p>③0~9的ASCII码：</p>
+<p>2进制：00110000~00111001</p>
+<p>16进制：30H~39H</p>
+<p>10进制：48~57</p>
+<p>④常用ASCII的大小规则：0~9＜A~Z＜a~z</p>
+<h3>53.汉字编码包括：</h3>
+<p>①汉字输入码②汉字内部码③汉字交换码④汉字字形码</p>
+<h3>54.汉字输入码（外码）包括：</h3>
+<p>①流水码②拼音类输入法③拼形类输入法④音形结合类输入法</p>
+<h3>55.汉字内部码（汉字机内码/汉字内码）：</h3>
+<p>①一个汉字的内码用2个字节表示</p>
+<p>②为了和西文符号区别，两个字节的最高位均置1</p>
+<h3>56.汉字交换码（国标码）：</h3>
+<p>①每个汉字用2个字节表示</p>
+<p>②每个字节仅用低7位，最高位为0</p>
+<div class="native-equation"><div class="native-layout" style="width:7.8389em;height:1.2433em"><span class="native-glyph" style="left:1.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">国</span></span><span class="native-glyph" style="left:2.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">标</span></span><span class="native-glyph" style="left:3.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">码</span></span><span class="native-glyph" style="left:4.1167em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">+</span></span><span class="native-glyph" style="left:4.6167em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">1</span></span><span class="native-glyph" style="left:5.1167em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">=</span></span><span class="native-glyph" style="left:5.6167em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">内</span></span><span class="native-glyph" style="left:6.6167em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">码</span></span><span class="native-glyph" style="left:0.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">③</span></span></div></div>
+<p>57.汉字字形码（输出码）：</p>
+<div class="native-equation"><div class="native-layout" style="width:9.6089em;height:1.2433em"><span class="native-glyph" style="left:0.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">汉</span></span><span class="native-glyph" style="left:1.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">子</span></span><span class="native-glyph" style="left:2.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">点</span></span><span class="native-glyph" style="left:3.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">阵</span></span><span class="native-glyph" style="left:4.1111em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">：</span></span><span class="native-glyph" style="left:5.1333em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">m</span></span><span class="native-glyph" style="left:5.6333em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">×</span></span><span class="native-glyph" style="left:6.6333em;top:-0.0789em"><span style="font:1.0000em/1 nfd54749ada82b">n</span></span><span class="native-glyph" style="left:7.3867em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">个</span></span><span class="native-glyph" style="left:8.3867em;top:-0.0789em"><span style="font:1.0000em/1 nativeBody">点</span></span></div></div>
+</section>
+<p class="source-label">计算机系统与技术基础</p>
+<section id="part-2">
+<h3>ASCII 码</h3>
+<p>ASCII 是美国信息交换标准代码（American Standard Code for Information Interchange）的简称。标准 ASCII 用 7 位表示 128 种字符，常以一个字节存放一个字符；8 位扩展编码可容纳 256 个不同的码值。</p>
+<h3>汉字国标码</h3>
+<p>GB 2312—80 收录了 6763 个常用汉字，每个汉字对应两个字节。汉字国标码的两个字节最高位均为 0。为与 ASCII 区分，相关机内码把各字节最高位置 1，相当于各字节加 128。</p>
+</section>
+</article>
+</body></html>

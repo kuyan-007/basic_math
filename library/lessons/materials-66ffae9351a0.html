@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>正应力、应变与强度条件</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="轴向拉压需要区分哪些量"><figcaption>轴向拉压需要区分哪些量</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((轴向拉压需要区分哪些量))
+    正应力
+      均匀直杆中用轴力除以横截面积
+    轴向应变
+      用长度改变量除以初始长度
+    横向应变
+      与轴向应变异号，绝对值之比为泊松比
+    强度
+      将最大工作应力与许用应力比较</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>2.3 轴向拉压的应力与应变</h3>
+<p>均匀直杆横截面面积为 A，轴力为 Fₙ，横截面上的轴向正应力为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><msub><mi>F</mi><mi>N</mi></msub><mi>A</mi></mfrac></mrow><annotation encoding="application/x-tex">\sigma=\frac{F_N}{A}</annotation></semantics></math></div>
+<p>杆件从初始长度 l 变为 l₁，其轴向应变为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>l</mi></mrow><mi>l</mi></mfrac><mo>=</mo><mfrac><mrow><msub><mi>l</mi><mn>1</mn></msub><mo>−</mo><mi>l</mi></mrow><mi>l</mi></mfrac></mrow><annotation encoding="application/x-tex">\varepsilon=\frac{\Delta l}{l}=\frac{l_1-l}{l}</annotation></semantics></math></div>
+<p>线弹性范围内，应力与应变成正比。E 为材料弹性模量，由胡克定律可求均匀直杆的轴向变形。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>σ</mi><mo>=</mo><mi>E</mi><mi>ε</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mfrac><msub><mi>F</mi><mi>N</mi></msub><mi>A</mi></mfrac><mo>=</mo><mi>E</mi><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>l</mi></mrow><mi>l</mi></mfrac><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi mathvariant="normal">Δ</mi><mi>l</mi><mo>=</mo><mfrac><mrow><msub><mi>F</mi><mi>N</mi></msub><mi>l</mi></mrow><mrow><mi>E</mi><mi>A</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\sigma=E\varepsilon\implies\frac{F_N}{A}=E\frac{\Delta l}{l}\implies\Delta l=\frac{F_Nl}{EA}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>l</mi></mrow><mi>l</mi></mfrac><mo>=</mo><mfrac><msub><mi>F</mi><mi>N</mi></msub><mrow><mi>E</mi><mi>A</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\varepsilon=\frac{\Delta l}{l}=\frac{F_N}{EA}</annotation></semantics></math></div>
+<p>横向应变与轴向应变符号相反，两者绝对值之比称为泊松比。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>ε</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>b</mi></mrow><mi>b</mi></mfrac><mo>=</mo><mfrac><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>−</mo><mi>b</mi></mrow><mi>b</mi></mfrac></mrow><annotation encoding="application/x-tex">\varepsilon&#x27;=\frac{\Delta b}{b}=\frac{b_1-b}{b}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>μ</mi><mo>=</mo><mo>−</mo><mfrac><msup><mi>ε</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mi>ε</mi></mfrac></mrow><annotation encoding="application/x-tex">\mu=-\frac{\varepsilon&#x27;}{\varepsilon}</annotation></semantics></math></div>
+<p>受压时，轴向应变为负，横向应变为正。</p>
+<h3>2.4 许用应力</h3>
+<p>许用应力是设计中允许材料承受的应力上限。校核轴向强度时，应将工作应力的大小与适用的许用拉应力或压应力比较。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><msub><mi>F</mi><mi>N</mi></msub><mi>A</mi></mfrac><mo>≤</mo><mo stretchy="false">[</mo><mi>σ</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\sigma=\frac{F_N}{A}\leq[\sigma]</annotation></semantics></math></div>
+</section>
+</article>
+</body></html>

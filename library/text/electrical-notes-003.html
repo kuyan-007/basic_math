@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>电阻串并联与电流定律</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<p>对电阻采用电流流入电压正端的关联参考方向时，欧姆定律取正号；相反时取负号。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>u</mi><mo>=</mo><mi>R</mi><mi>i</mi><mspace width="1em"/><mtext>（关联参考方向）</mtext></mrow><annotation encoding="application/x-tex">u=Ri\quad\text{（关联参考方向）}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>u</mi><mo>=</mo><mo>−</mo><mi>R</mi><mi>i</mi><mspace width="1em"/><mtext>（非关联参考方向）</mtext></mrow><annotation encoding="application/x-tex">u=-Ri\quad\text{（非关联参考方向）}</annotation></semantics></math></div>
+<p>电阻的串并联公式：</p>
+<p>两个电阻串联、并联时的等效电阻分别为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>R</mi><mtext>串</mtext></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">R_{\rm 串}=R_1+R_2</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mtext>并</mtext></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{R_{\rm 并}}=\frac{1}{R_1}+\frac{1}{R_2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>R</mi><mtext>并</mtext></msub><mo>=</mo><mfrac><mrow><msub><mi>R</mi><mn>1</mn></msub><msub><mi>R</mi><mn>2</mn></msub></mrow><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">R_{\rm 并}=\frac{R_1R_2}{R_1+R_2}</annotation></semantics></math></div>
+<h3>1.2基尔霍夫定律名词介绍</h3>
+<p>结点：三个或三个以上的电路元件的连接点。</p>
+<p>支路：连接两个结点之间的电路。</p>
+<p>回路：电路中任一闭合路径称为回路。</p>
+<p>每一条支路的电流为支路电流，每两个结点之间的电压为支路电压。</p>
+<p>以下图为例：</p>
+<p>图中有 a、b、c 三个结点，两处 c 由导线直接连接。五条支路为 c–1–a、a–2–c、a–3–b、b–4–c、b–5–6–c。六个回路中可选取三个独立回路。</p>
+<h3>1.3基尔霍夫电流定律（KCL)</h3>
+<p>在任何电路中，任何结点上的所有支路电流的代数和在任何时刻都等于零。注意：首先要指定每一条支路的参考方向，参考方向离开结点的电流为正，指向结点的电流为负。</p>
+<p>以结点 b 为例，电流 I₃ 流入，I₄、I₅ 流出。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mn>3</mn></msub><mo>=</mo><msub><mi>I</mi><mn>4</mn></msub><mo>+</mo><msub><mi>I</mi><mn>5</mn></msub></mrow><annotation encoding="application/x-tex">I_3=I_4+I_5</annotation></semantics></math></div>
+<h3>支路与节点的连接关系</h3>
+<p>两处 c 由连续导线相连，电位相同。a、b 是不同节点，中间隔着元件 3。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">支路</th><th scope="col">连接</th><th scope="col">标示电流方向</th></tr></thead><tbody><tr><td>1</td><td>c 经元件 1 到 a</td><td>向上流入 a</td></tr><tr><td>2</td><td>a 经元件 2 到 c</td><td>向下离开 a</td></tr><tr><td>3</td><td>a 经元件 3 到 b</td><td>向右流入 b</td></tr><tr><td>4</td><td>b 经元件 4 到 c</td><td>向下离开 b</td></tr><tr><td>5、6</td><td>b 经串联的元件 5、6 到 c</td><td>从 b 向右流出</td></tr></tbody></table></div>
+<p>电阻的串联图只有一条电流路径；并联图中的两只电阻跨接同一对节点。</p>
+</article>
+</body></html>

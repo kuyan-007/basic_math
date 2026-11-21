@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>三相负载</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<p>将相电压写成有效值相量形式。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mover accent="true"><mi>U</mi><mo>˙</mo></mover><mi>U</mi></msub><mo>=</mo><msub><mi>U</mi><mi>p</mi></msub><mi mathvariant="normal">∠</mi><msup><mn>0</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\dot U_U=U_p\angle0^\circ</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mover accent="true"><mi>U</mi><mo>˙</mo></mover><mi>V</mi></msub><mo>=</mo><msub><mi>U</mi><mi>p</mi></msub><mi mathvariant="normal">∠</mi><mo stretchy="false">(</mo><mo>−</mo><msup><mn>120</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\dot U_V=U_p\angle(-120^\circ)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mover accent="true"><mi>U</mi><mo>˙</mo></mover><mi>W</mi></msub><mo>=</mo><msub><mi>U</mi><mi>p</mi></msub><mi mathvariant="normal">∠</mi><mo stretchy="false">(</mo><mo>−</mo><msup><mn>240</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\dot U_W=U_p\angle(-240^\circ)</annotation></semantics></math></div>
+<p>三相负载具有相同的阻抗模和阻抗角时，称为三相对称负载。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>Z</mi><mo>=</mo><msub><mi>Z</mi><mi>p</mi></msub><mi mathvariant="normal">∠</mi><mi>φ</mi></mrow><annotation encoding="application/x-tex">Z=Z_p\angle\varphi</annotation></semantics></math></div>
+<p>三个负载的电流如下：</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mover accent="true"><mi>I</mi><mo>˙</mo></mover><mi>U</mi></msub><mo>=</mo><mfrac><msub><mi>U</mi><mi>p</mi></msub><msub><mi>Z</mi><mi>p</mi></msub></mfrac><mi mathvariant="normal">∠</mi><mo stretchy="false">(</mo><mo>−</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\dot I_U=\frac{U_p}{Z_p}\angle(-\varphi)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mover accent="true"><mi>I</mi><mo>˙</mo></mover><mi>V</mi></msub><mo>=</mo><mfrac><msub><mi>U</mi><mi>p</mi></msub><msub><mi>Z</mi><mi>p</mi></msub></mfrac><mi mathvariant="normal">∠</mi><mo stretchy="false">(</mo><mo>−</mo><msup><mn>120</mn><mo>∘</mo></msup><mo>−</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\dot I_V=\frac{U_p}{Z_p}\angle(-120^\circ-\varphi)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mover accent="true"><mi>I</mi><mo>˙</mo></mover><mi>W</mi></msub><mo>=</mo><mfrac><msub><mi>U</mi><mi>p</mi></msub><msub><mi>Z</mi><mi>p</mi></msub></mfrac><mi mathvariant="normal">∠</mi><mo stretchy="false">(</mo><mo>−</mo><msup><mn>240</mn><mo>∘</mo></msup><mo>−</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\dot I_W=\frac{U_p}{Z_p}\angle(-240^\circ-\varphi)</annotation></semantics></math></div>
+<p>这三个负载电流有效值相同，相位各自差120°。</p>
+<p>三个模相等且彼此相差 120° 的相量之和为零。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>i</mi><mi>U</mi></msub><mo>+</mo><msub><mi>i</mi><mi>V</mi></msub><mo>+</mo><msub><mi>i</mi><mi>W</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">i_U+i_V+i_W=0</annotation></semantics></math></div>
+<p>三相对称时中性线电流为零。在这种特定负载条件下，去掉中性线不改变各相电压和电流。</p>
+<p>三相四线制有三条相线和一条中性线。三相五线制将工作中性线 N 与保护导体 PE 分设；两者承担不同功能。</p>
+<h3>6.交流电路的功率</h3>
+<h3>6.1有功功率、无功功率和视在功率</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>u</mi><mo>=</mo><msqrt><mn>2</mn></msqrt><mi>U</mi><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><msub><mi>φ</mi><mi>u</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">u=\sqrt2 U\sin(\omega t+\varphi_u)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>u</mi><mo>=</mo><msqrt><mn>2</mn></msqrt><mi>U</mi><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><msub><mi>φ</mi><mi>u</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">u=\sqrt2 U\sin(\omega t+\varphi_u)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>i</mi><mo>=</mo><msqrt><mn>2</mn></msqrt><mi>I</mi><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><msub><mi>φ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">i=\sqrt2 I\sin(\omega t+\varphi_i)</annotation></semantics></math></div>
+<p>视在功率的单位是伏安（VA），其大小为电压和电流有效值的乘积。以电压相位减去电流相位得到相位差，有功功率的单位为瓦（W），无功功率的单位为乏（var）。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>φ</mi><mo>=</mo><msub><mi>φ</mi><mi>u</mi></msub><mo>−</mo><msub><mi>φ</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\varphi=\varphi_u-\varphi_i</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>S</mi><mo>=</mo><mi>U</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">S=UI</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>U</mi><mi>I</mi><mi>cos</mi><mo>⁡</mo><mi>φ</mi></mrow><annotation encoding="application/x-tex">P=UI\cos\varphi</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>U</mi><mi>I</mi><mi>sin</mi><mo>⁡</mo><mi>φ</mi></mrow><annotation encoding="application/x-tex">Q=UI\sin\varphi</annotation></semantics></math></div>
+<p>原页第三相电压的相量式漏印模值，此处按对称三相电压补上相电压有效值。</p>
+<h3>三相相量与中性线</h3>
+<p>图中三支相电压相量从原点发出，等长、彼此间隔 120°。按图示相序，相邻两相的相量差为对应的线电压。</p>
+<p>对称负载的三支线电流首尾相接构成闭合三角形，说明流入中性点的电流代数和为零。星形接线图中的 N 与负载端 N′ 对应。</p>
+</article>
+</body></html>

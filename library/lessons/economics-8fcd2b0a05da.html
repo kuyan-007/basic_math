@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>现金流量图与资金等值</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="读懂现金流量图"><figcaption>读懂现金流量图</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((读懂现金流量图))
+    时间
+      横轴标出每笔收付发生的时点
+    方向
+      向上表示流入，向下表示流出
+    金额
+      箭头长度表示金额大小
+    等值换算
+      现值在起点，终值在期末
+        等额年金对应各期期末等额收付</pre></study-mind-map></figure>
+<p class="source-label">工程经济学习笔记</p>
+<section id="part-1">
+<p>现金流量图。向下是现金流出，向上是流入。箭头长短与金额大小成比例。三要素是大小、方向、时间点。</p>
+<p>资金等值计算。现值P，终值F，等额年金A，计息期数n，折现率i。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mi>A</mi><mfrac><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>i</mi></mfrac></mrow><annotation encoding="application/x-tex">F=A\frac{(1+i)^n-1}{i}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>A</mi><mfrac><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">P=A\frac{(1+i)^n-1}{i(1+i)^n}</annotation></semantics></math></div>
+<p>F与n重叠，P是在0的位置，没有任何的分期。</p>
+</section>
+<p class="source-label">工程经济重点与例题</p>
+<section id="part-2">
+<h3>现金流量图与资金等值公式</h3>
+<p>现金流量示例中，第 1、2 年末分别流出 100、150，第 3 年末流入 200，图中第 n−1 和第 n 年末也各流入 200。</p>
+<p>P 为现值，F 为终值，A 为每期期末等额收付额，i 为期利率，n 为期数。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">F=P(1+i)^n</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>F</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P=F(1+i)^{-n}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mi>A</mi><mfrac><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>i</mi></mfrac></mrow><annotation encoding="application/x-tex">F=A\frac{(1+i)^n-1}{i}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mi>F</mi><mfrac><mi>i</mi><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">A=F\frac{i}{(1+i)^n-1}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>A</mi><mfrac><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">P=A\frac{(1+i)^n-1}{i(1+i)^n}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mi>P</mi><mfrac><mrow><mi>i</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup></mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">A=P\frac{i(1+i)^n}{(1+i)^n-1}</annotation></semantics></math></div>
+</section>
+<section id="part-3">
+<h3>现金流量图的含义</h3>
+<p>现金流量是一个经济系统在某个时点实际发生的资金流入或流出。现金流量图用时间轴表示一段时间内发生的现金流量。</p>
+<p>线段长度表示金额，箭头向上表示流入、向下表示流出，横轴数字表示时间点。时间点“1”表示第一年末，也表示第二年初。</p>
+<p>示例中的第 1 年末流出 100，第 2 年末流出 150，第 3 年末流入 200，第 n−1 年末和第 n 年末各流入 200。读图需同时识别大小、方向和时间点。</p>
+</section>
+</article>
+</body></html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>变压器的工作原理</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<h3>三变压器与电动机</h3>
+<h3>1.变压器</h3>
+<h3>1.1变压器的概念</h3>
+<p>变压器是根据电磁感应原理制成的电磁器件。它通过电-磁-电的转换，将某一种电压的交流电能转换成频率相同的另一种电压的交流电能。它不仅可以用来变换电压，而且可以变换电流和变换阻抗等。</p>
+<h3>1.2电压变换</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><msub><mi>U</mi><mn>1</mn></msub><msub><mi>U</mi><mn>20</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>N</mi><mn>1</mn></msub><msub><mi>N</mi><mn>2</mn></msub></mfrac><mo>=</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\frac{U_1}{U_{20}}=\frac{N_1}{N_2}=K</annotation></semantics></math></div>
+<p>理想变压器在空载条件下，一次电压与二次空载电压的有效值之比等于线圈匝数比。</p>
+<p>K 是变压比，N₁、N₂ 是原边和副边的匝数。电源电压一定时，改变匝数比可改变输出电压。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mover accent="true"><mi>U</mi><mo>˙</mo></mover><mn>1</mn></msub><mo>=</mo><mo>−</mo><mfrac><msub><mi>N</mi><mn>1</mn></msub><msub><mi>N</mi><mn>2</mn></msub></mfrac><msub><mover accent="true"><mi>U</mi><mo>˙</mo></mover><mn>20</mn></msub><mo>=</mo><mo>−</mo><mi>K</mi><msub><mover accent="true"><mi>U</mi><mo>˙</mo></mover><mn>20</mn></msub></mrow><annotation encoding="application/x-tex">\dot U_1=-\frac{N_1}{N_2}\dot U_{20}=-K\dot U_{20}</annotation></semantics></math></div>
+<p>按图给定的绕组与参考方向，两个电压相量带相反符号。</p>
+<p>变压器空载运行原理图</p>
+<h3>1.3电流变换</h3>
+<p>变压器带负载运行时（如左下图所示，有电阻RL)，一次电流与二次电流的比约与它们的匝数成反比，即：</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><msub><mi>I</mi><mn>1</mn></msub><msub><mi>I</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>N</mi><mn>2</mn></msub><msub><mi>N</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mi>K</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{I_1}{I_2}=\frac{N_2}{N_1}=\frac{1}{K}</annotation></semantics></math></div>
+<p>忽略变压器损耗时，两侧传输的功率相等。相量符号取决于绕组绕向和参考方向。副边电阻 Rᴸ 折算至原边时要乘以变比的平方。若原边电源内阻为 40 Ω、负载为纯电阻，折算电阻等于电源内阻时，负载获得的功率最大。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi>R</mi><mi>L</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msubsup><mo>=</mo><msup><mi>K</mi><mn>2</mn></msup><msub><mi>R</mi><mi>L</mi></msub></mrow><annotation encoding="application/x-tex">R_L^{\prime}=K^2 R_L</annotation></semantics></math></div>
+<h3>从绕组极性读变压器图</h3>
+<p>一次绕组在铁芯左侧，二次绕组在右侧，图中的磁通经共同铁芯闭合。按两绕组的绕向与电压参考箭头判断瞬时极性；反转一侧的参考方向会改变相量比的符号。</p>
+</article>
+</body></html>

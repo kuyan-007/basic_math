@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>主应力与主平面</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="平面应力状态下怎样排列主应力"><figcaption>平面应力状态下怎样排列主应力</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((平面应力状态下怎样排列主应力))
+    主平面
+      该截面上切应力为零
+    面内
+      两个主方向相互垂直
+    面外
+      垂直于原平面的主方向上主应力为零
+    排序
+      将三者按代数值从大到小排列，零值的位置由另外两个值决定</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>1.4 主应力</h3>
+<p>切应力为零的截面称为主平面，主平面上的正应力称为主应力。平面应力状态下，有两个相互垂直的面内主方向；另一个主方向垂直于该平面，主应力为零。</p>
+</section>
+<section id="part-2">
+<p>三个正交主平面上的应力构成一点的三个主应力。按代数值从大到小排列：</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mn>1</mn></msub><mo>≥</mo><msub><mi>σ</mi><mn>2</mn></msub><mo>≥</mo><msub><mi>σ</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\sigma_1\geq\sigma_2\geq\sigma_3</annotation></semantics></math></div>
+<p>平面应力状态下其中一个主应力为零。应按数值排序，零值不一定处在中间。</p>
+<h3>1.5 主应力的计算</h3>
+<p>把斜截面变换式中正应力减去平均正应力，再将其与切应力表达式分别平方并相加，利用三角恒等式消去 α。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\sigma_m</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mi>α</mi></msub><mo>−</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>+</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>−</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac><mi>cos</mi><mo>⁡</mo><mn>2</mn><mi>α</mi><mo>−</mo><msub><mi>τ</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mi>sin</mi><mo>⁡</mo><mn>2</mn><mi>α</mi></mrow><annotation encoding="application/x-tex">\sigma_\alpha-\frac{\sigma_x+\sigma_y}{2}=\frac{\sigma_x-\sigma_y}{2}\cos2\alpha-\tau_{xy}\sin2\alpha</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>τ</mi><mi>α</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>−</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac><mi>sin</mi><mo>⁡</mo><mn>2</mn><mi>α</mi><mo>+</mo><msub><mi>τ</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mi>cos</mi><mo>⁡</mo><mn>2</mn><mi>α</mi></mrow><annotation encoding="application/x-tex">\tau_\alpha=\frac{\sigma_x-\sigma_y}{2}\sin2\alpha+\tau_{xy}\cos2\alpha</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mrow><mo fence="true">(</mo><msub><mi>σ</mi><mi>α</mi></msub><mo>−</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>+</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msubsup><mi>τ</mi><mi>α</mi><mn>2</mn></msubsup><mo>=</mo><msup><mrow><mo fence="true">(</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>−</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msubsup><mi>τ</mi><mrow><mi>x</mi><mi>y</mi></mrow><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\left(\sigma_\alpha-\frac{\sigma_x+\sigma_y}{2}\right)^2+\tau_\alpha^2=\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2</annotation></semantics></math></div>
+<p>原坐标面上的应力给定后，该关系限定了斜截面正应力与切应力的取值。正应力取极值时，切应力为零；两个极值就是两个面内主应力，再与面外零应力一起排序。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>τ</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\tau_{xy}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mrow><mi>α</mi><mo separator="true">,</mo><mi>max</mi><mo>⁡</mo><mi mathvariant="normal">/</mi><mi>min</mi><mo>⁡</mo></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>+</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac><mo>±</mo><msqrt><mrow><msup><mrow><mo fence="true">(</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>−</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msubsup><mi>τ</mi><mrow><mi>x</mi><mi>y</mi></mrow><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\sigma_{\alpha,\max/\min}=\frac{\sigma_x+\sigma_y}{2}\pm\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>τ</mi><mi>α</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\tau_\alpha=0</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>τ</mi><mi>α</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\tau_\alpha=0</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mi>n</mi></msub><mo separator="true">,</mo><mspace width="1em"/><msub><mi>σ</mi><mi>m</mi></msub><mo separator="true">,</mo><mspace width="1em"/><msub><mi>σ</mi><mi>z</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sigma_n,\quad\sigma_m,\quad\sigma_z=0</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mi>z</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sigma_z=0</annotation></semantics></math></div>
+<p>正应力等于平均正应力时，面内切应力取极值。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mi>α</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>+</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\sigma_\alpha=\frac{\sigma_x+\sigma_y}{2}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>τ</mi><mrow><mi>α</mi><mo separator="true">,</mo><mi>max</mi><mo>⁡</mo><mi mathvariant="normal">/</mi><mi>min</mi><mo>⁡</mo></mrow></msub><mo>=</mo><mo>±</mo><msqrt><mrow><msup><mrow><mo fence="true">(</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>−</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msubsup><mi>τ</mi><mrow><mi>x</mi><mi>y</mi></mrow><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\tau_{\alpha,\max/\min}=\pm\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}</annotation></semantics></math></div>
+</section>
+<section id="part-3">
+<h3>主平面上的应力方向</h3>
+<p>左图将斜截面上的作用分为法向和切向，取特定方向时，切向分量为零，只剩垂直于截面的正应力。相应截面是主平面，该法向应力是主应力。</p>
+<p>立体单元体图保留三个相互垂直的主方向。图示平面应力状态在垂直于该平面的方向上正应力为零。</p>
+</section>
+</article>
+</body></html>

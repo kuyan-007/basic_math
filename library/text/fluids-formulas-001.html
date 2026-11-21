@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>流体物性与黏性</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<h3>理想气体状态方程</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>p</mi><mi>V</mi><mo>=</mo><mi>n</mi><mi>R</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">pV=nRT</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>p</mi><mi>V</mi><mo>=</mo><mfrac><mi>m</mi><mi>M</mi></mfrac><mi>R</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">pV=\frac{m}{M}RT</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi>p</mi><mi>M</mi></mrow><mi>ρ</mi></mfrac><mo>=</mo><mi>R</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">\frac{pM}{\rho}=RT</annotation></semantics></math></div>
+<p>p 为绝对压强（Pa），V 为体积（m³），T 为热力学温度（K），n 为物质的量（mol），M 为摩尔质量（kg/mol），m 为质量（kg），ρ 为密度（kg/m³）。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mo>=</mo><mn>8.314</mn><mtext>  </mtext><mrow><mi mathvariant="normal">J</mi><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><msup><mi mathvariant="normal">l</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mtext> </mtext><msup><mi mathvariant="normal">K</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><annotation encoding="application/x-tex">R=8.314\;\mathrm{J\,mol^{-1}\,K^{-1}}</annotation></semantics></math></div>
+<h3>牛顿内摩擦定律</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>τ</mi><mo>=</mo><mo>−</mo><mi>μ</mi><mfrac><mrow><mi mathvariant="normal">d</mi><msub><mi>u</mi><mi>x</mi></msub></mrow><mrow><mi mathvariant="normal">d</mi><mi>y</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\tau=-\mu\frac{\mathrm d u_x}{\mathrm d y}</annotation></semantics></math></div>
+<p>τ 为剪切应力（Pa）。此处采用的符号约定中，剪切应力与速度梯度方向相反。</p>
+<p>μ 为动力黏度（Pa·s），速度梯度沿垂直于流动方向的坐标 y 计算。温度升高时，一般液体的黏度下降，气体的黏度增大。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ν</mi><mo>=</mo><mfrac><mi>μ</mi><mi>ρ</mi></mfrac></mrow><annotation encoding="application/x-tex">\nu=\frac{\mu}{\rho}</annotation></semantics></math></div>
+<p>ν 为运动黏度（m²/s）。薄层厚度为 δ、两侧流速差为 V 时，黏性力大小可近似写成</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>T</mi><mo>=</mo><mi>μ</mi><mi>A</mi><mrow><mo fence="true">∣</mo><mfrac><mrow><mi mathvariant="normal">d</mi><mi>u</mi></mrow><mrow><mi mathvariant="normal">d</mi><mi>y</mi></mrow></mfrac><mo fence="true">∣</mo></mrow><mo>≈</mo><mi>μ</mi><mi>A</mi><mfrac><mi>V</mi><mi>δ</mi></mfrac></mrow><annotation encoding="application/x-tex">T=\mu A\left|\frac{\mathrm du}{\mathrm dy}\right|\approx\mu A\frac{V}{\delta}</annotation></semantics></math></div>
+<h3>液体静压基本方程</h3>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>p</mi><mo>=</mo><msub><mi>p</mi><mn>0</mn></msub><mo>+</mo><mi>ρ</mi><mi>g</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">p=p_0+\rho gh</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>p</mi><mn>2</mn></msub><mo>=</mo><msub><mi>p</mi><mn>1</mn></msub><mo>+</mo><mi>ρ</mi><mi>g</mi><mo stretchy="false">(</mo><msub><mi>h</mi><mn>2</mn></msub><mo>−</mo><msub><mi>h</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p_2=p_1+\rho g(h_2-h_1)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>+</mo><mfrac><msub><mi>p</mi><mn>1</mn></msub><mrow><mi>ρ</mi><mi>g</mi></mrow></mfrac><mo>=</mo><msub><mi>z</mi><mn>2</mn></msub><mo>+</mo><mfrac><msub><mi>p</mi><mn>2</mn></msub><mrow><mi>ρ</mi><mi>g</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">z_1+\frac{p_1}{\rho g}=z_2+\frac{p_2}{\rho g}</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>z</mi><mo>+</mo><mfrac><mi>p</mi><mrow><mi>ρ</mi><mi>g</mi></mrow></mfrac><mo>=</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">z+\frac{p}{\rho g}=C</annotation></semantics></math></div>
+<p>同一种静止液体中，h 为从自由液面向下的深度，z 为向上的位置高程。</p>
+</article>
+</body></html>

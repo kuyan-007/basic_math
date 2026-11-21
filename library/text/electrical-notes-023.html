@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>数字信号与逻辑函数</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<h3>六数字电子技术</h3>
+<h3>1.数字信号与逻辑函数</h3>
+<h3>1.1数字信号如何表达信息</h3>
+<p>数字信号在时间和幅值上离散，常以两种物理状态表示 0 和 1。通过编码，可用一串二进制数字表示特定信息。</p>
+<p>七段显示器的段序为 a、b、c、d、e、f、g。共阴极接法高电平点亮，显示 0 的段码为 1111110；共阳极接法低电平点亮，显示 3 的段码为 0000110。</p>
+<h3>1.2逻辑函数</h3>
+<p>在二值逻辑中，逻辑加表示或，逻辑乘表示与。例如</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>0</mn><mo>∨</mo><mn>0</mn><mo>=</mo><mn>0</mn><mo separator="true">,</mo><mspace width="1em"/><mn>0</mn><mo>∨</mo><mn>1</mn><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mspace width="1em"/><mn>1</mn><mo>∨</mo><mn>1</mn><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\lor0=0,\quad 0\lor1=1,\quad 1\lor1=1</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo>∧</mo><mn>0</mn><mo>=</mo><mn>0</mn><mo separator="true">,</mo><mspace width="2em"/><mn>1</mn><mo>∧</mo><mn>1</mn><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1\land0=0,\qquad 1\land1=1</annotation></semantics></math></div>
+<p>逻辑变量的反（¬A）与 A 的值相反。可以对输入组合逐一求值，列真值表核对逻辑函数。</p>
+<h3>2.BCD码</h3>
+<h3>2.1放弃二进制、十六进制等其他进制数字信号相关知识点的原因</h3>
+<p>有关各进制数字信号的历年考试题目，基本均与BCD码相关。因此本小节仅对BCD码进行展开学习，并放弃其他知识点。</p>
+<h3>七段显示器的段位与逻辑运算表</h3>
+<p>a、g、d 分别位于上横、中横、下横。右侧上、下竖段分别为 b、c，左侧下、上竖段分别为 e、f。右下角 DP 是独立小数点，七位段码按 a 到 g 的顺序书写。</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">显示器与目标数字</th><th scope="col">点亮的段</th><th scope="col">段码（abcdefg）</th></tr></thead><tbody><tr><td>共阴极显示 0</td><td>a、b、c、d、e、f</td><td>1111110</td></tr><tr><td>共阳极显示 3</td><td>a、b、c、d、g</td><td>0000110</td></tr></tbody></table></div>
+<div class="table-scroll"><table><thead><tr><th scope="col">基本律</th><th scope="col">恒等式</th></tr></thead><tbody><tr><th scope="row">交换律</th><td>A ∨ B = B ∨ A</td></tr><tr><th scope="row">交换律</th><td>A ∧ B = B ∧ A</td></tr><tr><th scope="row">结合律</th><td>A ∨ (B ∨ C) = (A ∨ B) ∨ C</td></tr><tr><th scope="row">结合律</th><td>A ∧ (B ∧ C) = (A ∧ B) ∧ C</td></tr><tr><th scope="row">分配律</th><td>A ∨ (B ∧ C) = (A ∨ B) ∧ (A ∨ C)</td></tr><tr><th scope="row">分配律</th><td>A ∧ (B ∨ C) = (A ∧ B) ∨ (A ∧ C)</td></tr><tr><th scope="row">互补律</th><td>A ∨ ¬A = 1</td></tr><tr><th scope="row">互补律</th><td>A ∧ ¬A = 0</td></tr><tr><th scope="row">与常量运算</th><td>A ∨ 0 = A</td></tr><tr><th scope="row">与常量运算</th><td>A ∨ 1 = 1</td></tr><tr><th scope="row">与常量运算</th><td>A ∧ 1 = A</td></tr><tr><th scope="row">与常量运算</th><td>A ∧ 0 = 0</td></tr></tbody></table></div>
+</article>
+</body></html>

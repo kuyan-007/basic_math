@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>编译、解释与程序执行</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="源程序如何执行"><figcaption>源程序如何执行</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((源程序如何执行))
+    汇编
+      将汇编语言源程序翻译为目标程序
+    编译
+      将高级语言源程序整体翻译为目标程序
+    解释
+      边读取、边翻译、边执行</pre></study-mind-map></figure>
+<p class="source-label">计算机技术知识梳理</p>
+<section id="part-1" class="native-text">
+<h3>39.语言处理程序是翻译程序的统称，包括：汇编、编译解释程序</h3>
+<p>①汇编程序：汇编语言编写的程序（源程序）翻译成机器语言程序</p>
+<p>（目标程序），汇编</p>
+<p>②编译程序：高级语言编写的程序（源程序）翻译成机器语言程序</p>
+<p>（目标程序），编译</p>
+<p>③解释程序：边扫描边翻译边执行的翻译程序，解释执行的是高级语言程序，不形成目标程序，语言不同使用的编译/解释程序也不同</p>
+<h3>40.常用编程语言：</h3>
+<p>①FORTRAN:编写科学、工程计算软件</p>
+<p>②LISP：编写人工智能、专家系统程序</p>
+<p>③Pascal：编写教学程序，是以学生学习编程思想</p>
+<p>④BASIC：编写一般实用程序</p>
+<p>⑤VB：可视化程序设计语言</p>
+<p>⑥C：功能丰富、表达能力强、应用面广、目标程序效率高、可移植性好的程序设计语言</p>
+<p>⑦C++：面向对象的程序设计语言</p>
+<p>⑧JAVA：最有活力、发展最快、最具网络优势的编程语言</p>
+</section>
+<p class="source-label">计算机系统与技术基础</p>
+<section id="part-2">
+<h3>（5）语言的编译与解释</h3>
+<p>用高级语言编写的源程序在计算机中不能直接执行，必须翻译成机器语言才可执行。翻译的方式一般有两种，一种是编译方式，另一种是解释方式。</p>
+<p>①编译方式（效率高）</p>
+<h3>②解释方式（效率低）</h3>
+<p>两种翻译方式都起着将高级语言编写的源程序翻译成计算机可以识别和运行的二进制代码的作用。但两种方式是有区别的。编译方式将源程序经编译、连接得到可执行程序文件后，就可以脱离源程序和编译程序，单独执行，所以编译方式的效率高，执行速度快。解释方式是在执行时，源程序和解释程序必须同时参与才能运行，并且不产生目标文件及可执行程序文件，所以解释方式效率低，执行速度慢，但是便于人机对话。</p>
+</section>
+<section id="part-3">
+<h3>编译执行与解释执行的过程</h3>
+<ol><li>编译执行：高级语言源程序经编译生成目标文件（.obj），链接程序将其组成可执行文件（.exe），运行后得到结果。</li><li>解释执行：解释程序读取源程序并直接解释执行，得到结果。图中没有独立的目标文件和可执行文件阶段。</li></ol>
+</section>
+</article>
+</body></html>

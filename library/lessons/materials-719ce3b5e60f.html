@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>平面应力状态与单元体</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="单元体上怎样辨认应力"><figcaption>单元体上怎样辨认应力</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((单元体上怎样辨认应力))
+    正应力
+      垂直于截面，拉为正、压为负
+    切应力
+      平行于截面
+      本讲义按使单元体顺时针转动为正
+    相互垂直的面
+      平衡的切应力大小相等，按本节约定符号相反</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>三、材料力学的其他综合知识</h3>
+<h3>1. 应力状态</h3>
+<p>本节研究材料一点在不同截面上的正应力、切应力和主应力，以及应力变换与强度校核的关系。</p>
+</section>
+<section id="part-2">
+<h3>1.2 材料中某一点的应力状态</h3>
+<p>在待分析点取一微小正六面体，称为单元体。各表面上垂直于面的应力为正应力，平行于面的为切应力；单元体充分小时，各面上的应力可按均匀分布处理。</p>
+<h3>1.3 平面应力状态</h3>
+<p>将单元体投影到 xOy 平面。在本课件采用的记号中，正应力拉为正、压为负；切应力以使单元体顺时针转动为正。因此在互相垂直的两个面上，一对相互平衡的切应力大小相同、符号相反。应用公式时须沿用同一约定。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>&gt;</mo><mn>0</mn><mo separator="true">,</mo><mspace width="1em"/><msub><mi>σ</mi><mi>y</mi></msub><mo>&gt;</mo><mn>0</mn><mo separator="true">,</mo><mspace width="1em"/><msub><mi>τ</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mo>&gt;</mo><mn>0</mn><mo separator="true">,</mo><mspace width="1em"/><msub><mi>τ</mi><mrow><mi>y</mi><mi>x</mi></mrow></msub><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sigma_x&gt;0,\quad\sigma_y&gt;0,\quad\tau_{xy}&gt;0,\quad\tau_{yx}&lt;0</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>τ</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\tau_{xy}&gt;0</annotation></semantics></math></div>
+<p>斜截面上的正应力和切应力取决于原坐标面上的应力以及斜截面的方位角 α，变换关系为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mi>α</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>+</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>−</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac><mi>cos</mi><mo>⁡</mo><mn>2</mn><mi>α</mi><mo>−</mo><msub><mi>τ</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mi>sin</mi><mo>⁡</mo><mn>2</mn><mi>α</mi></mrow><annotation encoding="application/x-tex">\sigma_\alpha=\frac{\sigma_x+\sigma_y}{2}+\frac{\sigma_x-\sigma_y}{2}\cos2\alpha-\tau_{xy}\sin2\alpha</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>τ</mi><mi>α</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>−</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac><mi>sin</mi><mo>⁡</mo><mn>2</mn><mi>α</mi><mo>+</mo><msub><mi>τ</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mi>cos</mi><mo>⁡</mo><mn>2</mn><mi>α</mi></mrow><annotation encoding="application/x-tex">\tau_\alpha=\frac{\sigma_x-\sigma_y}{2}\sin2\alpha+\tau_{xy}\cos2\alpha</annotation></semantics></math></div>
+<p>若原两个正交面上的切应力均为零，则斜截面切应力的两个极值可由原正应力之差求得。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>τ</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mo>=</mo><msub><mi>τ</mi><mrow><mi>y</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\tau_{xy}=\tau_{yx}=0</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>τ</mi><mrow><mi>α</mi><mo separator="true">,</mo><mi>max</mi><mo>⁡</mo><mi mathvariant="normal">/</mi><mi>min</mi><mo>⁡</mo></mrow></msub><mo>=</mo><mo>±</mo><mfrac><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>−</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\tau_{\alpha,\max/\min}=\pm\frac{\sigma_x-\sigma_y}{2}</annotation></semantics></math></div>
+</section>
+<section id="part-3">
+<h3>单元体上的正应力与切应力</h3>
+<p>图中从梁内取出一个小单元体。投影到 x–y 平面后，垂直于单元面的箭头表示正应力，沿面的箭头表示切应力。四个面的法向拉应力向外；相向两面上的切应力箭头方向相反。</p>
+<p>斜黑线表示待求应力的倾斜截面。不同标注角度与不同剪应力正负约定可能改变变换式的符号，读图时要与同页定义保持一致。</p>
+</section>
+</article>
+</body></html>

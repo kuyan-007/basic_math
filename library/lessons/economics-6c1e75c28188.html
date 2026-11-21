@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>单利、复利与实际利率</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="利息按什么基数计算"><figcaption>利息按什么基数计算</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((利息按什么基数计算))
+    单利
+      各期均以原本金为计息基础
+    复利
+      以前一期的本利和作为下一期基数
+    一年内多次计息
+      由名义年利率求期利率
+        按实际计息次数复利换算</pre></study-mind-map></figure>
+<p class="source-label">工程经济学习笔记</p>
+<section id="part-1">
+<p>1.1~1.2利息I，本金P，F本利和，利率i。单利计算</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F=P(1+in)</annotation></semantics></math></div>
+<p>复利计算</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">F=P(1+i)^n</annotation></semantics></math></div>
+<p>名义利率（年利率）用r表示。实际利率i，</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>i</mi><mo>=</mo><mfrac><mi>I</mi><mi>P</mi></mfrac><mo>=</mo><msup><mrow><mo fence="true">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>m</mi></mfrac><mo fence="true">)</mo></mrow><mi>m</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i=\frac{I}{P}=\left(1+\frac{r}{m}\right)^m-1</annotation></semantics></math></div>
+<p>一般实际利率较大。主要相互之间的换算。</p>
+</section>
+<p class="source-label">工程经济重点与例题</p>
+<section id="part-2">
+<h3>名义利率与实际利率</h3>
+<p>例题：名义年利率为 12%，按季度、按月和按日计息时，实际年利率分别是多少？</p>
+<p>设 r 为名义年利率，m 为一年内的计息次数。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>i</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">f</mi></mrow></msub><mo>=</mo><msup><mrow><mo fence="true">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>m</mi></mfrac><mo fence="true">)</mo></mrow><mi>m</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i_{\rm eff}=\left(1+\frac{r}{m}\right)^m-1</annotation></semantics></math></div>
+<p>每季度计息一次</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>i</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">f</mi></mrow></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>12</mn><mi mathvariant="normal">%</mi><mi mathvariant="normal">/</mi><mn>4</mn><msup><mo stretchy="false">)</mo><mn>4</mn></msup><mo>−</mo><mn>1</mn><mo>≈</mo><mn>12.55</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">i_{\rm eff}=(1+12\%/4)^4-1\approx12.55\%</annotation></semantics></math></div>
+<p>每月计息一次</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>i</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">f</mi></mrow></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>12</mn><mi mathvariant="normal">%</mi><mi mathvariant="normal">/</mi><mn>12</mn><msup><mo stretchy="false">)</mo><mn>12</mn></msup><mo>−</mo><mn>1</mn><mo>≈</mo><mn>12.68</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">i_{\rm eff}=(1+12\%/12)^{12}-1\approx12.68\%</annotation></semantics></math></div>
+<p>每天计息一次，按一年 365 天计算</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>i</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">f</mi></mrow></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>12</mn><mi mathvariant="normal">%</mi><mi mathvariant="normal">/</mi><mn>365</mn><msup><mo stretchy="false">)</mo><mn>365</mn></msup><mo>−</mo><mn>1</mn><mo>≈</mo><mn>12.75</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">i_{\rm eff}=(1+12\%/365)^{365}-1\approx12.75\%</annotation></semantics></math></div>
+</section>
+</article>
+</body></html>

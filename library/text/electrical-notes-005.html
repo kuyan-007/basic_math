@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>戴维宁定理与诺顿定理</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<p>戴维宁（戴维南）定理：任何一个有源二端线性网络都可以用一个理想电压源（无内阻的电压源）和一个电阻串联的电路来等效代替。等效电源的电压就是有源二端网络的开路电压（将负载断开后a、b两端之间的电压)Uoc。等效电源的内阻Ro等于有源二端网络中所有电源均除去(将各个理想电压源短路，即其电动势为零；将各个理想电流源开路，即其电流为零）后所得到的无源网络a、b两端之间的等效电阻。</p>
+<p>诺顿定理：任何一个有源二端网络都可以用一个电流源和一个电阻并联的电路来等效代替。该电流源的电流等于此有源二端网络的短路电流（将负载断开后a、b两端之间的直接用导线相连后经过的电流）Ics，并联电阻等于此有源二端网络除去独立电源后在其端口处的等效电阻Ro。</p>
+<p>开路电压除以短路电流，可得线性一端口的等效内阻。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>R</mi><mn>0</mn></msub><mo>=</mo><msub><mi>U</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">c</mi></mrow></msub><mi mathvariant="normal">/</mi><msub><mi>I</mi><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">c</mi></mrow></msub></mrow><annotation encoding="application/x-tex">R_0=U_{\rm oc}/I_{\rm sc}</annotation></semantics></math></div>
+<p>” 戴维宁定理示意图 ” 诺顿定理示意图戴维宁定理示意图诺顿定理示意图</p>
+<h3>3.直流电路的瞬态分析</h3>
+<p>电阻单位为 Ω（欧姆）、kΩ（千欧）、MΩ（兆欧）。在关联参考方向下，两端电压与电流满足欧姆定律。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>u</mi><mo>=</mo><mi>i</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">u=iR</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>p</mi><mo>=</mo><mi>u</mi><mi>i</mi><mo>=</mo><msup><mi>i</mi><mn>2</mn></msup><mi>R</mi><mo>=</mo><mfrac><msup><mi>u</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">p=ui=i^2R=\frac{u^2}{R}</annotation></semantics></math></div>
+<p>电阻为耗能元件，吸收功率 :</p>
+<h3>3.2电感元件</h3>
+<p>符号：</p>
+<p>单位：H（亨利）、mH（毫亨）、μH（微亨）</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>u</mi><mo>=</mo><mi>L</mi><mfrac><mrow><mi mathvariant="normal">d</mi><mi>i</mi></mrow><mrow><mi mathvariant="normal">d</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">u=L\frac{\mathrm di}{\mathrm dt}</annotation></semantics></math></div>
+<p>电感元件的感应电压 u 的大小 :</p>
+<p>电感为储能元件，本身并不消耗能量。</p>
+<p>理想电感在直流稳态时两端电压为零，可等效为短路。</p>
+<h3>3.3电容元件</h3>
+<p>电容的单位为 F（法拉）、μF（微法）、pF（皮法）。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>i</mi><mo>=</mo><mi>C</mi><mfrac><mrow><mi mathvariant="normal">d</mi><mi>u</mi></mrow><mrow><mi mathvariant="normal">d</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">i=C\frac{\mathrm du}{\mathrm dt}</annotation></semantics></math></div>
+<p>电容元件的感应电流 i 的大小 :</p>
+<h3>一端口网络的两种等效表示</h3>
+<p>在网络的两个外接端子上接入同一负载，等效前后的负载端电压和负载电流相同。戴维南形式用理想电压源串联电阻；诺顿形式用理想电流源并联电阻。</p>
+</article>
+</body></html>

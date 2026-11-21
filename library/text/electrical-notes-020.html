@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>二极管与模拟电子技术</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<h3>五模拟电子技术</h3>
+<h3>1.二极管</h3>
+<h3>1.1二极管的概念</h3>
+<p>二极管是半导体器件，具有单向导电性。在理想模型中，正向偏置时导通，反向偏置时截止。</p>
+<h3>1.2二极管的电路符号</h3>
+<p>符号左端为阳极，竖线一端为阴极。正向导通时理想二极管等效为闭合开关，反向截止时等效为开路。</p>
+<h3>1.3半波整流电路</h3>
+<p>半波整流利用二极管的单向导电特性保留输入交流电的一个半周，得到单向脉动输出。</p>
+<p>正弦输入、理想二极管与电阻负载下，半波整流输出平均值的绝对值约为输入有效值的 0.45 倍。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>U</mi><mo>=</mo><mfrac><mn>10</mn><msqrt><mn>2</mn></msqrt></mfrac><mtext> </mtext><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/x-tex">U=\frac{10}{\sqrt2}\,\mathrm V</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>0.45</mn><mtext> </mtext><mfrac><mn>10</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>≈</mo><mn>3.18</mn><mtext> </mtext><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/x-tex">0.45\,\frac{10}{\sqrt2}\approx3.18\,\mathrm V</annotation></semantics></math></div>
+<p>输入峰值为 10 V 时，其有效值为峰值除以 √2；输出平均值的符号由负载电压的参考方向决定。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>u</mi><mi>i</mi></msub><mo>=</mo><mn>10</mn><mi>sin</mi><mo>⁡</mo><mi>ω</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">u_i=10\sin\omega t</annotation></semantics></math></div>
+<p>按图示极性，负载上端电位低于下端，输出平均值取负号。</p>
+<h3>1.4全波整流电路</h3>
+<p>全波整流电路是指能够把交流电转换成单一方向电流的电路，最典型的全波整流电路是由四个二极管组成的整流桥，一般用于交流电源的整流。</p>
+<p>桥式全波整流每个输入周期有两个输出脉动。理想条件下，输出电压平均值的绝对值约为正弦输入有效值的 0.9 倍。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>0.9</mn><mtext> </mtext><mfrac><mn>10</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>≈</mo><mn>6.36</mn><mtext> </mtext><mi mathvariant="normal">V</mi></mrow><annotation encoding="application/x-tex">0.9\,\frac{10}{\sqrt2}\approx6.36\,\mathrm V</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>u</mi><mi>i</mi></msub><mo>=</mo><mn>10</mn><mi>sin</mi><mo>⁡</mo><mi>ω</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">u_i=10\sin\omega t</annotation></semantics></math></div>
+<p>按图示极性，负载上端电位低于下端，输出平均值取负号。</p>
+<h3>1.5其他电路</h3>
+<p>有关二极管的知识除已介绍的内容外，还有滤波电路、稳压二极管电路、变容二极管电路等。这些知识较难，且数年才考一题，因此考试遇到可以放弃。</p>
+<h3>2.运算放大器</h3>
+<h3>按图示极性读整流波形</h3>
+<p>半波图中二极管串在交流源与电阻之间，以负载上端为输出正端。该接法保留输入的负半周，正半周输出为零。虚线画的是被截止的半周。</p>
+<p>全波图使用四只二极管组成电桥，交流输入接桥的两中点，负载电阻跨接另两端。图示输出的两个半周都位于零线以下，每个输入周期出现两次负脉动。</p>
+</article>
+</body></html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>普通股成本与股利增长模型</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="估算普通股资金成本"><figcaption>估算普通股资金成本</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((估算普通股资金成本))
+    股利折现
+      固定股利
+        以每年股利与筹资净额计算
+      固定增长股利
+        计入第一年股利和股利增长率
+    其他方法
+      资本资产定价模型
+      税前债务成本加风险溢价法</pre></study-mind-map></figure>
+<p class="source-label">工程经济学习笔记</p>
+<section id="part-1">
+<p>普通股的资金成本。股利折现：固定股利政策</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>K</mi><mi>s</mi></msub><mo>=</mo><mfrac><mi>D</mi><mrow><msub><mi>P</mi><mn>0</mn></msub><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">K_s=\frac{D}{P_0(1-F)}</annotation></semantics></math></div>
+<p>固定增长股利。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>K</mi><mi>s</mi></msub><mo>=</mo><mfrac><msub><mi>D</mi><mn>1</mn></msub><mrow><msub><mi>P</mi><mn>0</mn></msub><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mfrac><mo>+</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">K_s=\frac{D_1}{P_0(1-F)}+G</annotation></semantics></math></div>
+</section>
+<p class="source-label">工程经济重点与例题</p>
+<section id="part-2">
+<h3>资金成本的三种计算</h3>
+<p>固定增长股利的普通股，股利固定增长率为 G。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>K</mi><mi>s</mi></msub><mo>=</mo><mfrac><msub><mi>D</mi><mn>1</mn></msub><mrow><msub><mi>P</mi><mn>0</mn></msub><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mfrac><mo>+</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">K_s=\frac{D_1}{P_0(1-f)}+G</annotation></semantics></math></div>
+</section>
+<section id="part-3">
+<h3>普通股资金成本</h3>
+<p>普通股资金成本可用股利折现模型、资本资产定价模型或税前债务成本加风险溢价法估算。</p>
+<p>固定股利政策：每年分配现金股利 D。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>K</mi><mi>s</mi></msub><mo>=</mo><mfrac><mi>D</mi><mrow><msub><mi>P</mi><mn>0</mn></msub><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">K_s=\frac{D}{P_0(1-f)}</annotation></semantics></math></div>
+<p>固定增长股利政策：第一年股息为 D₁，之后按固定增长率 G 增长。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>K</mi><mi>s</mi></msub><mo>=</mo><mfrac><msub><mi>D</mi><mn>1</mn></msub><mrow><msub><mi>P</mi><mn>0</mn></msub><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mfrac><mo>+</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">K_s=\frac{D_1}{P_0(1-f)}+G</annotation></semantics></math></div>
+<p>P₀ 为普通股筹资额，f 为筹资费用率，Kₛ 为普通股股东要求的收益率。</p>
+<p>例题：发行普通股筹资 5000 万元，筹资费率 4%，第一年股利率 12%，以后每年增长 5%。普通股资金成本为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>K</mi><mi>s</mi></msub><mo>=</mo><mfrac><mrow><mn>5000</mn><mo>×</mo><mn>12</mn><mi mathvariant="normal">%</mi></mrow><mrow><mn>5000</mn><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mn>4</mn><mi mathvariant="normal">%</mi><mo stretchy="false">)</mo></mrow></mfrac><mo>+</mo><mn>5</mn><mi mathvariant="normal">%</mi><mo>=</mo><mn>17.5</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">K_s=\frac{5000\times12\%}{5000(1-4\%)}+5\%=17.5\%</annotation></semantics></math></div>
+</section>
+</article>
+</body></html>

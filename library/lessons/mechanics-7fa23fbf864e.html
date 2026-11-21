@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>动量矩与动量矩定理</title><link rel="stylesheet" href="../../assets/reading.css"><link rel="stylesheet" href="../../assets/native-text.css"><script defer src="../../assets/mind-map.js?v=adaptive2"></script></head>
+<body class="standalone-reading">
+<article class="study-text" data-reading-page>
+<figure class="study-map" aria-label="怎样求动量矩"><figcaption>怎样求动量矩</figcaption><study-mind-map class="mermaid-map"><pre>mindmap
+  root((怎样求动量矩))
+    质点相对固定点
+      用矢径与动量的叉积
+    平移刚体
+      将总动量作用在质心处计算
+    绕固定轴转动的刚体
+      轴向动量矩由转动惯量和角速度确定
+    多个刚体
+      统一参考点和正方向后相加</pre></study-mind-map></figure>
+<section id="part-1">
+<h3>4.3 动量矩</h3>
+<p>质点对固定点 O 的动量矩是位置矢量与动量矢量的叉积，其量纲为 ML²T⁻¹。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi mathvariant="bold-italic">L</mi><mi>O</mi></msub><mo>=</mo><mi mathvariant="bold-italic">r</mi><mo>×</mo><mi mathvariant="bold-italic">p</mi></mrow><annotation encoding="application/x-tex">\boldsymbol L_O=\boldsymbol r\times\boldsymbol p</annotation></semantics></math></div>
+<p>多个刚体组成的系统对同一点的动量矩，可以把各刚体对该点的动量矩相加，需统一正方向。</p>
+<p>平移刚体的动量矩可用作用在质心的总动量计算。θ 是质心矢径和动量的夹角。</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><msub><mi mathvariant="bold-italic">L</mi><mi>O</mi></msub><mi mathvariant="normal">∣</mi><mo>=</mo><mi>r</mi><mi>p</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding="application/x-tex">|\boldsymbol L_O|=rp\sin\theta</annotation></semantics></math></div>
+<p>例如悬挂物块向下运动时，若其动量作用线到轴心的垂距为 R，则动量矩大小为 mvR。</p>
+<p>对绕固定轴转动的刚体，轴向动量矩为</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>L</mi><mi>z</mi></msub><mo>=</mo><msub><mi>J</mi><mi>z</mi></msub><mi>ω</mi></mrow><annotation encoding="application/x-tex">L_z=J_z\omega</annotation></semantics></math></div>
+<h3>下降物体对滑轮中心的动量矩</h3>
+<p>物体 W 沿竖直绳向下运动，动量沿绳向下。滑轮中心 O 到这条作用线的垂距为滑轮半径 R。图中物体在 O 的右方，其动量对 O 的矩为顺时针方向。</p>
+</section>
+<section id="part-2">
+<h3>动量矩定理及守恒</h3>
+<p>外力对固定点或固定轴的合矩等于动量矩对时间的变化率。合外力矩为零时，相应动量矩守恒。对于课件所示的平移和定轴转动，分别有</p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">d</mi><mi>L</mi></mrow><mrow><mi mathvariant="normal">d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi mathvariant="normal">d</mi><mo stretchy="false">(</mo><mi>m</mi><mi>r</mi><mi>v</mi><mo stretchy="false">)</mo></mrow><mrow><mi mathvariant="normal">d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>m</mi><mi>r</mi><mfrac><mrow><mi mathvariant="normal">d</mi><mi>v</mi></mrow><mrow><mi mathvariant="normal">d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>m</mi><mi>r</mi><mi>a</mi><mo>=</mo><mi>F</mi><mi>r</mi><mo>=</mo><mi>M</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{\mathrm dL}{\mathrm dt}=\frac{\mathrm d(mrv)}{\mathrm dt}=mr\frac{\mathrm dv}{\mathrm dt}=mra=Fr=M(F)</annotation></semantics></math></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">d</mi><mi>L</mi></mrow><mrow><mi mathvariant="normal">d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi mathvariant="normal">d</mi><mo stretchy="false">(</mo><mi>J</mi><mi>ω</mi><mo stretchy="false">)</mo></mrow><mrow><mi mathvariant="normal">d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>J</mi><mfrac><mrow><mi mathvariant="normal">d</mi><mi>ω</mi></mrow><mrow><mi mathvariant="normal">d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>J</mi><mi>α</mi><mo>=</mo><mi>M</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{\mathrm dL}{\mathrm dt}=\frac{\mathrm d(J\omega)}{\mathrm dt}=J\frac{\mathrm d\omega}{\mathrm dt}=J\alpha=M(F)</annotation></semantics></math></div>
+<p>动量矩的量纲为 ML²T⁻¹，力矩量纲为 ML²T⁻²。</p>
+</section>
+<section id="part-3">
+<p>系统内部成对的内力不会改变系统的总动量矩。</p>
+</section>
+</article>
+</body></html>
